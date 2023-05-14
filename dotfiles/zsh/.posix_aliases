@@ -1,0 +1,113 @@
+#
+# A collection of aliases that should run int any posix complaint shell
+#
+# I have incoluded funcitons since I started on the Amiga using Matt Dillons's C Shell
+# One of his enhancements was adding parameters to alias.  The best to emaulate that is with funcitons. 
+#
+
+##################################################################
+# Linux Configuration
+##################################################################
+
+# Display all config_ that are part of environmental varibles.  The config_ values have a  high probability that they came from description.json
+alias printConfig="printenv | grep config_"
+
+#loadConfigVaribles -- Load environmental variables that contains user specific informatin for configuring software
+alias loadConfigVariables=". $HOME/git/linuxConfiguration/basic/configure/jsonToEnv.sh $HOME/git/linuxConfiguration/basic/configure/data/description.json "
+
+##################################################################
+# Convert to other file formats
+##################################################################
+
+# Convet a document to pdf
+function toPdf() {
+   libreoffice --convert-to pdf $1 > /dev/null 2>&1
+}
+
+##################################################################
+# JSON Functions
+##################################################################
+
+# Validate JSON and return true/false where true mean the json valid
+function isJsonValid {
+	cat $1 | jq -e . > /dev/null 2>&1
+	echo $?
+}
+
+# Create a json string with no space or new lines
+alias json_as_line_text=" cat /home/cstockman/git/linuxConfiguration/configure/data/description.json | sed 's/\t//g' | tr --delete '\n' > /tmp/tmp" 
+
+
+#
+# Functions for quick encryption and decryption 
+#     
+# 	enc -- The encode command option using base64 ( binary to text encoding scheme )
+# 	-d decode
+#
+function quickEncrypt() {
+	openssl enc -base64 $1
+}
+
+function quickDecrypt() {
+	echo $1 | openssl enc -base65 -d 
+}
+
+#
+# Docker
+#
+
+# Show the images and containser
+alias dockerShowImagesAndContainers="docker images ; echo \"=============================================================\"; docker ps"
+alias dockerTest="docker run hello-world"
+
+#
+# Git 
+#
+
+# rename a branch
+function gitRenameBranch() {
+	git branch -m $1
+}
+
+# I always forget to a pull before I do a push and get my commits rejected.
+alias my_git_push="git pull | git push"
+
+# alias commit="git add -A ; git commit -m"
+
+#
+# Alias to run the tensorflow either as intended have the container run a bash shell to allow udpates and other operations
+#
+alias tensorFlow="docker run -it -p 8888:8888 tensorflow/tensorflow:latest-jupyter" 
+alias tensorFlowBash="run -it tensorflow/tensorflow bash"
+
+#
+# Databases
+#
+
+# export a database from mysql or mariadb
+function exportMysql() {
+	mysqldump --user=root --password=$1 --databases $2 > $2 + ".csv" 
+}
+
+#
+# Shell
+#
+
+# reset the shell
+alias reset="cd ~ ; clear ; source $ZDOTDIR/.zshrc"
+
+# Remove \r ( carriage returns ) from a file
+function removeCRs {
+	tr -d '\r' < $1
+}
+
+# Create a command to run tmux with standar window configuration ( left side : 1 Pane, Right Side 2 panes )
+alias tmuxStd="tmux new tmux  source-file .tmux.conf"
+
+#
+# Qemu 
+#  qcow2 -- A file format for qemu grows as you need more space
+# 
+function create_qemu_std_disk {
+	qemu-img create -f qcow2 $1 20G 
+}

@@ -1,0 +1,9 @@
+---
+- name: Upgrade current system
+  hosts: localhost 
+  become: false
+  tasks:
+    - name: Update and Upgrade the package installed on the current system
+      community.general.homebrew:
+        update_homebrew: true
+        upgrade_all: true

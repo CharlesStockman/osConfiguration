@@ -1,0 +1,13 @@
+# Set "Ultimate Trust for the select user ( gpg id ) 
+
+set timeout 10
+
+spawn gpg --edit-key $argv 0 trust quit
+
+expect "Your decision? " { send "5\r" }
+expect "Do you really want to set this key to ultimate trust? (y/N) " { send "y\r" }
+
+# Gives control of the current process to the user
+# Keystrokes are sent to the current process
+# Stdout and Stderr of the current process is returned
+interact

@@ -1,0 +1,28 @@
+{ 
+	"config": {
+
+		"full_name": "Charles Stockman",
+
+		"email": "chuck.stockman@yahoo.com",
+
+                "distro": "void",
+
+		"userName": "cstockman",
+
+		"dataDirectory": "/home/cstockman/data",
+
+		"homeDirectory": "/home/cstockman",
+
+		"linuxConfiguration_directory": "/home/cstockman/git/linuxConfiguration",
+
+		"textEditor": "/bin/vi",
+
+		"github": {
+			"username": "CharlesStockman",
+			"personalAccessToken": "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"  
+		},
+
+		"terminal_emulator": "/bin/xfce4-terminal" 
+
+	}
+}

@@ -1,0 +1,41 @@
+---
+- name: Install Software using brew
+  hosts: localhost
+  gather_facts: no
+  vars:
+    software:
+      shells:
+        - zsh
+        - zsh-completions
+        - tmux
+      bin:
+        - neofetch
+      processViewer:
+        - htop
+
+    software_cask:
+      browsers:
+        - brave-browser
+        - slack
+
+  tasks:
+
+    - name: Create the list of software installed by brew
+      set_fact:
+         test: "{{ software.values() | list | flatten }} "
+
+    - name: Create the list of software installed by cask
+      set_fact:
+         cask_software: "{{ software_cask.values() | list | flatten }}"
+
+    - name: Install the software packages
+      community.general.homebrew:
+        name: "{{ test }}"
+        state: present
+
+    - name: Install the software packages using cask
+      community.general.homebrew_cask:
+        name: "{{ cask_software }}"
+        state: present
+
+

@@ -1,0 +1,23 @@
+{
+	"install": {
+		"software": { 
+			"bin": [
+				"jq",
+				"gnupg",
+				"pass",
+				"nmap"
+			],
+
+			"devops": [
+				"expect",
+				"ansible",
+				"git"
+			],
+
+			"hardware": [
+				"nvidai",
+				"pipeire"
+			]
+       		}	
+	}
+}
