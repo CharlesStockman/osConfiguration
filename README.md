@@ -13,11 +13,11 @@ By Separating the intallation of the software from the configuration, the config
 
 <b>Assumption : A linux configuration or Mac OS has been installed</b>
 
-### Copy linuxConfiguration to the new machine
+### Copy osConfiguration to the new machine
 
 <b>Source</b>
-> * `git clone https://github.com/CharlesStockman/linuxConfiguration.git`
-> * copy linuxConfigruation to a USB
+> * `git clone https://github.com/CharlesStockman/isConfiguration.git`
+> * copy osConfigruation to a USB
 
 <b>Destination</b><br>
 > 
@@ -29,27 +29,27 @@ By Separating the intallation of the software from the configuration, the config
 > |`passwd cstockman`         		| Add a password so the user can log in.                                  |
 > |`usermod -a -G wheel cstockman`      | Modify user cstockman append the Group wheel to his list of groups      |
 
-> <b> Copy Linux Configuration to a non root user</b>
+> <b> Copy osConfiguration to a non root user</b>
 > |Command                   		              | Explanation                                                             |
 > |---------------------------------------------------|-------------------------------------------------------------------------|
 > | log in as root                                    |                                                                         |
 > | `mkdir /mnt/transfer`                             |                                                                         |
 > | `mount /dev/sda1 /mnt/transfer`                   | Mount the removable disk                                                |
-> | `mkdir $HOME/git`                                 | location where linuxConfiguration will reside                           |
+> | `mkdir $HOME/git`                                 | location where osConfiguration will reside                           |
 > | `log in as non-root user`                         |                                                                         |
-> | `cp -r /mnt/tranfer/linuxConfigurarion $HOME/git` |                           
+> | `cp -r /mnt/tranfer/osConfigurarion $HOME/git` |                           
 
 ### Install Software 
 The purpose of this section is to install the software.  When this section is complete the developer will have all the software on the system needed to configure the system.  Alot of distros have their own GUI programs for configuring the software.  However, I chose to use the commands line programs themselves so only one set of scripts will be needed to configure any linux distro or OSX.
 
 Note that installAll requrires one parameeter which is the JSON file that contains all the software needed to be installed.  This file will be 
-found in linuxconfiguration/distro/<specific distro>/repository.json
+found in psconfiguration/distro/<specific distro>/repository.json
 
 #### Install All the Software
 |Command                                                 | Explanation                                                                           |
 |--------------------------------------------------------|---------------------------------------------------------------------------------------|
 |`su root`                                               | Change user to root since software is installed on linux by root.                     |
-| `cd ~/git/linuxConfiguration/distro/<specific distro>` | change directory into the directory needed for the next two steps                     |
+| `cd ~/git/osConfiguration/distro/<specific distro>` | change directory into the directory needed for the next two steps                     |
 | `. ./commands.sh`                                      | Load functions to install the software for specific distro into the shell environemnt |
 | `setup`                                                | Install a needed dependencies to execute insallAll                                    |
 | `installAll <repsository.json>`                        | Installs all the software from the repository                                         |
@@ -71,15 +71,15 @@ In summary the intial tasks are tailoring to the specfic user, secureity ( encry
 The purpose of this section is to create a configuration file that can tailor the configuraton using metadata about the environment and user.
 For example full_name and home_directory are two of the pieces of information that is provided by the file.
 
-The administrator or the user should edit the following file "$HOME/git/linuxConfiguration/basic/description.json".  <b>Do not put description.json into the GIT repository since there is personal information in the file.</b>
+The administrator or the user should edit the following file "$HOME/git/osConfiguration/basic/description.json".  <b>Do not put description.json into the GIT repository since there is personal information in the file.</b>
 
 |Command                                                                                  | Explanation                                                                                                |
 |-----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
 | Edit description.json                                                                   | Fill in the needed information to describe the user an envioronment                                        |
-| `~/git/linuxConfiguration/configure/basic/configure/jsonToEnv.sh` data/description.json`|  convert description.json into a collection of environmental variables which start with the prefix: config_|
+| `~/git/osConfiguration/configure/basic/configure/jsonToEnv.sh` data/description.json`|  convert description.json into a collection of environmental variables which start with the prefix: config_|
 	
 #### <b>For Mac Only -- </b>Intialize Global Environemnt Variables -- Macintosh Launchctl is not setting my environment variable(s)
-* cd into linuxConfiguration/dotfiles<br>
+* cd into osConfiguration/dotfiles<br>
 * sh ./fixMacCreateSetEnv.sh<br>
 * Select Menu Item Terminal -> Quit Terminal<br>
 * Open a new terminal and thses variables will be set<br>
@@ -92,7 +92,7 @@ The private key is used by the owner to decrypt the software
 	
 |Command                                                   | Explanation                                                                           |
 |----------------------------------------------------------|---------------------------------------------------------------------------------------|
-| cd  ~/linuxConfiguration/configure/basic/gnuPrivacyGuard |                                                                                       | 
+| cd  ~/osConfiguration/configure/basic/gnuPrivacyGuard |                                                                                       | 
 |` sh ./configure.sh`                                      | Creates the public and private key for the devloper                                   |
 |` . ./getPublicKey.sh                                     | Assigns the public key to the environmental varible : config_gpg_public_key           |
 |` sh ./create_trust.sh                                    | Set "Ultimate Trust' for the GPG id.                                                  |
@@ -132,12 +132,12 @@ to be split into multiple terminals
 
 #### Setting up Python Virtual Environment for Ansible 
 I chose to install a Python Virtual Environment instead of using the package manager so that I could install ansible when the rest of the packages were installed.
-> Exeucte sh linuxConfiguration/pythonVirtualEnvironments/create_venv_ansible.sh<br>
+> Exeucte sh osConfiguration/pythonVirtualEnvironments/create_venv_ansible.sh<br>
 > <bold>Notes</bold>
 
 >>  Activate the virtual enviornment
->>> Execute chmod 744 linuxConfiguration/pythonVirtualEnvironments/venv-ansible/bin/activate so the script can be executed
->>> Active the python virtual environment: source linuxConfiguration/pythonVirtualEnvironments/venv-ansible/bin/activate
+>>> Execute chmod 744 osConfiguration/pythonVirtualEnvironments/venv-ansible/bin/activate so the script can be executed
+>>> Active the python virtual environment: source osConfiguration/pythonVirtualEnvironments/venv-ansible/bin/activate
 
 >> Deactivate the Virtual Environment
 >>> Deactivate the python virtual enviornment: deactivate
