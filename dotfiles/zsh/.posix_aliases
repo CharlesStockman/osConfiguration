@@ -69,6 +69,9 @@ function gitRenameBranch() {
 	git branch -m $1
 }
 
+# Crate a readable git log
+alias git_log="git log --decorate --oneline --graph --decorate"
+
 # I always forget to a pull before I do a push and get my commits rejected.
 alias my_git_push="git pull | git push"
 

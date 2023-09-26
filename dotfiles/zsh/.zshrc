@@ -58,3 +58,7 @@ HISTSIZE=2000		    # Number of commands to remember in the session
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)
