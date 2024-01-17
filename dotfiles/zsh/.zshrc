@@ -62,3 +62,6 @@ export SDKMAN_DIR="$HOME/.sdkman"
 
 # Load Angular CLI autocompletion.
 source <(ng completion script)
+
+# Path to the chromedriver for selenium
+export PATH=$PATH:/opt/homebrew/bin/chromedriver
