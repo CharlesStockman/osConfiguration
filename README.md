@@ -10,34 +10,35 @@ to building a linux enivronment.  The thr        ee steps are:
 By Separating the intallation of the software from the configuration, the configuration script(s) are written once and we can have multiple installation scripts where each installation script for a linux distribution.
 
 ## Steps
-
 <b>Assumption : A linux configuration or Mac OS has been installed</b>
 
-### Copy osConfiguration to the new machine
+### Install software needed for configuration using the package manager of your choice
+> <ol>
+>	<li>zsh</li>	
+>       <li>git</li>
+> </ol>
 
-<b>Source</b>
-> * `git clone https://github.com/CharlesStockman/isConfiguration.git`
-> * copy osConfigruation to a USB
-
-<b>Destination</b><br>
-> 
-> <b>Create a non-root user if none are pressent</b>
+### Create a non root user 
 > |Command                   		| Explanation                                                             |
 > |-------------------------------------|-------------------------------------------------------------------------|
 > | log in as root                      |                                                                         |
-> |`useradd stockman`        		| Create a user with cstockman and has default group/home directory/shell |
+> |`useradd stockman`        		| Create a user with cstockman and has default shell /bin/zsh             |
 > |`passwd cstockman`         		| Add a password so the user can log in.                                  |
 > |`usermod -a -G wheel cstockman`      | Modify user cstockman append the Group wheel to his list of groups      |
 
-> <b> Copy osConfiguration to a non root user</b>
-> |Command                   		              | Explanation                                                             |
-> |---------------------------------------------------|-------------------------------------------------------------------------|
-> | log in as root                                    |                                                                         |
-> | `mkdir /mnt/transfer`                             |                                                                         |
-> | `mount /dev/sda1 /mnt/transfer`                   | Mount the removable disk                                                |
-> | `mkdir $HOME/git`                                 | location where osConfiguration will reside                           |
-> | `log in as non-root user`                         |                                                                         |
-> | `cp -r /mnt/tranfer/osConfigurarion $HOME/git` |                           
+
+### Setup Environmental Variable osConfgiurationDir for the parent dirctory that will contain osConfiguration
+> My location of choice will be $HOME/git and the export statement will be <code>export osConfigurationParentDir = $HOME/git</code>
+
+### clone osConfiguration ( contains scripts and Documents (xml and json ) to the new machine
+>> <code>cd osConfigurationParentDir</code><br>
+>> <code>git clone https://github.com/CharlesStockman/osConfiguration.git</code><br>
+>> Verify the environment is correct -- <code>`sh /Users/charlesstockman/git/osConfiguration/scripts`</code>
+
+
+
+
+
 
 ### Install Software 
 The purpose of this section is to install the software.  When this section is complete the developer will have all the software on the system needed to configure the system.  Alot of distros have their own GUI programs for configuring the software.  However, I chose to use the commands line programs themselves so only one set of scripts will be needed to configure any linux distro or OSX.
