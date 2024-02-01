@@ -7,9 +7,8 @@ echo "--- Currently executing .zshenv ---"
     
 export PATH=/opt/homebrew/bin:$config_linuxConfiguration/distro/$config_distro:$PATH 
 
-# fPATH -- A seperate file for putting reusable completions and functions
+# fpath -- A seperate file for putting reusable completions and functions
 fpath=( fpath=$(brew --prefix)/share/zsh-completions $fpath )
-
 
 echo "--- Finished executing .zshenv --- "
 
