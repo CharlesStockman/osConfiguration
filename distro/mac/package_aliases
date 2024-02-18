@@ -1,5 +1,0 @@
-
-#
-# Search for string to get a list of formulas or casks
-#
-pkg_search() { brew formulae | grep $1 ; brew casks | grep $1 } 
