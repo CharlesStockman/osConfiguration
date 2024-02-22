@@ -1,3 +1,7 @@
+# Update : I have decided to stop working on slackware since I really do need up to date version of certain libraries such as Python.  In the future, I will be distrobox to create a slackware distro to enjoy one and while 
+
+# Assume these are not working yet.  I know installSoftware.sh does need some work.
+
 ## Introduction
 The purpose to describe the scripts that will used to install the software and configure the system 
 for a slackware 15.0 distribution.
