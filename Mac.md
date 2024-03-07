@@ -10,7 +10,10 @@
 | Network | Thunderbolt should be inactive |
 | General | Local hostname should be change to Thor.local to make it unique |
 | Control Center | Control Center Modules -- Sound should be set to always in menubar |
-| 
+| Desktop & Dock | Minimize when using -- Select "Genie Effect" |
+| Desktop & Dock | Show suggested and recent apps in Docks | 
+
+
 
 
 ## TODO
@@ -25,4 +28,8 @@ Thunderbolt Bridge is a high speed connection between two computer both have a t
 
 ### General -- Conetent & Media, Accessories and Internet, Advanced
 All these items seem to talk about shareing.  How can these be used to create a cohesive environment.  Since there are many different parts we could create an epic for this item if Github will permit.
+
+### Understand Stage Manager
+I have no clue what Stage Manager is and then return to Desktop & Dock and look and decide on the changes ot settings 
+
 
