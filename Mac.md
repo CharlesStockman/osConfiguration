@@ -12,6 +12,11 @@
 | Control Center | Control Center Modules -- Sound should be set to always in menubar |
 | Desktop & Dock | Minimize when using -- Select "Genie Effect" |
 | Desktop & Dock | Show suggested and recent apps in Docks | 
+| Desktop & Dock | Hot Corners -- Should have shift Mission Control |
+| Desktop & Dock | Hot Corners -- Should have shift Application Window -- Current active window is only one on Desktop |
+
+
+
 
 
 
@@ -32,4 +37,6 @@ All these items seem to talk about shareing.  How can these be used to create a 
 ### Understand Stage Manager
 I have no clue what Stage Manager is and then return to Desktop & Dock and look and decide on the changes ot settings 
 
+### Learn what kind of widgets are available
 
+### Understand Mission Control 
