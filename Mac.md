@@ -8,6 +8,8 @@
 | ------- | ------------- | 
 | Network | Firewall should be inactive |
 | Network | Thunderbolt should be inactive |
+| General | Local hostname should be change to Thor.local to make it unique |
+
 
 ## TODO
 
@@ -18,3 +20,7 @@ The firewall should be enabled and confgirued for the following reasons
 
 ### Netowrk -- Should Thunderbolt Bridge be enabled ?
 Thunderbolt Bridge is a high speed connection between two computer both have a thunderbolt port.  Is there any benefit to me ?
+
+### General -- Conetent & Media, Accessories and Internet, Advanced
+All these items seem to talk about shareing.  How can these be used to create a cohesive environment.  Since there are many different parts we could create an epic for this item if Github will permit.
+
