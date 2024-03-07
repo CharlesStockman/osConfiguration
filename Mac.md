@@ -9,6 +9,8 @@
 | Network | Firewall should be inactive |
 | Network | Thunderbolt should be inactive |
 | General | Local hostname should be change to Thor.local to make it unique |
+| Control Center | Control Center Modules -- Sound should be set to always in menubar |
+| 
 
 
 ## TODO
