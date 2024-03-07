@@ -40,3 +40,7 @@ I have no clue what Stage Manager is and then return to Desktop & Dock and look 
 ### Learn what kind of widgets are available
 
 ### Understand Mission Control 
+
+### Desktop & Dock -- Learn about keyboard shortcuts including the symbols and how they work
+
+### 
