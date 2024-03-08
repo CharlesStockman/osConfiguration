@@ -17,27 +17,3 @@
 | Lock Screen    | | Start Screen Wqf3 when inactive -- Set to 1 hour and 30 minutes |
 | Lock Screen    | | Turn display off when inactive For one hour |
 | Lock Screen    | | Require password after screen save begins o0r display is turned off |
-
-## TODO
-
-### Network -- Enable firewall and configure
-The firewall should be enabled and confgirued for the following reasons
-* When working with localhost, creating vulnerable channels can allow outsiders to connect to your mac.
-* Downloading software from the internet can contain malware.
-
-### Netowrk -- Should Thunderbolt Bridge be enabled ?
-Thunderbolt Bridge is a high speed connection between two computer both have a thunderbolt port.  Is there any benefit to me ?
-
-### General -- Conetent & Media, Accessories and Internet, Advanced
-All these items seem to talk about shareing.  How can these be used to create a cohesive environment.  Since there are many different parts we could create an epic for this item if Github will permit.
-
-### Understand Stage Manager
-I have no clue what Stage Manager is and then return to Desktop & Dock and look and decide on the changes ot settings 
-
-### Learn what kind of widgets are available
-
-### Understand Mission Control 
-
-### Desktop & Dock -- Learn about keyboard shortcuts including the symbols and how they work
-
-### Learn more about how internet accounts can be used and deterine best to use with ICloud
