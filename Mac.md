@@ -39,4 +39,4 @@
 
 | Software | Installation Insturctions | 
 |--------- | ------------------------- |
-| XCode    | xcode-select --install then click Install and Agree |
+| Command Line Tools | xcode-select --install then click Install and Agree |
