@@ -27,4 +27,11 @@
 | View --> Show Path Bar | Allow the absolute path to be shown |
 | View --> Show Status Bar | Dislpaly thge number of items in the folder / the amount of memory available |
 | Finder --> Finder Settings --> General --> Show these items on the desktop | Unselect Harddrives, Connecgted servers External disks and Select CDs, DVDs and IPods |
-| Finter --> Finder Settings --> General --> New Find Windows Show | Select cstockman |
+| Finder --> Finder Settings --> General --> New Find Windows Show | Select cstockman |
+| Finder --> Finder Settings --> General --> Open folders in tabs instead of new window | Should be selected |
+| Finder --> Finder Settings --> Side Bar --> Show these items in the sidebar --> Favorites | Unselect All then Select Applliations, Desktop, Dockments, Downloads, cstockman |
+| Finder --> Finder Settings --> Side Bar --> Show these items in the sidebar --> ICloud | Select all |
+| Finder --> Finder Settings --> Side Bar --> Show these items in the sidebar --> Locations | Select all |
+| Finder --> Finder Settings --> Side Bar --> Show these items in the sidebar --> Tags | Select all |
+| Finder --> Finder Settings --> Advanced | Unselect All and When performing a search -- Search this mac |
+
