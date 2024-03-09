@@ -35,3 +35,8 @@
 | Finder --> Finder Settings --> Side Bar --> Show these items in the sidebar --> Tags | Select all |
 | Finder --> Finder Settings --> Advanced | Unselect All and When performing a search -- Search this mac |
 
+## Installation of Software
+
+| Software | Installation Insturctions | 
+|--------- | ------------------------- |
+| XCode    | xcode-select --install then click Install and Agree |
