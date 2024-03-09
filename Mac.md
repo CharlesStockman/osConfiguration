@@ -26,3 +26,5 @@
 | View --> Show Table Bar | Allow for mulltiple tabs |
 | View --> Show Path Bar | Allow the absolute path to be shown |
 | View --> Show Status Bar | Dislpaly thge number of items in the folder / the amount of memory available |
+| Finder --> Finder Settings --> General --> Show these items on the desktop | Unselect Harddrives, Connecgted servers External disks and Select CDs, DVDs and IPods |
+| Finter --> Finder Settings --> General --> New Find Windows Show | Select cstockman |
