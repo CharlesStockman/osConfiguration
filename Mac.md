@@ -17,3 +17,12 @@
 | Lock Screen    | | Start Screen Wqf3 when inactive -- Set to 1 hour and 30 minutes |
 | Lock Screen    | | Turn display off when inactive For one hour |
 | Lock Screen    | | Require password after screen save begins o0r display is turned off |
+
+## Finder 
+
+| Setting | Configuration |
+|---------|---------------|
+| View --> As List | Display entries as list |
+| View --> Show Table Bar | Allow for mulltiple tabs |
+| View --> Show Path Bar | Allow the absolute path to be shown |
+| View --> Show Status Bar | Dislpaly thge number of items in the folder / the amount of memory available |
