@@ -1,35 +1,18 @@
 # Purpose
 
-Distrohopping is a fact of life for linux users.  I am working on making it easier.  The basic idea is there are three steps 
-to building a linux enivronment.  The thr        ee steps are:
-
-> * Install the sofware from multiple repositories including arch, pip and docker
-> * retrieve dotifles
-> * configure the linux system using scripts
-
-By Separating the intallation of the software from the configuration, the configuration script(s) are written once and we can have multiple installation scripts where each installation script for a linux distribution.
-
 ## Create a Github Access Key 
+Create the key that will act as the password fro GitHub.
 [Create a Github Access Key ](git/README.md)
-
 
 ## Steps
 <b>Assumption : A linux configuration or Mac OS has been installed</b>
 
 ### Install software needed for configuration using the package manager of your choice
 > <ol>
->	<li>zsh</li>	
->       <li>git</li>
+>	<li>git</li>	
+>       <li>ansible</li>
+>	<li>jq</li>
 > </ol>
-
-### Create a non root user 
-> |Command                   		| Explanation                                                             |
-> |-------------------------------------|-------------------------------------------------------------------------|
-> | log in as root                      |                                                                         |
-> |`useradd stockman`        		| Create a user with cstockman and has default shell /bin/zsh             |
-> |`passwd cstockman`         		| Add a password so the user can log in.                                  |
-> |`usermod -a -G wheel cstockman`      | Modify user cstockman append the Group wheel to his list of groups      |
-
 
 ### Setup Environmental Variable osConfgiurationDir for the parent dirctory that will contain osConfiguration
 > My location of choice will be $HOME/git and the export statement will be <code>export osConfigurationParentDir = $HOME/git</code>
