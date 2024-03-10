@@ -9,15 +9,15 @@
 
 		"userName": "cstockman",
 		
-		"homeDirectory": "/home/cstockman",
+		"homeDirectory": "/Users/cstockman",
 
-		"linuxConfiguration_directory": "/home/cstockman/git/linuxConfiguration",
+		"linuxConfiguration_directory": "/Users/cstockman/git/linuxConfiguration",
 
 		"textEditor": "/bin/vi",
 
 		"github": {
 			"username": "CharlesStockman",
-			"personalAccessToken": ""  
+			"personalAccessToken": "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"  
 		},
 
 		"terminal_emulator": "/bin/xfce4-terminal" 
