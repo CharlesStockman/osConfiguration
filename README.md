@@ -29,12 +29,12 @@ The purpose of this section is to install the software. The Software will be ins
 | Configure Git                                          | Configure Git to serve as backup since most of my artifacts are code/documentaiton    |
 	
 #### Load Configuration
-The administrator or the user should edit the following file "$HOME/git/osConfiguration/basic/description.json".  <b>Do not put description.json into the GIT repository since there is personal information in the file.</b>
+<b>Do not commit the data/description.json since it PII Information.</b>
 
 |Command                                                                                  | Explanation                                                                                                |
 |-----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-| Edit description.json                                                                   | Fill in the needed information to describe the user an envioronment                                        |
-| `~/git/osConfiguration/configure/basic/configure/jsonToEnv.sh` data/description.json`|  convert description.json into a collection of environmental variables which start with the prefix: config_|
+| Edit description.json                                                                   | Fill in the needed information to describe the user                                                        |
+| `. ~/git/osConfiguration/configure/basic/configure/jsonToEnv.sh` data/description.json` |  convert description.json into a collection of environmental variables which start with the prefix: config_|
 	
 #### <b>For Mac Only -- </b>Intialize Global Environemnt Variables -- Macintosh Launchctl is not setting my environment variable(s)
 * cd into osConfiguration/dotfiles<br>
