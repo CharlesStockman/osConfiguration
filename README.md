@@ -29,29 +29,6 @@ The purpose of this section is to install the software. The Software will be ins
 | Configure Git                                          | Configure Git to serve as backup since most of my artifacts are code/documentaiton    |
 	
 
-#### Generating the Public and Private Key For Your System
-The public and private key allows software to be encrypted and decrypted.  
-
-The public key is used to encrypt so the key is given to another user or executable that will encrypt the information
-The private key is used by the owner to decrypt the software
-	
-|Command                                                   | Explanation                                                                           |
-|----------------------------------------------------------|---------------------------------------------------------------------------------------|
-| cd  ~/osConfiguration/configure/basic/gnuPrivacyGuard |                                                                                       | 
-|` sh ./configure.sh`                                      | Creates the public and private key for the devloper                                   |
-|` . ./getPublicKey.sh                                     | Assigns the public key to the environmental varible : config_gpg_public_key           |
-|` sh ./create_trust.sh                                    | Set "Ultimate Trust' for the GPG id.                                                  |
-
-#### Create the Pass Storage and Add the Initial Passwords
-pass is a program that will securely store passwords anad allow the owner to access them.  The only require,emt is to install and configure gpg 
-as detailed above.
-	
-|Command                                                           | Explanation                                                                           |
-|------------------------------------------------------------------|---------------------------------------------------------------------------------------|
-| cd ~/git/linuxConfiguration/configrue/basic/gnuPrivacyGuard      |                                                                                       |
-|` sh ./configurePass.sh`                                          | Setup the password database                                                           |
-|` sh ./addFirstPassword.sh                                        | Add the initial passwords to the database                                             |
-
 ### Configurre Git
 The purpsoe of this section is to set git global configuration varaiables using an ansible script.  The variables are described in the git.yaml
 	
