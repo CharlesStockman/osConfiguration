@@ -4,31 +4,20 @@
 Create the key that will act as the password fro GitHub.
 [Create a Github Access Key ](git/README.md)
 
+## Assumptions
+<b>Assumption : A Unix OS such as Cygwin, Mac OS, Linux has been installed</b><br>
+<b>Assumption : Location of choice will be $HOME/Developer, <code>export osConfigurationParentDir = $HOME/Developer</code>
+
 ## Steps
-<b>Assumption : A linux configuration or Mac OS has been installed</b>
-
-### Install software needed for configuration using the package manager of your choice
-> <ol>
->	<li>git</li>	
->       <li>ansible</li>
->	<li>jq</li>
-> </ol>
-
-### Setup Environmental Variable osConfgiurationDir for the parent dirctory that will contain osConfiguration
-> My location of choice will be $HOME/git and the export statement will be <code>export osConfigurationParentDir = $HOME/git</code>
 
 ### clone osConfiguration ( contains scripts and Documents (xml and json ) to the new machine
->> <code>cd osConfigurationParentDir</code><br>
->> <code>git clone https://github.com/CharlesStockman/osConfiguration.git</code><br>
->> Verify the environment is correct -- <code>`sh /Users/charlesstockman/git/osConfiguration/scripts`</code>
-
-
-
-
-
+&emsp;<code>cd $osConfigurationParentDir</code><br>
+&emsp;<code>git clone https://github.com/CharlesStockman/osConfiguration.git</code><br>
 
 ### Install Software 
-The purpose of this section is to install the software.  When this section is complete the developer will have all the software on the system needed to configure the system.  Alot of distros have their own GUI programs for configuring the software.  However, I chose to use the commands line programs themselves so only one set of scripts will be needed to configure any linux distro or OSX.
+The purpose of this section is to install the software. The Software will be installed in one of two ways
+<li>Intall the Software and use the configurtion scripts</li>
+<li>Use Nix Configuration to install and configure.  I might try to wreite a DSL to convert the scripts to the Nix Language.</li>
 
 Note that installAll requrires one parameeter which is the JSON file that contains all the software needed to be installed.  This file will be 
 found in psconfiguration/distro/<specific distro>/repository.json
