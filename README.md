@@ -32,9 +32,6 @@ In summary the intial tasks are tailoring to the specfic user, secureity ( encry
 | Configure Git                                          | Configure Git to serve as backup since most of my artifacts are code/documentaiton    |
 	
 #### Load Configuration
-The purpose of this section is to create a configuration file that can tailor the configuraton using metadata about the environment and user.
-For example full_name and home_directory are two of the pieces of information that is provided by the file.
-
 The administrator or the user should edit the following file "$HOME/git/osConfiguration/basic/description.json".  <b>Do not put description.json into the GIT repository since there is personal information in the file.</b>
 
 |Command                                                                                  | Explanation                                                                                                |
