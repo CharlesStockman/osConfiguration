@@ -23,19 +23,11 @@ The purpose of this section is to install the software. The Software will be ins
 
 |Configuration                                           | Explanation                                                                           |
 |--------------------------------------------------------|---------------------------------------------------------------------------------------|
-| Load Configuration                                     | The JSON Tools that allow tailoring of the configuring to the user's preferences      |
+| Load Configuration                                     | The JSON Tools that allow tailoring of the configuring to the user's preferences<br>[Instructions](configure/basic/configure)     |
 | Generating the Public and Private Key For Your System  | Provides encryption for pass and files.                                               |
 | Create the Pass Storage and Add the Initial Passwords  | Set up encrypted storage for you passwords so they are secure  and accessiable        |
 | Configure Git                                          | Configure Git to serve as backup since most of my artifacts are code/documentaiton    |
 	
-#### Load Configuration
-<b>Do not commit the data/description.json since it PII Information.</b>
-
-|Command                                                                                  | Explanation                                                                                                |
-|-----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-| Edit description.json                                                                   | Fill in the needed information to describe the user                                                        |
-| cd Developer/osConfiguration/<br>cd configure/basic/configure                           | Change Directory                                                                                           |
-| ./jsonToEnv.sh data/description.json                                                    | Convert description.json into a collection of environmental varibles with the prefix config_               |
 
 #### Generating the Public and Private Key For Your System
 The public and private key allows software to be encrypted and decrypted.  
