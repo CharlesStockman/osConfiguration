@@ -34,7 +34,7 @@ The purpsoe of this section is to set git global configuration varaiables using 
 	
 |Command                                                 | Explanation                                                                           |
 |--------------------------------------------------------|---------------------------------------------------------------------------------------|
-| cd ~/git/linuxConfiguration/configure/basic/git        |                                                                                       |
+| cd ~/git/linuxConfiguration/configure/basic/git        | Change Directory                                                                      |
 | ansible-playbook git.yaml                              | Run the Tasks needed to confgiure the git global variable int he git.yml              |
 	
 
