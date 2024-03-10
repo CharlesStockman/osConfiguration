@@ -19,7 +19,7 @@
 
 		"github": {
 			"username": "CharlesStockman",
-			"personalAccessToken": "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"  
+			"personalAccessToken": ""  
 		},
 
 		"terminal_emulator": "/bin/xfce4-terminal" 
