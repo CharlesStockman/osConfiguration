@@ -2,7 +2,7 @@
 The purpose of this document is to describe the procedure for creating a Github Access Key which will be used for certain operations such as push changees to Github or clone a private repostiry.
 Github has impleneted a policy that Github Access Kyes are used intead of passwords.
 
-This will be need for data/description and the key is personalAccessToken
+This will be needed for data/description and the key is personalAccessToken
 
 ### Insturctions
 - Select the profile Settings --> Settings --> Develper
