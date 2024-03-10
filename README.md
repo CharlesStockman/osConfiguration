@@ -20,9 +20,6 @@ The purpose of this section is to install the software. The Software will be ins
 <li>Use Nix Configuration to install and configure.</li>
 
 ### Configuring the Basic Components of the System
-	
-This secton will document the configuration that I consider most important.  At this point the areas that I consider important are the following:
-In summary the intial tasks are tailoring to the specfic user, secureity ( encryption and password storage ), and backup ( git ).
 
 |Configuration                                           | Explanation                                                                           |
 |--------------------------------------------------------|---------------------------------------------------------------------------------------|
