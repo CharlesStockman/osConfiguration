@@ -34,7 +34,9 @@ The purpose of this section is to install the software. The Software will be ins
 |Command                                                                                  | Explanation                                                                                                |
 |-----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
 | Edit description.json                                                                   | Fill in the needed information to describe the user                                                        |
-| `. ~/git/osConfiguration/configure/basic/configure/jsonToEnv.sh` data/description.json` |  convert description.json into a collection of environmental variables which start with the prefix: config_|
+| cd Developer/osConfiguration/configure/basic/configure                                  | Change Directory                                                                                           |
+| . ./jsonToEnv.sh data/description.json                                                  | Convert description.json into a collection of environmental varibles with the prefix config_               |
+
 	
 #### <b>For Mac Only -- </b>Intialize Global Environemnt Variables -- Macintosh Launchctl is not setting my environment variable(s)
 * cd into osConfiguration/dotfiles<br>
