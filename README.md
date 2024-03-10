@@ -34,8 +34,8 @@ The purpose of this section is to install the software. The Software will be ins
 |Command                                                                                  | Explanation                                                                                                |
 |-----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
 | Edit description.json                                                                   | Fill in the needed information to describe the user                                                        |
-| cd Developer/osConfiguration/configure/basic/                                           | Change Directory                                                                                           |
-| . ./configure/jsonToEnv.sh data/description.json                                        | Convert description.json into a collection of environmental varibles with the prefix config_               |
+| cd Developer/osConfiguration/configure                                                  | Change Directory                                                                                           |
+| . ./basic/configure/jsonToEnv.sh data/description.json                                  | Convert description.json into a collection of environmental varibles with the prefix config_               |
 
 #### Generating the Public and Private Key For Your System
 The public and private key allows software to be encrypted and decrypted.  
