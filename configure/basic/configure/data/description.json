@@ -8,9 +8,7 @@
                 "distro": "void",
 
 		"userName": "cstockman",
-
-		"dataDirectory": "/home/cstockman/data",
-
+		
 		"homeDirectory": "/home/cstockman",
 
 		"linuxConfiguration_directory": "/home/cstockman/git/linuxConfiguration",
