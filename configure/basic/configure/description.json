@@ -9,8 +9,6 @@
 
 		"userName": "The name of the account for the user".
 
-		"dataDirectory": "enter the directory to store data files",
-
 		"homeDirectory": "enter the home directory of the user",
 
 		"linuxConfiguration_directory": "enter the linux configuration data top directory ex. /home/git/cstockman/linuxConfiguration""
