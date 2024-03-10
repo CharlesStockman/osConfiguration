@@ -30,5 +30,3 @@ EOF
 # Generate the public/private keys.
 gpg --verbose --batch --gen-key keydetails
 
-cd $HOME/git/linuxConfiguration/basic/gnuPrivacyGuard
-
