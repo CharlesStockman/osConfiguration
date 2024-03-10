@@ -17,20 +17,7 @@ Create the key that will act as the password fro GitHub.
 ### Install Software 
 The purpose of this section is to install the software. The Software will be installed in one of two ways
 <li>Intall the Software and use the configurtion scripts</li>
-<li>Use Nix Configuration to install and configure.  I might try to wreite a DSL to convert the scripts to the Nix Language.</li>
-
-Note that installAll requrires one parameeter which is the JSON file that contains all the software needed to be installed.  This file will be 
-found in psconfiguration/distro/<specific distro>/repository.json
-
-#### Install All the Software
-|Command                                                 | Explanation                                                                           |
-|--------------------------------------------------------|---------------------------------------------------------------------------------------|
-|`su root`                                               | Change user to root since software is installed on linux by root.                     |
-| `cd ~/git/osConfiguration/distro/<specific distro>` | change directory into the directory needed for the next two steps                     |
-| `. ./commands.sh`                                      | Load functions to install the software for specific distro into the shell environemnt |
-| `setup`                                                | Install a needed dependencies to execute insallAll                                    |
-| `installAll <repsository.json>`                        | Installs all the software from the repository                                         |
-| `exit`                                                 | Leaves the root shell                                                                 |
+<li>Use Nix Configuration to install and configure.</li>
 
 ### Configuring the Basic Components of the System
 	
