@@ -35,6 +35,9 @@
 | Finder --> Finder Settings --> Side Bar --> Show these items in the sidebar --> Tags | Select all |
 | Finder --> Finder Settings --> Advanced | Unselect All and When performing a search -- Search this mac |
 
+## Command Line 
+setFile -a -V /Volumes/"MyBook 1" to make the backup drive visible returns an error code of -5000
+
 ## Installation of Software before brew
 
 | Software | Installation Insturctions | 
@@ -50,4 +53,4 @@
 | initalInstall.sh | Install Programs needed to install configure the rest of the applications such as git, jq, ansible |
 | commericalInstall.sh | Applications such as Slack, Discord are commerical and may not be availaable on all machines |
 
-### Configuration
+
