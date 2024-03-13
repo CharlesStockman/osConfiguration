@@ -26,15 +26,7 @@ The purpose of this section is to install the software. The Software will be ins
 | Load Configuration                                     | The JSON Tools that allow tailoring of the configuring to the user's preferences<br>[Instructions](configure/basic/configure)     |
 | Generating the Public and Private Key For Your System  | Provides encryption for pass and files.<br>[Instructions](configure/basic/gnuPrivacyGuard) |
 | Create the Pass Storage and Add the Initial Passwords  | Set up encrypted storage for you passwords so they are secure  and accessiable<br>[Instructions](configure/basic/pass)        |
-
-### Configure Git
-The purpose of this section is to set git global configuration varaiables using an ansible script.  The variables are described in the git.yaml
-	
-|Command                                                 | Explanation                                                                           |
-|--------------------------------------------------------|---------------------------------------------------------------------------------------|
-| cd ~/git/linuxConfiguration/configure/basic/git        | Change Directory                                                                      |
-| ansible-playbook git.yaml                              | Run the Tasks needed to confgiure the git global variable int he git.yml              |
-	
+| The purpose of this section is to set git global configuration varaiables using an ansible script. | The variables are described in the git.yaml<br>[Instructions](/basic/git) |	
 
 #### Starting TMUX ( A terminal multiplexer ) 
 A terminal multiplexer that allows the creation of pseudo terminals inside a single terminal.  It allows the terminal
