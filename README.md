@@ -26,8 +26,6 @@ The purpose of this section is to install the software. The Software will be ins
 | Load Configuration                                     | The JSON Tools that allow tailoring of the configuring to the user's preferences<br>[Instructions](configure/basic/configure)     |
 | Generating the Public and Private Key For Your System  | Provides encryption for pass and files.<br>[Instructions](configure/basic/gnuPrivacyGuard) |
 | Create the Pass Storage and Add the Initial Passwords  | Set up encrypted storage for you passwords so they are secure  and accessiable<br>[Instructions](configure/basic/pass)        |
-| Configure Git                                          | Configure Git to serve as backup since most of my artifacts are code/documentaiton<br>[Instructions](configure/basic/git)    |
-	
 
 ### Configure Git
 The purpsoe of this section is to set git global configuration varaiables using an ansible script.  The variables are described in the git.yaml
