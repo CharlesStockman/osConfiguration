@@ -28,7 +28,7 @@ The purpose of this section is to install the software. The Software will be ins
 | Create the Pass Storage and Add the Initial Passwords  | Set up encrypted storage for you passwords so they are secure  and accessiable<br>[Instructions](configure/basic/pass)        |
 
 ### Configure Git
-The purpsoe of this section is to set git global configuration varaiables using an ansible script.  The variables are described in the git.yaml
+The purpose of this section is to set git global configuration varaiables using an ansible script.  The variables are described in the git.yaml
 	
 |Command                                                 | Explanation                                                                           |
 |--------------------------------------------------------|---------------------------------------------------------------------------------------|
