@@ -11,7 +11,7 @@
 
 		"homeDirectory": "enter the home directory of the user",
 
-		"linuxConfiguration_directory": "enter the linux configuration data top directory ex. /home/git/cstockman/linuxConfiguration""
+		"osConfiguration_directory": "The directory that will contain the osConfiguration directory"
 
 		"textEditor": "enter your favorite editor ( absolute path ) ex. /bin/vi",
 
