@@ -29,7 +29,7 @@ The purpose of this section is to install the software. The Software will be ins
 | Configure Git                                          | Configure Git to serve as backup since most of my artifacts are code/documentaiton<br>[Instructions](configure/basic/git)    |
 	
 
-### Configurre Git
+### Configure Git
 The purpsoe of this section is to set git global configuration varaiables using an ansible script.  The variables are described in the git.yaml
 	
 |Command                                                 | Explanation                                                                           |
