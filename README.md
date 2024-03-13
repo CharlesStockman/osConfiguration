@@ -24,7 +24,7 @@ The purpose of this section is to install the software. The Software will be ins
 |Configuration                                           | Explanation                                                                           |
 |--------------------------------------------------------|---------------------------------------------------------------------------------------|
 | Load Configuration                                     | The JSON Tools that allow tailoring of the configuring to the user's preferences<br>[Instructions](configure/basic/configure)     |
-| Generating the Public and Private Key For Your System  | Provides encryption for pass and files.                                               |
+| Generating the Public and Private Key For Your System  | Provides encryption for pass and files.<br>[Instructions](configure/basic/gnuPrivacyGuard) |
 | Create the Pass Storage and Add the Initial Passwords  | Set up encrypted storage for you passwords so they are secure  and accessiable        |
 | Configure Git                                          | Configure Git to serve as backup since most of my artifacts are code/documentaiton    |
 	
