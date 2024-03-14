@@ -23,10 +23,11 @@ The purpose of this section is to install the software. The Software will be ins
 
 |Configuration                                           | Explanation                                                                           |
 |--------------------------------------------------------|---------------------------------------------------------------------------------------|
+| Replacement of shell dot files                         | Replaces the .zshrc and .zshenv with the files found in Git Configuration             |
 | Load Configuration                                     | The JSON Tools that allow tailoring of the configuring to the user's preferences<br>[Instructions](configure/basic/configure)     |
 | Generating the Public and Private Key For Your System  | Provides encryption for pass and files.<br>[Instructions](configure/basic/gnuPrivacyGuard) |
 | Create the Pass Storage and Add the Initial Passwords  | Set up encrypted storage for you passwords so they are secure  and accessiable<br>[Instructions](configure/basic/pass)        |
-| The purpose of this section is to set git global configuration varaiables using an ansible script. | The variables are described in the git.yaml<br>[Instructions](configure/basic/git) |	
+| Git Configuration | The GIT Variables are configured in git.yaml<br>[Instructions](configure/basic/git) |	
 
 #### Starting TMUX ( A terminal multiplexer ) 
 A terminal multiplexer that allows the creation of pseudo terminals inside a single terminal.  It allows the terminal
