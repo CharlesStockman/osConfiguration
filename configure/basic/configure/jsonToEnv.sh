@@ -47,8 +47,8 @@ else
 	config_homeDirectory=$( echo `jq '.config.homeDirectory' $1` | sed 's/"//g' )
 	export config_homeDirectory=$config_homeDirectory
 
-        config_osConfiguration=$( echo `jq '.config.osConfiguration_directory' $1` | sed 's/"//g')
-        export config_osConfiguration=$config_osConfiguration
+        config_configurationDirectory=$( echo `jq '.config.configurationDirectory' $1` | sed 's/"//g')
+        export config_osConfigurationDirectory=$config_configurationDirectory
 
 	config_github_username=$( echo `jq '.config.github.username' $1` | sed 's/"//g' )
 	export config_github_username=$config_github_username

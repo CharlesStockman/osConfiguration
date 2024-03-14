@@ -12,3 +12,4 @@ brew install ansible
 brew install jq
 brew install pass
 brew install expect
+brew install zsh
