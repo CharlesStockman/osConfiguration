@@ -9,17 +9,20 @@
 # Linux Configuration
 ##################################################################
 
-# Display all config_ that are part of environmental varibles.  The config_ values have a  high probability that they came from description.json
+# Display the ocnfiguration variables created by the confgiuration code in theis repository 
 alias printConfig="printenv | grep config_"
 
 #loadConfigVaribles -- Load environmental variables that contains user specific informatin for configuring software
 alias loadConfigVariables=". $HOME/git/linuxConfiguration/basic/configure/jsonToEnv.sh $HOME/git/linuxConfiguration/basic/configure/data/description.json "
 
+# Print out the alias or the function and the descriptino ( a comment above )
+alias show_aliases="egrep -B1 'function|alias' .posix_aliases"
+
 ##################################################################
 # Convert to other file formats
 ##################################################################
 
-# Convet a document to pdf
+# Convet a document to pdf need linux configuration
 function toPdf() {
    libreoffice --convert-to pdf $1 > /dev/null 2>&1
 }
@@ -28,7 +31,7 @@ function toPdf() {
 # JSON Functions
 ##################################################################
 
-# Validate JSON and return true/false where true mean the json valid
+# Validate JSON and return true/false where true meanis the json valid
 function isJsonValid {
 	cat $1 | jq -e . > /dev/null 2>&1
 	echo $?
@@ -44,10 +47,13 @@ alias json_as_line_text=" cat /home/cstockman/git/linuxConfiguration/configure/d
 # 	enc -- The encode command option using base64 ( binary to text encoding scheme )
 # 	-d decode
 #
+
+# encrypt data
 function quickEncrypt() {
 	openssl enc -base64 $1
 }
 
+# descript data
 function quickDecrypt() {
 	echo $1 | openssl enc -base65 -d 
 }
@@ -56,8 +62,10 @@ function quickDecrypt() {
 # Docker
 #
 
-# Show the images and containser
+# Show the images that are present and the containers that are active
 alias dockerShowImagesAndContainers="docker images ; echo \"=============================================================\"; docker ps"
+
+# Test docker
 alias dockerTest="docker run hello-world"
 
 #
@@ -72,16 +80,9 @@ function gitRenameBranch() {
 # Crate a readable git log
 alias git_log="git log --decorate --oneline --graph --decorate"
 
-# I always forget to a pull before I do a push and get my commits rejected.
+# Do a git pull before doing a git search 
 alias my_git_push="git pull | git push"
 
-# alias commit="git add -A ; git commit -m"
-
-#
-# Alias to run the tensorflow either as intended have the container run a bash shell to allow udpates and other operations
-#
-alias tensorFlow="docker run -it -p 8888:8888 tensorflow/tensorflow:latest-jupyter" 
-alias tensorFlowBash="run -it tensorflow/tensorflow bash"
 
 #
 # Databases
@@ -97,7 +98,7 @@ function exportMysql() {
 #
 
 # reset the shell
-alias reset="cd ~ ; clear ; source $ZDOTDIR/.zshrc"
+alias reset="cd ~ ; clear ; source $HOME/.zshrc"
 
 # Remove \r ( carriage returns ) from a file
 function removeCRs {
@@ -111,6 +112,8 @@ alias tmuxStd="tmux new tmux  source-file .tmux.conf"
 # Qemu 
 #  qcow2 -- A file format for qemu grows as you need more space
 # 
+
+# Qemu -- Create a virtual disk for qemu.
 function create_qemu_std_disk {
 	qemu-img create -f qcow2 $1 20G 
 }
