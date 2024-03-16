@@ -106,7 +106,7 @@ function removeCRs {
 }
 
 # Create a command to run tmux with standar window configuration ( left side : 1 Pane, Right Side 2 panes )
-alias tmuxStd="tmux new tmux  source-file .tmux.conf"
+alias tmuxStd="tmux new tmux source-file ../tmux/.tmux.conf"
 
 #
 # Qemu 

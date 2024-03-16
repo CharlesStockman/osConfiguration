@@ -24,7 +24,7 @@ export VISUAL='vim'
 #
 # Load the aliases
 #
-. `pwd`/.posix_aliases
+. $ZDOTDIR/.posix_aliases
 
 #
 # Zsh Directory Stack
