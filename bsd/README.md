@@ -4,4 +4,8 @@ For Basic Instructions watch the youtube video : [How to Install BSD: ](https://
 
 ## Post Installation
 
-### Update the call system by running updateCallSystem.sh
+| File | Description | 
+|------|-------------|
+| UpdateCallSystem.sh | Update the Core System. |
+| amdGraphic.sh       | Install the AMD Drivers |
+| installSoftware.sh  | Install the software need to configure the System |
