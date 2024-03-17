@@ -124,3 +124,6 @@ function create_qemu_std_disk {
 
 # find, but ignore git files 
 alias no_find_git="find . -type f -not -path '*/\.git/*';"
+
+# find, but ignore git files and .zsh_sessions ( 2 different type of files/directories
+alias no_find_git_2="find . -type f -not -path '*/\.git/*' -not -path '*/\.zsh_sessions/*'"
