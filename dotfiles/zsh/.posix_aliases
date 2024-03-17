@@ -117,3 +117,10 @@ alias tmuxStd="tmux new tmux source-file ../tmux/.tmux.conf"
 function create_qemu_std_disk {
 	qemu-img create -f qcow2 $1 20G 
 }
+
+#
+# Learning 
+# 
+
+# find, but ignore git files 
+alias no_find_git="find . -type f -not -path '*/\.git/*';"
