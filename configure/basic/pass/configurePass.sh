@@ -1,4 +1,4 @@
-#/bin/bash 
+#/bin/sh 
 
 # Purpose : Initailize the pass command 
 #   and creates the storage needed.  

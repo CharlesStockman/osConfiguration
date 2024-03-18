@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # Purpose : Creates a public/private key so other program can easily encrypt their data.
 #	GPG : A free implementation of the OpenPGP standard as defined by RFC4889 (PGP) 

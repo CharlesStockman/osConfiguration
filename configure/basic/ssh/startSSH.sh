@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 #
 # Purpose to install ssh and to to configure ssh to allow passowrdless access to at one leat one remote machine

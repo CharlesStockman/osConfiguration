@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # Purpose : To convet the JSON into environmental varibles which will be used by other scripts
 # to tailer the commands.

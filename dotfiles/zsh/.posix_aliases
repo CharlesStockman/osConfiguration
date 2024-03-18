@@ -18,6 +18,11 @@ alias loadConfigVariables=". $HOME/git/linuxConfiguration/basic/configure/jsonTo
 # Print out the alias or the function and the descriptino ( a comment above )
 alias show_aliases="egrep -B1 'function|alias' .posix_aliases"
 
+# write iso to usb sticik
+function writeIsoToUsb() {
+	dd if=$1 of=$2 bs=1024k status=progress
+}
+
 ##################################################################
 # Convert to other file formats
 ##################################################################

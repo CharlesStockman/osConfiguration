@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 #
 # Purpose : May need to executed each time a new shell is open.
