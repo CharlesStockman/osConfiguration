@@ -15,9 +15,14 @@ Create the key that will act as the password fro GitHub.
 &emsp;<code>git clone https://github.com/CharlesStockman/osConfiguration.git</code><br>
 
 ### Install Software 
-The purpose of this section is to install the software. The Software will be installed in one of two ways
-<li>Intall the Software and use the configurtion scripts</li>
-<li>Use Nix Configuration to install and configure.</li>
+The software will be installed using a script to call the command that will install the packages:
+<ul>
+  <li>emerge (gentoo)</li>
+  <li>brew (macinitosh)</li>
+  <li>Freebsd pkg not, but ports later.</li>
+</ul>
+
+Nix Package Manager will be added later, it could result in another package manager added to the mix or become the universal package manager.
 
 ### Configuring the Basic Components of the System
 
