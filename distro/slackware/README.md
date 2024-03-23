@@ -1,4 +1,4 @@
-# Update : I have decided to stop working on slackware since I really do need up to date version of certain libraries such as Python.  In the future, I will be distrobox to create a slackware distro to enjoy one and while 
+# Update : I have decided to stop working on slackware since I really do need up to date version of certain libraries such as Python.  In the future, I will be using distrobox to create a slackware distro to enjoy once and while 
 
 # Assume these are not working yet.  I know installSoftware.sh does need some work.
 
