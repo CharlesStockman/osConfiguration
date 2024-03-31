@@ -113,6 +113,12 @@ function removeCRs {
 # Create a command to run tmux with standar window configuration ( left side : 1 Pane, Right Side 2 panes )
 alias tmuxStd="tmux new tmux source-file ../tmux/.tmux.conf"
 
+# Review the history with timestamps where the input is the number of entries from the most current to show
+function review_history {
+	history -E $1
+}
+
+
 #
 # Qemu 
 #  qcow2 -- A file format for qemu grows as you need more space
