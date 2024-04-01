@@ -13,3 +13,4 @@ brew install jq
 brew install pass
 brew install expect
 brew install zsh
+brew install powerlevel10k

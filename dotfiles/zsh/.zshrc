@@ -18,3 +18,8 @@ setopt INC_APPEND_HISTORY       # command are added to the "HISTFILE" immediatel
 HISTFILE=$ZDOTDIR/.zsh_history
 SAVEHIST=10000000           # Number of commands to have to the "HISTFILE"
 HISTSIZE=2000		    # Number of commands to remember in the session
+
+# Configure the prompt using powerlevel-10k
+# To customize prompt, run `p10k configure` or edit ~/origGit/osConfiguration/dotfiles/zsh/.p10k.zsh.
+source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
+[[ ! -f ~/origGit/osConfiguration/dotfiles/zsh/.p10k.zsh ]] || source ~/origGit/osConfiguration/dotfiles/zsh/.p10k.zsh
