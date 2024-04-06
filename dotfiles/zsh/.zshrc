@@ -18,7 +18,6 @@ SAVEHIST=10000000           # Number of commands to have to the "HISTFILE"
 HISTSIZE=2000		    # Number of commands to remember in the session
 
 # Set Options
-
 setopt	correct		# Auto Correct Mistakes
 setopt  extendedglob	# Extended globbing, Allows using regular expressions 
 setopt  nocaseglob	# case insensitve globbing
@@ -33,3 +32,7 @@ source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 
 # Auto Suggestions
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# Fast Syntax Highlighting
+source /opt/homebrew/share/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+
