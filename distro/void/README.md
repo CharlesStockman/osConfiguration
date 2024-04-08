@@ -11,4 +11,5 @@ All the scripts should be run in root
 | postInstall | 03_giveUserRootAccess.sh | Allows all users to haave root access on the machine |
 | infrastructure | 01_installdbus.hs | D-Bus is a message bus system, a simple way for applications to talk to one another |
 | infrastructure | 02_elogind.sh | installs elogind<br> For sway or wayland in general it can be used to also do some required privileged things, in this case setting up the "drm" (Direct Rendering Manager) which is required for wayland. If sway doesn't use elogind/logind to handle the privileged parts|
+| Infrastructure | 03_nix.sh | Install and Confgure nix package manger |
 | hardware | installPipewire.sh | install and configure pipewire the following components of pipewire.<br>Pipewire -- improves handling of audio and video under linux<br>Pipewire Manager -- Watching for new streams and connect them to the appropiate ouptut device or application.<br>Pulse Audio -- A sound server that provides a number of features on top of low level audio including Networking support, per-application volume contorl, Dynamic latency, Better cross-platform support and plugin modules
