@@ -1,4 +1,4 @@
-#
+#:wq
 # Another package manager that can install packages that can't be found in the void 
 # repository due to the reasonable rules for adding packages to the repository
 #
@@ -10,7 +10,7 @@ ln -s /etc/sv/nix-daemon/ /var/service
 sv start nix-daemon
 
 # Add the chnanel that will contain the software
-nix-channel --add https://nixos/chnanels/nixpkgs-unstable
+nix-channel --add https://nixos.org/channels/nixos-unstable
 
 
 

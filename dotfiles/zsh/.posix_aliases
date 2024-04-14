@@ -118,6 +118,14 @@ function review_history {
 	history -E $1
 }
 
+# Compare two different directories
+function compareTwoDifferentDirectories() {
+	# -r -- recursive
+	# -q -- gives brief output
+	diff -rq $1 $2
+}
+
+
 
 #
 # Qemu 
