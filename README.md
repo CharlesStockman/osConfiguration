@@ -19,7 +19,7 @@ The software will be installed using a script to call the command that will inst
 <ul>
   <li>emerge (gentoo)</li>
   <li>brew (macinitosh)</li>
-  <li>Freebsd pkg not, but ports later.</li>
+  <li>nix</li>
 </ul>
 
 Nix Package Manager will be added later, it could result in another package manager added to the mix or become the universal package manager.
