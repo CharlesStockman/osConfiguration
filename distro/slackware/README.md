@@ -8,12 +8,11 @@ for a slackware 15.0 distribution.
 
 ## Prerequisite
 A new version of slackware 15.0 installed and the scripts must be excecuted as the user root.
-Directly after installing the software and before reboot exit to a shell and do the following:
+For my machine grub has had a problem installing so I have been using ELILO.
 
-### Setup chroot into the OS on the harddrive ( not the USB Stick)
-chroot /mnt/os /mnt
 
 ## Setup mount the drive the configuraiton scripts
+
 mkdir /mnt/transfer
 mount /dev/sda1 /mnt/transfer
 
@@ -26,7 +25,7 @@ Should be executed in the following order.
 | adduser.sh                | Add a normal to the systeem.  Need one parameter login|
 | giveUsersRootAccess.sh    | Allows normal user to execute root commands      |  
 | uncommentCurrentMirror.sh | Does not work yet                                |
-| ** Upgrade to current**   |                                                  |
+| **Upgrade to current**   |                                                  |
 | writeBlockers.sh          | Block the kernel from being updated              |
 | update.sh                 | Updates the Slackware distro                     |
 | installSBOTools.sh        | Install SBO Tools to install new software        |
