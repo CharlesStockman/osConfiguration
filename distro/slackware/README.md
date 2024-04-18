@@ -7,17 +7,16 @@ The purpose to describe the scripts that will used to install the software and c
 for a slackware 15.0 distribution.
 
 ## Prerequisite
-A new version of slackware 15.0 installed and the scripts must be excecuted as the user root.
-For my machine grub has had a problem installing so I have been using ELILO.
+A new version of slackware 15.0 This link provides the slackware 15.0 with the most current patches [Location of Slackware 15. with current patches](https://slackware.uk/people/alien-current-iso/slackware64-current-iso/).  For my machine grub has had a problem installing so I have been using ELILO.
 
 
 ## Setup mount the drive the configuraiton scripts
 
-mkdir /mnt/transfer
+mkdir /mnt/transfer<br>
 mount /dev/sda1 /mnt/transfer
 
 ## Scripts
-Should be executed in the following order.
+Should be executed in the following order and must be executed aas root
 
 | Script                    | Description                                      |
 | :------------------       | :---------:                                      |
