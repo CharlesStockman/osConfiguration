@@ -18,17 +18,20 @@ mount /dev/sda1 /mnt/transfer
 ## Scripts
 Should be executed in the following order and must be executed aas root
 
-| Script                    | Description                                                                  |
-| :------------------       | :---------:                                                                  |
-| **Post Installation**     |                                                                              |
-| adduser.sh                | Add a normal to the systeem.  Need one parameter login                       | 
-| giveUsersRootAccess.sh    | Allows normal user to execute root commands                                  |  
-| uncommentCurrentMirror.sh | Uncomment the location where updates for slackware will be retrieved         |
-| **Upgrade to current**   |                                                                               |
-| writeBlockers.sh          | Block the kernel from being updated since it could cause the update to fail. |
-| update.sh                 | Updates the Slackware distro                                                 |
-| installSBOTools.sh        | Install SBO Tools to install new software                                    |
-| installNvidia.sh          | Does not work with Hyprland yet                                              |
-| installSoftware.sh        | Install Software need for work and entertainment                             |
-| oneTimeConfigure.sh       | Execute commands needed after installation                                   |
-| configure.sh              | Execute commands needed when a shell is started                              |
+| Script                       | Description                                                                  |
+| :------------------          | :---------:                                                                  |
+| **Post Installation**        |                                                                              |
+| adduser.sh                   | Add a normal to the systeem.  Need one parameter login                       | 
+| giveUsersRootAccess.sh       | Allows normal user to execute root commands                                  |  
+| uncommentCurrentMirror.sh    | Uncomment the location where updates for slackware will be retrieved         |
+| **Upgrade to current**       |                                                                              |
+| writeBlockers.sh             | Block the kernel from being updated since it could cause the update to fail. |
+| update.sh                    | Updates the Slackware distro using slackpkg                                  |
+| **Install SBOTools**         |                                                                              |
+| installSBOTools.sh           | Install SBO Tools to install new software                                    |
+| sboToolsConfigure.sh         | Configure SBO Tools                                                          |
+| **Install Nvidia**           |                                                                              |
+| installNvidia.sh             | Does not work with Hyprland yet                                              |
+| installSoftware.sh           | Install Software need for work and entertainment                             |
+| oneTimeConfigure.sh          | Execute commands needed after installation                                   |
+| configure.sh                 | Execute commands needed when a shell is started                              |
