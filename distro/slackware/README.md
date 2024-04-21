@@ -3,8 +3,7 @@
 # Assume these are not working yet.  I know installSoftware.sh does need some work.
 
 ## Introduction
-The purpose to describe the scripts that will used to install the software and configure the system 
-for a slackware 15.0 distribution.
+The purpose is to describe the scripts that will used to install the software and configure the system for slackware 15.0 distribution.
 
 ## Prerequisite
 A new version of slackware 15.0 This link provides the slackware 15.0 with the most current patches [Location of Slackware 15. with current patches](https://slackware.uk/people/alien-current-iso/slackware64-current-iso/).  For my machine grub has had a problem installing so I have been using ELILO.
@@ -27,7 +26,7 @@ Should be executed in the following order and must be executed aas root
 | **Upgrade to current**       |                                                                              |
 | writeBlockers.sh             | Block the kernel from being updated since it could cause the update to fail. |
 | update.sh                    | Updates the Slackware distro using slackpkg                                  |
-| **Install SBOTools**         |                                                                              |
+| **Setup SBOTools**           |                                                                              |
 | installSBOTools.sh           | Install SBO Tools to install new software                                    |
 | sboToolsConfigure.sh         | Configure SBO Tools                                                          |
 | **Install Nvidia**           |                                                                              |
