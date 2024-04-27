@@ -1,3 +1,5 @@
+# Have Decided to stop working on void, but keeping the script for now.  They should be in good working order.
+
 # Purpose Install Void
 The purpose of this document is to describe how to install the software and configure VOID after the intial installation has been completed
 
