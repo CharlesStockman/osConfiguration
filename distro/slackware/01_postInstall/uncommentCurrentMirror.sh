@@ -7,7 +7,8 @@ originalLine=`tail -n 1 /etc/slackpkg/mirrors`
 # new line is not being replaced
 newLine=`echo $originalLine | cut -c 2-` 
 
-echo "1 \"$originalLine\""
-echo "2 $newLine"
+#echo "1 \"$originalLine\""
+#echo "2 $newLine"
 
-sed -i 's/$originalLine/$newLine/g' /etc/slackpkg/mirrors 
+#sed -i 's/$originalLine/$newLine/g' /etc/slackpkg/mirrors 
+sed -i 's/^# \(http:\/\/spout\.ussg\.indiana\.edu\/linux\/slackware\/slackware64-current\/\)/\1/' /etc/slackpkg/mirrors 

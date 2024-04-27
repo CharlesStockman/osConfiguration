@@ -1,6 +1,14 @@
 #
 # Purpose : set nvidia-drm.mode to 1
 #
+# Nvidia does not support  "automatic KMS late loading" enableing kernel mode setting is required to make Waylannd compositors function properly or to allow Xorg#Rootless Xorg
+#
+# Kernel Mode Setting ( KMS )
+#    Makes fancy graphics during bootup
+#    virtual console and X fast switching possible
+#
+# DRM ( Direct Rendering Mnaager ) -- a subsytem of the linux kernel responsible for interfacing with GPUs.  DRM Expose an API that user-space program can use to send commands and data to the GPU Card
+#
 
 # Exlanation of the command
 # 	sed -i: This tells sed to edit the file in place.

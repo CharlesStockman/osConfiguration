@@ -8,20 +8,26 @@ installSoftware() {
    installpkg /tmp/*.tgz
 }
 
+export PATH=/sbin:/usr/sbin:/usr/lib64/go1.22.1/go/bin/:$PATH
+
 # Flatpak
-installSoftware "xdg-desktop-portal-gtk"
-installSoftware "bubblewrap"
-installSoftware "ostree"i
-installSoftware "gcab"
-installSoftware "appstream-glib"
-installSoftware "flatpak"
+#installSoftware "xdg-desktop-portal-gtk"
+#installSoftware "bubblewrap"
+#installSoftware "ostree"
+#installSoftware "gcab"
+#installSoftware "appstream-glib"
+#installSoftware "flatpak"
 
 # Applications
-installSoftware "brave-browser"
+#installSoftware "brave-browser"
+
+# Go
+#installSoftware "google-go-lang"
 
 # Kitty
-installSoftware "librsync"
-installSoftware "kitty"
+#installSoftware "librsync"
+#installSoftware "simde"
+#installSoftware "kitty"
 
 # Hyperland
 installSoftware "scdoc"
@@ -29,17 +35,17 @@ installSoftware "seatd"
 installSoftware "hyprland-bin"
 
 # Java 
-installSoftware "zulu-openjdk21"
-installSoftware "apache-maven"
-
-# Go
-installSoftware "google-go-lang"
+#installSoftware "zulu-openjdk21"
+#installSoftware "apache-maven"
 
 # Docker
-installSoftware "docker-proxy"
-installSoftware "tini"
-installSoftware "runc"
-installSoftware "containerd"
-installSoftware "docker"
-installSoftware "docker-cli"
+#installSoftware "docker-proxy"
+#installSoftware "tini"
+#installSoftware "runc"
+#installSoftware "containerd"
+#installSoftware "docker"
+#installSoftware "docker-cli"
+
+rm /tmp/*.tgz
+
 

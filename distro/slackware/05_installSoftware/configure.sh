@@ -1,5 +1,7 @@
 # A script that will be executed everytime a new shell is open.
 
+export PATH=/usr/lib64/go1.22.1/go/bin/:$PATH
+
 # Configuration for Java
 export JAVA_HOME=/usr/lib64/zulu-openjdk21/bin/java
 export PATH=$JAVA_HOME/bin:$PATH

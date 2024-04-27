@@ -1,0 +1,1000 @@
+   63 | GtkWidget * gtk_hbox_new      (gboolean homogeneous,
+      |             ^~~~~~~~~~~~
+gtk+-2.x/ctkvdpau.c:1255:5: warning: ‘gtk_table_attach’ is deprecated: Use 'GtkGrid' instead [-Wdeprecated-declarations]
+ 1255 |     gtk_table_attach(GTK_TABLE(table), hbox, 0, 5, 1, 2,
+      |     ^~~~~~~~~~~~~~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtktable.h:127:12: note: declared here
+  127 | void       gtk_table_attach           (GtkTable        *table,
+      |            ^~~~~~~~~~~~~~~~
+gtk+-2.x/ctkvdpau.c:1258:5: warning: ‘gtk_hbox_new’ is deprecated: Use 'gtk_box_new' instead [-Wdeprecated-declarations]
+ 1258 |     hbox  = gtk_hbox_new(FALSE, 0);
+      |     ^~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtkhbox.h:63:13: note: declared here
+   63 | GtkWidget * gtk_hbox_new      (gboolean homogeneous,
+      |             ^~~~~~~~~~~~
+gtk+-2.x/ctkvdpau.c:1274:9: warning: ‘gtk_table_resize’ is deprecated: Use 'GtkGrid' instead [-Wdeprecated-declarations]
+ 1274 |         gtk_table_resize(GTK_TABLE(table), count+4, 5);
+      |         ^~~~~~~~~~~~~~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtktable.h:123:12: note: declared here
+  123 | void       gtk_table_resize           (GtkTable        *table,
+      |            ^~~~~~~~~~~~~~~~
+gtk+-2.x/ctkvdpau.c:1279:9: warning: ‘gtk_misc_set_alignment’ is deprecated [-Wdeprecated-declarations]
+ 1279 |         gtk_misc_set_alignment(GTK_MISC(label), 0.0f, 0.5f);
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtkmisc.h:72:9: note: declared here
+   72 | void    gtk_misc_set_alignment (GtkMisc *misc,
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+gtk+-2.x/ctkvdpau.c:1280:9: warning: ‘gtk_table_attach’ is deprecated: Use 'GtkGrid' instead [-Wdeprecated-declarations]
+ 1280 |         gtk_table_attach(GTK_TABLE(table), label, 0, 1, count+3, count+4,
+      |         ^~~~~~~~~~~~~~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtktable.h:127:12: note: declared here
+  127 | void       gtk_table_attach           (GtkTable        *table,
+      |            ^~~~~~~~~~~~~~~~
+gtk+-2.x/ctkvdpau.c:1287:9: warning: ‘gtk_misc_set_alignment’ is deprecated [-Wdeprecated-declarations]
+ 1287 |         gtk_misc_set_alignment(GTK_MISC(label), 0.0f, 0.5f);
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtkmisc.h:72:9: note: declared here
+   72 | void    gtk_misc_set_alignment (GtkMisc *misc,
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+gtk+-2.x/ctkvdpau.c:1288:9: warning: ‘gtk_table_attach’ is deprecated: Use 'GtkGrid' instead [-Wdeprecated-declarations]
+ 1288 |         gtk_table_attach(GTK_TABLE(table), label, 1, 2, count+3, count+4,
+      |         ^~~~~~~~~~~~~~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtktable.h:127:12: note: declared here
+  127 | void       gtk_table_attach           (GtkTable        *table,
+      |            ^~~~~~~~~~~~~~~~
+gtk+-2.x/ctkvdpau.c:1306:5: warning: ‘gtk_table_new’ is deprecated: Use 'GtkGrid' instead [-Wdeprecated-declarations]
+ 1306 |     table = gtk_table_new(2, 5, FALSE);
+      |     ^~~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtktable.h:119:12: note: declared here
+  119 | GtkWidget* gtk_table_new              (guint            rows,
+      |            ^~~~~~~~~~~~~
+gtk+-2.x/ctkvdpau.c:1307:5: warning: ‘gtk_table_set_row_spacings’ is deprecated: Use 'GtkGrid' instead [-Wdeprecated-declarations]
+ 1307 |     gtk_table_set_row_spacings(GTK_TABLE(table), 3);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtktable.h:159:12: note: declared here
+  159 | void       gtk_table_set_row_spacings (GtkTable        *table,
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+gtk+-2.x/ctkvdpau.c:1308:5: warning: ‘gtk_table_set_col_spacings’ is deprecated: Use 'GtkGrid' instead [-Wdeprecated-declarations]
+ 1308 |     gtk_table_set_col_spacings(GTK_TABLE(table), 15);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtktable.h:164:12: note: declared here
+  164 | void       gtk_table_set_col_spacings (GtkTable        *table,
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+gtk+-2.x/ctkvdpau.c:1316:5: warning: ‘gtk_misc_set_alignment’ is deprecated [-Wdeprecated-declarations]
+ 1316 |     gtk_misc_set_alignment(GTK_MISC(label), 0.0f, 0.5f);
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtkmisc.h:72:9: note: declared here
+   72 | void    gtk_misc_set_alignment (GtkMisc *misc,
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+gtk+-2.x/ctkvdpau.c:1317:5: warning: ‘gtk_table_attach’ is deprecated: Use 'GtkGrid' instead [-Wdeprecated-declarations]
+ 1317 |     gtk_table_attach(GTK_TABLE(table), eventbox, 0, 1, 0, 1,
+      |     ^~~~~~~~~~~~~~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtktable.h:127:12: note: declared here
+  127 | void       gtk_table_attach           (GtkTable        *table,
+      |            ^~~~~~~~~~~~~~~~
+gtk+-2.x/ctkvdpau.c:1324:5: warning: ‘gtk_misc_set_alignment’ is deprecated [-Wdeprecated-declarations]
+ 1324 |     gtk_misc_set_alignment(GTK_MISC(label), 0.0f, 0.5f);
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtkmisc.h:72:9: note: declared here
+   72 | void    gtk_misc_set_alignment (GtkMisc *misc,
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+gtk+-2.x/ctkvdpau.c:1325:5: warning: ‘gtk_table_attach’ is deprecated: Use 'GtkGrid' instead [-Wdeprecated-declarations]
+ 1325 |     gtk_table_attach(GTK_TABLE(table), label, 1, 2, 0, 1,
+      |     ^~~~~~~~~~~~~~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtktable.h:127:12: note: declared here
+  127 | void       gtk_table_attach           (GtkTable        *table,
+      |            ^~~~~~~~~~~~~~~~
+gtk+-2.x/ctkvdpau.c:1330:5: warning: ‘gtk_misc_set_alignment’ is deprecated [-Wdeprecated-declarations]
+ 1330 |     gtk_misc_set_alignment(GTK_MISC(label), 0.0f, 0.5f);
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtkmisc.h:72:9: note: declared here
+   72 | void    gtk_misc_set_alignment (GtkMisc *misc,
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+gtk+-2.x/ctkvdpau.c:1331:5: warning: ‘gtk_table_attach’ is deprecated: Use 'GtkGrid' instead [-Wdeprecated-declarations]
+ 1331 |     gtk_table_attach(GTK_TABLE(table), label, 2, 3, 0, 1,
+      |     ^~~~~~~~~~~~~~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtktable.h:127:12: note: declared here
+  127 | void       gtk_table_attach           (GtkTable        *table,
+      |            ^~~~~~~~~~~~~~~~
+gtk+-2.x/ctkvdpau.c:1336:5: warning: ‘gtk_misc_set_alignment’ is deprecated [-Wdeprecated-declarations]
+ 1336 |     gtk_misc_set_alignment(GTK_MISC(label), 0.0f, 0.5f);
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtkmisc.h:72:9: note: declared here
+   72 | void    gtk_misc_set_alignment (GtkMisc *misc,
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+gtk+-2.x/ctkvdpau.c:1337:5: warning: ‘gtk_table_attach’ is deprecated: Use 'GtkGrid' instead [-Wdeprecated-declarations]
+ 1337 |     gtk_table_attach(GTK_TABLE(table), label, 3, 4, 0, 1,
+      |     ^~~~~~~~~~~~~~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtktable.h:127:12: note: declared here
+  127 | void       gtk_table_attach           (GtkTable        *table,
+      |            ^~~~~~~~~~~~~~~~
+gtk+-2.x/ctkvdpau.c:1342:5: warning: ‘gtk_hseparator_new’ is deprecated: Use 'gtk_separator_new' instead [-Wdeprecated-declarations]
+ 1342 |     hseparator = gtk_hseparator_new();
+      |     ^~~~~~~~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtkhseparator.h:61:12: note: declared here
+   61 | GtkWidget* gtk_hseparator_new      (void);
+      |            ^~~~~~~~~~~~~~~~~~
+gtk+-2.x/ctkvdpau.c:1343:5: warning: ‘gtk_hbox_new’ is deprecated: Use 'gtk_box_new' instead [-Wdeprecated-declarations]
+ 1343 |     hbox  = gtk_hbox_new(FALSE, 0);
+      |     ^~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtkhbox.h:63:13: note: declared here
+   63 | GtkWidget * gtk_hbox_new      (gboolean homogeneous,
+      |             ^~~~~~~~~~~~
+gtk+-2.x/ctkvdpau.c:1345:5: warning: ‘gtk_table_attach’ is deprecated: Use 'GtkGrid' instead [-Wdeprecated-declarations]
+ 1345 |     gtk_table_attach(GTK_TABLE(table), hbox, 0, 5, 1, 2,
+      |     ^~~~~~~~~~~~~~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtktable.h:127:12: note: declared here
+  127 | void       gtk_table_attach           (GtkTable        *table,
+      |            ^~~~~~~~~~~~~~~~
+gtk+-2.x/ctkvdpau.c:1348:5: warning: ‘gtk_hbox_new’ is deprecated: Use 'gtk_box_new' instead [-Wdeprecated-declarations]
+ 1348 |     hbox  = gtk_hbox_new(FALSE, 0);
+      |     ^~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtkhbox.h:63:13: note: declared here
+   63 | GtkWidget * gtk_hbox_new      (gboolean homogeneous,
+      |             ^~~~~~~~~~~~
+gtk+-2.x/ctkvdpau.c:1364:9: warning: ‘gtk_table_resize’ is deprecated: Use 'GtkGrid' instead [-Wdeprecated-declarations]
+ 1364 |         gtk_table_resize(GTK_TABLE(table), count+4, 5);
+      |         ^~~~~~~~~~~~~~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtktable.h:123:12: note: declared here
+  123 | void       gtk_table_resize           (GtkTable        *table,
+      |            ^~~~~~~~~~~~~~~~
+gtk+-2.x/ctkvdpau.c:1369:9: warning: ‘gtk_misc_set_alignment’ is deprecated [-Wdeprecated-declarations]
+ 1369 |         gtk_misc_set_alignment(GTK_MISC(label), 0.0f, 0.5f);
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtkmisc.h:72:9: note: declared here
+   72 | void    gtk_misc_set_alignment (GtkMisc *misc,
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+gtk+-2.x/ctkvdpau.c:1370:9: warning: ‘gtk_table_attach’ is deprecated: Use 'GtkGrid' instead [-Wdeprecated-declarations]
+ 1370 |         gtk_table_attach(GTK_TABLE(table), label, 0, 1, count+3, count+4,
+      |         ^~~~~~~~~~~~~~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtktable.h:127:12: note: declared here
+  127 | void       gtk_table_attach           (GtkTable        *table,
+      |            ^~~~~~~~~~~~~~~~
+gtk+-2.x/ctkvdpau.c:1377:9: warning: ‘gtk_misc_set_alignment’ is deprecated [-Wdeprecated-declarations]
+ 1377 |         gtk_misc_set_alignment(GTK_MISC(label), 0.0f, 0.5f);
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtkmisc.h:72:9: note: declared here
+   72 | void    gtk_misc_set_alignment (GtkMisc *misc,
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+gtk+-2.x/ctkvdpau.c:1378:9: warning: ‘gtk_table_attach’ is deprecated: Use 'GtkGrid' instead [-Wdeprecated-declarations]
+ 1378 |         gtk_table_attach(GTK_TABLE(table), label, 1, 2, count+3, count+4,
+      |         ^~~~~~~~~~~~~~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtktable.h:127:12: note: declared here
+  127 | void       gtk_table_attach           (GtkTable        *table,
+      |            ^~~~~~~~~~~~~~~~
+gtk+-2.x/ctkvdpau.c: In function ‘ctk_vdpau_get_type’:
+gtk+-2.x/ctkvdpau.c:1415:13: warning: ‘gtk_vbox_get_type’ is deprecated [-Wdeprecated-declarations]
+ 1415 |             g_type_register_static(GTK_TYPE_VBOX, "CtkVDPAU",
+      |             ^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtkvbox.h:59:13: note: declared here
+   59 | GType       gtk_vbox_get_type (void) G_GNUC_CONST;
+      |             ^~~~~~~~~~~~~~~~~
+gtk+-2.x/ctkvdpau.c: In function ‘ctk_vdpau_new’:
+gtk+-2.x/ctkvdpau.c:1489:5: warning: ‘gtk_vbox_new’ is deprecated: Use 'gtk_box_new' instead [-Wdeprecated-declarations]
+ 1489 |     vbox3 = gtk_vbox_new(FALSE, 5);
+      |     ^~~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtkvbox.h:61:13: note: declared here
+   61 | GtkWidget * gtk_vbox_new      (gboolean homogeneous,
+      |             ^~~~~~~~~~~~
+gtk+-2.x/ctkvdpau.c:1490:5: warning: ‘gtk_vbox_new’ is deprecated: Use 'gtk_box_new' instead [-Wdeprecated-declarations]
+ 1490 |     vbox = gtk_vbox_new(FALSE, 5);
+      |     ^~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtkvbox.h:61:13: note: declared here
+   61 | GtkWidget * gtk_vbox_new      (gboolean homogeneous,
+      |             ^~~~~~~~~~~~
+gtk+-2.x/ctkvdpau.c:1493:5: warning: ‘gtk_hbox_new’ is deprecated: Use 'gtk_box_new' instead [-Wdeprecated-declarations]
+ 1493 |     hbox = gtk_hbox_new(FALSE, 0);
+      |     ^~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtkhbox.h:63:13: note: declared here
+   63 | GtkWidget * gtk_hbox_new      (gboolean homogeneous,
+      |             ^~~~~~~~~~~~
+gtk+-2.x/ctkvdpau.c:1499:5: warning: ‘gtk_scrolled_window_add_with_viewport’ is deprecated: Use 'gtk_container_add' instead [-Wdeprecated-declarations]
+ 1499 |     gtk_scrolled_window_add_with_viewport(GTK_SCROLLED_WINDOW(scrollWin),
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-3.0/gtk/gtkscrolledwindow.h:186:16: note: declared here
+  186 | void           gtk_scrolled_window_add_with_viewport (GtkScrolledWindow *scrolled_window,
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   CC           gtk+-2.x/ctkgridlicense.c
+gtk+-2.x/ctkgridlicense.c: In function ‘ctk_manage_grid_license_get_type’:
+gtk+-2.x/ctkgridlicense.c:146:13: warning: ‘gtk_vbox_get_type’ is deprecated [-Wdeprecated-declarations]
+  146 |             g_type_register_static(GTK_TYPE_VBOX, "CtkManageGridLicense",
+      |             ^~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/gtk-3.0/gtk/gtk.h:286,
+                 from gtk+-2.x/ctkgridlicense.c:29:
+/usr/include/gtk-3.0/gtk/deprecated/gtkvbox.h:59:13: note: declared here
+   59 | GType       gtk_vbox_get_type (void) G_GNUC_CONST;
+      |             ^~~~~~~~~~~~~~~~~
+gtk+-2.x/ctkgridlicense.c: In function ‘ctk_manage_grid_license_new’:
+gtk+-2.x/ctkgridlicense.c:1646:5: warning: ‘gtk_vbox_new’ is deprecated: Use 'gtk_box_new' instead [-Wdeprecated-declarations]
+ 1646 |     vbox = gtk_vbox_new(FALSE, 5);
+      |     ^~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtkvbox.h:61:13: note: declared here
+   61 | GtkWidget * gtk_vbox_new      (gboolean homogeneous,
+      |             ^~~~~~~~~~~~
+gtk+-2.x/ctkgridlicense.c:1649:5: warning: ‘gtk_vbox_new’ is deprecated: Use 'gtk_box_new' instead [-Wdeprecated-declarations]
+ 1649 |     vbox1 = gtk_vbox_new(FALSE, 5);
+      |     ^~~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtkvbox.h:61:13: note: declared here
+   61 | GtkWidget * gtk_vbox_new      (gboolean homogeneous,
+      |             ^~~~~~~~~~~~
+gtk+-2.x/ctkgridlicense.c:1650:5: warning: ‘gtk_vbox_new’ is deprecated: Use 'gtk_box_new' instead [-Wdeprecated-declarations]
+ 1650 |     vbox2 = gtk_vbox_new(FALSE, 0);
+      |     ^~~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtkvbox.h:61:13: note: declared here
+   61 | GtkWidget * gtk_vbox_new      (gboolean homogeneous,
+      |             ^~~~~~~~~~~~
+gtk+-2.x/ctkgridlicense.c:1657:9: warning: ‘gtk_hbox_new’ is deprecated: Use 'gtk_box_new' instead [-Wdeprecated-declarations]
+ 1657 |         hbox = gtk_hbox_new(FALSE, 0);
+      |         ^~~~
+In file included from /usr/include/gtk-3.0/gtk/gtk.h:262:
+/usr/include/gtk-3.0/gtk/deprecated/gtkhbox.h:63:13: note: declared here
+   63 | GtkWidget * gtk_hbox_new      (gboolean homogeneous,
+      |             ^~~~~~~~~~~~
+gtk+-2.x/ctkgridlicense.c:1664:9: warning: ‘gtk_vbox_new’ is deprecated: Use 'gtk_box_new' instead [-Wdeprecated-declarations]
+ 1664 |         vbox3 = gtk_vbox_new(FALSE, 5);
+      |         ^~~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtkvbox.h:61:13: note: declared here
+   61 | GtkWidget * gtk_vbox_new      (gboolean homogeneous,
+      |             ^~~~~~~~~~~~
+gtk+-2.x/ctkgridlicense.c:1732:5: warning: ‘gtk_hbox_new’ is deprecated: Use 'gtk_box_new' instead [-Wdeprecated-declarations]
+ 1732 |     hbox = gtk_hbox_new(FALSE, 0);
+      |     ^~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtkhbox.h:63:13: note: declared here
+   63 | GtkWidget * gtk_hbox_new      (gboolean homogeneous,
+      |             ^~~~~~~~~~~~
+gtk+-2.x/ctkgridlicense.c:1746:5: warning: ‘gtk_hbox_new’ is deprecated: Use 'gtk_box_new' instead [-Wdeprecated-declarations]
+ 1746 |     hbox = gtk_hbox_new(FALSE, 0);
+      |     ^~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtkhbox.h:63:13: note: declared here
+   63 | GtkWidget * gtk_hbox_new      (gboolean homogeneous,
+      |             ^~~~~~~~~~~~
+gtk+-2.x/ctkgridlicense.c:1753:5: warning: ‘gtk_vbox_new’ is deprecated: Use 'gtk_box_new' instead [-Wdeprecated-declarations]
+ 1753 |     vbox3 = gtk_vbox_new(FALSE, 0);
+      |     ^~~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtkvbox.h:61:13: note: declared here
+   61 | GtkWidget * gtk_vbox_new      (gboolean homogeneous,
+      |             ^~~~~~~~~~~~
+gtk+-2.x/ctkgridlicense.c:1757:5: warning: ‘gtk_table_new’ is deprecated: Use 'GtkGrid' instead [-Wdeprecated-declarations]
+ 1757 |     table = gtk_table_new(7, 5, FALSE);
+      |     ^~~~~
+In file included from /usr/include/gtk-3.0/gtk/gtk.h:280:
+/usr/include/gtk-3.0/gtk/deprecated/gtktable.h:119:12: note: declared here
+  119 | GtkWidget* gtk_table_new              (guint            rows,
+      |            ^~~~~~~~~~~~~
+gtk+-2.x/ctkgridlicense.c:1759:5: warning: ‘gtk_table_set_row_spacings’ is deprecated: Use 'GtkGrid' instead [-Wdeprecated-declarations]
+ 1759 |     gtk_table_set_row_spacings(GTK_TABLE(table), 3);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtktable.h:159:12: note: declared here
+  159 | void       gtk_table_set_row_spacings (GtkTable        *table,
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+gtk+-2.x/ctkgridlicense.c:1760:5: warning: ‘gtk_table_set_col_spacings’ is deprecated: Use 'GtkGrid' instead [-Wdeprecated-declarations]
+ 1760 |     gtk_table_set_col_spacings(GTK_TABLE(table), 15);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtktable.h:164:12: note: declared here
+  164 | void       gtk_table_set_col_spacings (GtkTable        *table,
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+gtk+-2.x/ctkgridlicense.c:1767:5: warning: ‘gtk_hbox_new’ is deprecated: Use 'gtk_box_new' instead [-Wdeprecated-declarations]
+ 1767 |     hbox = gtk_hbox_new(FALSE, 0);
+      |     ^~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtkhbox.h:63:13: note: declared here
+   63 | GtkWidget * gtk_hbox_new      (gboolean homogeneous,
+      |             ^~~~~~~~~~~~
+gtk+-2.x/ctkgridlicense.c:1772:5: warning: ‘gtk_table_attach’ is deprecated: Use 'GtkGrid' instead [-Wdeprecated-declarations]
+ 1772 |     gtk_table_attach(GTK_TABLE(table), hbox, 0, 1, 1, 2,
+      |     ^~~~~~~~~~~~~~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtktable.h:127:12: note: declared here
+  127 | void       gtk_table_attach           (GtkTable        *table,
+      |            ^~~~~~~~~~~~~~~~
+gtk+-2.x/ctkgridlicense.c:1776:5: warning: ‘gtk_hbox_new’ is deprecated: Use 'gtk_box_new' instead [-Wdeprecated-declarations]
+ 1776 |     hbox = gtk_hbox_new(FALSE, 0);
+      |     ^~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtkhbox.h:63:13: note: declared here
+   63 | GtkWidget * gtk_hbox_new      (gboolean homogeneous,
+      |             ^~~~~~~~~~~~
+gtk+-2.x/ctkgridlicense.c:1781:5: warning: ‘gtk_table_attach’ is deprecated: Use 'GtkGrid' instead [-Wdeprecated-declarations]
+ 1781 |     gtk_table_attach(GTK_TABLE(table), hbox, 1, 2, 1, 2,
+      |     ^~~~~~~~~~~~~~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtktable.h:127:12: note: declared here
+  127 | void       gtk_table_attach           (GtkTable        *table,
+      |            ^~~~~~~~~~~~~~~~
+gtk+-2.x/ctkgridlicense.c:1787:5: warning: ‘gtk_hbox_new’ is deprecated: Use 'gtk_box_new' instead [-Wdeprecated-declarations]
+ 1787 |     hbox = gtk_hbox_new(FALSE, 5);
+      |     ^~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtkhbox.h:63:13: note: declared here
+   63 | GtkWidget * gtk_hbox_new      (gboolean homogeneous,
+      |             ^~~~~~~~~~~~
+gtk+-2.x/ctkgridlicense.c:1792:5: warning: ‘gtk_table_attach’ is deprecated: Use 'GtkGrid' instead [-Wdeprecated-declarations]
+ 1792 |     gtk_table_attach(GTK_TABLE(table), hbox, 0, 1, 2, 3,
+      |     ^~~~~~~~~~~~~~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtktable.h:127:12: note: declared here
+  127 | void       gtk_table_attach           (GtkTable        *table,
+      |            ^~~~~~~~~~~~~~~~
+gtk+-2.x/ctkgridlicense.c:1799:5: warning: ‘gtk_hbox_new’ is deprecated: Use 'gtk_box_new' instead [-Wdeprecated-declarations]
+ 1799 |     hbox = gtk_hbox_new(FALSE, 0);
+      |     ^~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtkhbox.h:63:13: note: declared here
+   63 | GtkWidget * gtk_hbox_new      (gboolean homogeneous,
+      |             ^~~~~~~~~~~~
+gtk+-2.x/ctkgridlicense.c:1803:5: warning: ‘gtk_table_attach’ is deprecated: Use 'GtkGrid' instead [-Wdeprecated-declarations]
+ 1803 |     gtk_table_attach(GTK_TABLE(table), hbox, 1, 2, 2, 3,
+      |     ^~~~~~~~~~~~~~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtktable.h:127:12: note: declared here
+  127 | void       gtk_table_attach           (GtkTable        *table,
+      |            ^~~~~~~~~~~~~~~~
+gtk+-2.x/ctkgridlicense.c:1810:5: warning: ‘gtk_hbox_new’ is deprecated: Use 'gtk_box_new' instead [-Wdeprecated-declarations]
+ 1810 |     hbox = gtk_hbox_new(FALSE, 0);
+      |     ^~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtkhbox.h:63:13: note: declared here
+   63 | GtkWidget * gtk_hbox_new      (gboolean homogeneous,
+      |             ^~~~~~~~~~~~
+gtk+-2.x/ctkgridlicense.c:1816:5: warning: ‘gtk_table_attach’ is deprecated: Use 'GtkGrid' instead [-Wdeprecated-declarations]
+ 1816 |     gtk_table_attach(GTK_TABLE(table), hbox, 0, 1, 5, 6,
+      |     ^~~~~~~~~~~~~~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtktable.h:127:12: note: declared here
+  127 | void       gtk_table_attach           (GtkTable        *table,
+      |            ^~~~~~~~~~~~~~~~
+gtk+-2.x/ctkgridlicense.c:1820:5: warning: ‘gtk_hbox_new’ is deprecated: Use 'gtk_box_new' instead [-Wdeprecated-declarations]
+ 1820 |     hbox = gtk_hbox_new(FALSE, 0);
+      |     ^~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtkhbox.h:63:13: note: declared here
+   63 | GtkWidget * gtk_hbox_new      (gboolean homogeneous,
+      |             ^~~~~~~~~~~~
+gtk+-2.x/ctkgridlicense.c:1825:5: warning: ‘gtk_table_attach’ is deprecated: Use 'GtkGrid' instead [-Wdeprecated-declarations]
+ 1825 |     gtk_table_attach(GTK_TABLE(table), hbox, 1, 2, 5, 6,
+      |     ^~~~~~~~~~~~~~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtktable.h:127:12: note: declared here
+  127 | void       gtk_table_attach           (GtkTable        *table,
+      |            ^~~~~~~~~~~~~~~~
+gtk+-2.x/ctkgridlicense.c:1831:5: warning: ‘gtk_hbox_new’ is deprecated: Use 'gtk_box_new' instead [-Wdeprecated-declarations]
+ 1831 |     hbox = gtk_hbox_new(FALSE, 5);
+      |     ^~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtkhbox.h:63:13: note: declared here
+   63 | GtkWidget * gtk_hbox_new      (gboolean homogeneous,
+      |             ^~~~~~~~~~~~
+gtk+-2.x/ctkgridlicense.c:1836:5: warning: ‘gtk_table_attach’ is deprecated: Use 'GtkGrid' instead [-Wdeprecated-declarations]
+ 1836 |     gtk_table_attach(GTK_TABLE(table), hbox, 0, 1, 6, 7,
+      |     ^~~~~~~~~~~~~~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtktable.h:127:12: note: declared here
+  127 | void       gtk_table_attach           (GtkTable        *table,
+      |            ^~~~~~~~~~~~~~~~
+gtk+-2.x/ctkgridlicense.c:1842:5: warning: ‘gtk_hbox_new’ is deprecated: Use 'gtk_box_new' instead [-Wdeprecated-declarations]
+ 1842 |     hbox = gtk_hbox_new(FALSE, 0);
+      |     ^~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtkhbox.h:63:13: note: declared here
+   63 | GtkWidget * gtk_hbox_new      (gboolean homogeneous,
+      |             ^~~~~~~~~~~~
+gtk+-2.x/ctkgridlicense.c:1846:5: warning: ‘gtk_table_attach’ is deprecated: Use 'GtkGrid' instead [-Wdeprecated-declarations]
+ 1846 |     gtk_table_attach(GTK_TABLE(table), hbox, 1, 2, 6, 7,
+      |     ^~~~~~~~~~~~~~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtktable.h:127:12: note: declared here
+  127 | void       gtk_table_attach           (GtkTable        *table,
+      |            ^~~~~~~~~~~~~~~~
+gtk+-2.x/ctkgridlicense.c:1857:5: warning: ‘gtk_hbox_new’ is deprecated: Use 'gtk_box_new' instead [-Wdeprecated-declarations]
+ 1857 |     hbox = gtk_hbox_new(FALSE, 5);
+      |     ^~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtkhbox.h:63:13: note: declared here
+   63 | GtkWidget * gtk_hbox_new      (gboolean homogeneous,
+      |             ^~~~~~~~~~~~
+   CC           gtk+-2.x/ctkglwidget.c
+   CC           gtk+-2.x/ctkglstereo.c
+   CC           gtk+-2.x/opengl_loading.c
+   CC           gtk+-2.x/opengl_wrappers.c
+   CC           gtk+-2.x/matrix_utils.c
+   CC           gtk+-2.x/ctkpowermode.c
+gtk+-2.x/ctkpowermode.c: In function ‘ctk_powermode_get_type’:
+gtk+-2.x/ctkpowermode.c:79:13: warning: ‘gtk_vbox_get_type’ is deprecated [-Wdeprecated-declarations]
+   79 |             g_type_register_static(GTK_TYPE_VBOX, "CtkPowermode",
+      |             ^~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/gtk-3.0/gtk/gtk.h:286,
+                 from gtk+-2.x/ctkpowermode.c:23:
+/usr/include/gtk-3.0/gtk/deprecated/gtkvbox.h:59:13: note: declared here
+   59 | GType       gtk_vbox_get_type (void) G_GNUC_CONST;
+      |             ^~~~~~~~~~~~~~~~~
+gtk+-2.x/ctkpowermode.c: In function ‘ctk_powermode_new’:
+gtk+-2.x/ctkpowermode.c:204:5: warning: ‘gtk_vbox_new’ is deprecated: Use 'gtk_box_new' instead [-Wdeprecated-declarations]
+  204 |     vbox = gtk_vbox_new(FALSE, 0);
+      |     ^~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtkvbox.h:61:13: note: declared here
+   61 | GtkWidget * gtk_vbox_new      (gboolean homogeneous,
+      |             ^~~~~~~~~~~~
+gtk+-2.x/ctkpowermode.c:208:5: warning: ‘gtk_hbox_new’ is deprecated: Use 'gtk_box_new' instead [-Wdeprecated-declarations]
+  208 |     hbox = gtk_hbox_new(FALSE, 0);
+      |     ^~~~
+In file included from /usr/include/gtk-3.0/gtk/gtk.h:262:
+/usr/include/gtk-3.0/gtk/deprecated/gtkhbox.h:63:13: note: declared here
+   63 | GtkWidget * gtk_hbox_new      (gboolean homogeneous,
+      |             ^~~~~~~~~~~~
+gtk+-2.x/ctkpowermode.c:215:5: warning: ‘gtk_hseparator_new’ is deprecated: Use 'gtk_separator_new' instead [-Wdeprecated-declarations]
+  215 |     hsep = gtk_hseparator_new();
+      |     ^~~~
+In file included from /usr/include/gtk-3.0/gtk/gtk.h:267:
+/usr/include/gtk-3.0/gtk/deprecated/gtkhseparator.h:61:12: note: declared here
+   61 | GtkWidget* gtk_hseparator_new      (void);
+      |            ^~~~~~~~~~~~~~~~~~
+gtk+-2.x/ctkpowermode.c:228:5: warning: ‘gtk_table_new’ is deprecated: Use 'GtkGrid' instead [-Wdeprecated-declarations]
+  228 |     table = gtk_table_new(1, 4, FALSE);
+      |     ^~~~~
+In file included from /usr/include/gtk-3.0/gtk/gtk.h:280:
+/usr/include/gtk-3.0/gtk/deprecated/gtktable.h:119:12: note: declared here
+  119 | GtkWidget* gtk_table_new              (guint            rows,
+      |            ^~~~~~~~~~~~~
+gtk+-2.x/ctkpowermode.c:230:5: warning: ‘gtk_table_set_row_spacings’ is deprecated: Use 'GtkGrid' instead [-Wdeprecated-declarations]
+  230 |     gtk_table_set_row_spacings(GTK_TABLE(table), 3);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtktable.h:159:12: note: declared here
+  159 | void       gtk_table_set_row_spacings (GtkTable        *table,
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+gtk+-2.x/ctkpowermode.c:231:5: warning: ‘gtk_table_set_col_spacings’ is deprecated: Use 'GtkGrid' instead [-Wdeprecated-declarations]
+  231 |     gtk_table_set_col_spacings(GTK_TABLE(table), 0);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtktable.h:164:12: note: declared here
+  164 | void       gtk_table_set_col_spacings (GtkTable        *table,
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+gtk+-2.x/ctkpowermode.c:234:5: warning: ‘gtk_hbox_new’ is deprecated: Use 'gtk_box_new' instead [-Wdeprecated-declarations]
+  234 |     hbox2 = gtk_hbox_new(FALSE, 0);
+      |     ^~~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtkhbox.h:63:13: note: declared here
+   63 | GtkWidget * gtk_hbox_new      (gboolean homogeneous,
+      |             ^~~~~~~~~~~~
+gtk+-2.x/ctkpowermode.c:235:5: warning: ‘gtk_table_attach’ is deprecated: Use 'GtkGrid' instead [-Wdeprecated-declarations]
+  235 |     gtk_table_attach(GTK_TABLE(table), hbox2, 0, 1, 0, 1,
+      |     ^~~~~~~~~~~~~~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtktable.h:127:12: note: declared here
+  127 | void       gtk_table_attach           (GtkTable        *table,
+      |            ^~~~~~~~~~~~~~~~
+gtk+-2.x/ctkpowermode.c:238:5: warning: ‘gtk_misc_set_alignment’ is deprecated [-Wdeprecated-declarations]
+  238 |     gtk_misc_set_alignment(GTK_MISC(label), 0.0f, 0.5f);
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/gtk-3.0/gtk/gtklabel.h:32,
+                 from /usr/include/gtk-3.0/gtk/gtkaccellabel.h:35,
+                 from /usr/include/gtk-3.0/gtk/gtk.h:33:
+/usr/include/gtk-3.0/gtk/deprecated/gtkmisc.h:72:9: note: declared here
+   72 | void    gtk_misc_set_alignment (GtkMisc *misc,
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+gtk+-2.x/ctkpowermode.c:244:5: warning: ‘gtk_hbox_new’ is deprecated: Use 'gtk_box_new' instead [-Wdeprecated-declarations]
+  244 |     hbox2 = gtk_hbox_new(FALSE, 0);
+      |     ^~~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtkhbox.h:63:13: note: declared here
+   63 | GtkWidget * gtk_hbox_new      (gboolean homogeneous,
+      |             ^~~~~~~~~~~~
+gtk+-2.x/ctkpowermode.c:245:5: warning: ‘gtk_table_attach’ is deprecated: Use 'GtkGrid' instead [-Wdeprecated-declarations]
+  245 |     gtk_table_attach(GTK_TABLE(table), hbox2, 1, 2, 0, 1,
+      |     ^~~~~~~~~~~~~~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtktable.h:127:12: note: declared here
+  127 | void       gtk_table_attach           (GtkTable        *table,
+      |            ^~~~~~~~~~~~~~~~
+gtk+-2.x/ctkpowermode.c:251:5: warning: ‘gtk_hbox_new’ is deprecated: Use 'gtk_box_new' instead [-Wdeprecated-declarations]
+  251 |     hbox2 = gtk_hbox_new(FALSE, 0);
+      |     ^~~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtkhbox.h:63:13: note: declared here
+   63 | GtkWidget * gtk_hbox_new      (gboolean homogeneous,
+      |             ^~~~~~~~~~~~
+gtk+-2.x/ctkpowermode.c:252:5: warning: ‘gtk_table_attach’ is deprecated: Use 'GtkGrid' instead [-Wdeprecated-declarations]
+  252 |     gtk_table_attach(GTK_TABLE(table), hbox2, 2, 3, 0, 1,
+      |     ^~~~~~~~~~~~~~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtktable.h:127:12: note: declared here
+  127 | void       gtk_table_attach           (GtkTable        *table,
+      |            ^~~~~~~~~~~~~~~~
+gtk+-2.x/ctkpowermode.c:255:5: warning: ‘gtk_misc_set_alignment’ is deprecated [-Wdeprecated-declarations]
+  255 |     gtk_misc_set_alignment(GTK_MISC(label), 0.0f, 0.5f);
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtkmisc.h:72:9: note: declared here
+   72 | void    gtk_misc_set_alignment (GtkMisc *misc,
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+gtk+-2.x/ctkpowermode.c:258:5: warning: ‘gtk_hbox_new’ is deprecated: Use 'gtk_box_new' instead [-Wdeprecated-declarations]
+  258 |     hbox2 = gtk_hbox_new(FALSE, 0);
+      |     ^~~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtkhbox.h:63:13: note: declared here
+   63 | GtkWidget * gtk_hbox_new      (gboolean homogeneous,
+      |             ^~~~~~~~~~~~
+gtk+-2.x/ctkpowermode.c:259:5: warning: ‘gtk_table_attach’ is deprecated: Use 'GtkGrid' instead [-Wdeprecated-declarations]
+  259 |     gtk_table_attach(GTK_TABLE(table), hbox2, 3, 4, 0, 1,
+      |     ^~~~~~~~~~~~~~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtktable.h:127:12: note: declared here
+  127 | void       gtk_table_attach           (GtkTable        *table,
+      |            ^~~~~~~~~~~~~~~~
+gtk+-2.x/ctkpowermode.c:263:5: warning: ‘gtk_misc_set_alignment’ is deprecated [-Wdeprecated-declarations]
+  263 |     gtk_misc_set_alignment(GTK_MISC(label), 0.0f, 0.5f);
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gtk-3.0/gtk/deprecated/gtkmisc.h:72:9: note: declared here
+   72 | void    gtk_misc_set_alignment (GtkMisc *misc,
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+   LINK         _out/Linux_x86_64/libnvidia-gtk3.so.unstripped
+   STRIP        _out/Linux_x86_64/libnvidia-gtk3.so
+   CC           wayland-connector.c
+   LINK         _out/Linux_x86_64/libnvidia-wayland-client.so.unstripped
+   STRIP        _out/Linux_x86_64/libnvidia-wayland-client.so
+rm _out/Linux_x86_64/nvidia-settings.unstripped _out/Linux_x86_64/libnvidia-wayland-client.so.unstripped _out/Linux_x86_64/libnvidia-gtk2.so.unstripped _out/Linux_x86_64/libnvidia-gtk3.so.unstripped
+make[1]: Leaving directory '/tmp/SBo/nvidia-settings-550.67/src'
+make[1]: Entering directory '/tmp/SBo/nvidia-settings-550.67/samples'
+   CC           nv-control-info.c
+   CC           ../src/libXNVCtrl/NVCtrl.c
+   AR           _out/Linux_x86_64/libXNVCtrl.a
+ar: creating _out/Linux_x86_64/libXNVCtrl.a
+   LINK         _out/Linux_x86_64/nv-control-info
+   CC           nv-control-dvc.c
+   LINK         _out/Linux_x86_64/nv-control-dvc
+   CC           nv-control-events.c
+   LINK         _out/Linux_x86_64/nv-control-events
+   CC           nv-control-dpy.c
+   LINK         _out/Linux_x86_64/nv-control-dpy
+   CC           nv-control-targets.c
+   LINK         _out/Linux_x86_64/nv-control-targets
+   CC           nv-control-framelock.c
+   LINK         _out/Linux_x86_64/nv-control-framelock
+   CC           nv-control-3dvisionpro.c
+   LINK         _out/Linux_x86_64/nv-control-3dvisionpro
+   CC           nv-control-warpblend.c
+   LINK         _out/Linux_x86_64/nv-control-warpblend
+make[1]: Leaving directory '/tmp/SBo/nvidia-settings-550.67/samples'
+make[1]: Entering directory '/tmp/SBo/nvidia-settings-550.67/doc'
+   HOST_CC      ../src/gen-manpage-opts.c
+   HOST_CC      ../src/common-utils/gen-manpage-opts-helper.c
+   HOST_LINK    tmp/SBo/nvidia-settings-550.67/doc/_out/Linux_x86_64/gen-manpage-opts
+   M4           nvidia-settings.1.m4
+gzip -9nf < _out/Linux_x86_64/nvidia-settings.1 > _out/Linux_x86_64/nvidia-settings.1.gz
+make[1]: Leaving directory '/tmp/SBo/nvidia-settings-550.67/doc'
+/tmp/SBo/nvidia-settings-550.67/src/libXNVCtrl
+   CC           XF86Config-parser/DRI.c
+   CC           XF86Config-parser/Device.c
+   CC           XF86Config-parser/Extensions.c
+   CC           XF86Config-parser/Files.c
+   CC           XF86Config-parser/Flags.c
+   CC           XF86Config-parser/Generate.c
+   CC           XF86Config-parser/Input.c
+   CC           XF86Config-parser/Keyboard.c
+   CC           XF86Config-parser/Layout.c
+   CC           XF86Config-parser/Merge.c
+   CC           XF86Config-parser/Module.c
+   CC           XF86Config-parser/Monitor.c
+   CC           XF86Config-parser/Pointer.c
+   CC           XF86Config-parser/Read.c
+   CC           XF86Config-parser/Scan.c
+   CC           XF86Config-parser/Screen.c
+   CC           XF86Config-parser/Util.c
+   CC           XF86Config-parser/Vendor.c
+   CC           XF86Config-parser/Video.c
+   CC           XF86Config-parser/Write.c
+   CC           util.c
+   CC           nvidia-xconfig.c
+   CC           make_usable.c
+   CC           multiple_screens.c
+   CC           tree.c
+   CC           options.c
+   CC           lscf.c
+   CC           query_gpu_info.c
+   CC           extract_edids.c
+   CC           common-utils/nvgetopt.c
+   CC           common-utils/common-utils.c
+   CC           common-utils/msg.c
+   CC           common-utils/nvpci-utils.c
+   LINK         _out/Linux_x86_64/nvidia-xconfig.unstripped
+   STRIP        _out/Linux_x86_64/nvidia-xconfig
+   HOST_CC      gen-manpage-opts.c
+   HOST_CC      common-utils/gen-manpage-opts-helper.c
+   HOST_LINK    tmp/SBo/nvidia-xconfig-550.67/_out/Linux_x86_64/gen-manpage-opts
+   M4           nvidia-xconfig.1.m4
+gzip -9nf < _out/Linux_x86_64/nvidia-xconfig.1 > _out/Linux_x86_64/nvidia-xconfig.1.gz
+rm _out/Linux_x86_64/nvidia-xconfig.unstripped
+/tmp/SBo/nvidia-settings-550.67/src/libXNVCtrl
+   CC           nvidia-modprobe.c
+   CC           common-utils/nvgetopt.c
+   CC           common-utils/common-utils.c
+   CC           common-utils/msg.c
+   CC           modprobe-utils/nvidia-modprobe-utils.c
+   CC           modprobe-utils/pci-sysfs.c
+   LINK         _out/Linux_x86_64/nvidia-modprobe.unstripped
+   STRIP        _out/Linux_x86_64/nvidia-modprobe
+   HOST_CC      gen-manpage-opts.c
+   HOST_CC      common-utils/gen-manpage-opts-helper.c
+   HOST_LINK    tmp/SBo/nvidia-modprobe-550.67/_out/Linux_x86_64/gen-manpage-opts
+   M4           nvidia-modprobe.1.m4
+gzip -9nf < _out/Linux_x86_64/nvidia-modprobe.1 > _out/Linux_x86_64/nvidia-modprobe.1.gz
+rm _out/Linux_x86_64/nvidia-modprobe.unstripped
+/tmp/SBo/nvidia-settings-550.67/src/libXNVCtrl
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+usr/bin/nvidia-uninstall	nvidia-installer
+usr/lib64/gbm/nvidia-drm_gbm.so	../libnvidia-allocator.so.1
+usr/lib64/libEGL_nvidia.so.0	libEGL_nvidia.so.550.67
+usr/lib64/libGLESv1_CM_nvidia.so.1	libGLESv1_CM_nvidia.so.550.67
+usr/lib64/libGLESv2_nvidia.so.2	libGLESv2_nvidia.so.550.67
+usr/lib64/libGLX_indirect.so.0	libGLX_nvidia.so.550.67
+usr/lib64/libGLX_nvidia.so.0	libGLX_nvidia.so.550.67
+usr/lib64/libcuda.so	libcuda.so.1
+usr/lib64/libcuda.so.1	libcuda.so.550.67
+usr/lib64/libcudadebugger.so.1	libcudadebugger.so.550.67
+usr/lib64/libnvcuvid.so	libnvcuvid.so.1
+usr/lib64/libnvcuvid.so.1	libnvcuvid.so.550.67
+usr/lib64/libnvidia-allocator.so	libnvidia-allocator.so.1
+usr/lib64/libnvidia-allocator.so.1	libnvidia-allocator.so.550.67
+usr/lib64/libnvidia-cfg.so	libnvidia-cfg.so.1
+usr/lib64/libnvidia-cfg.so.1	libnvidia-cfg.so.550.67
+usr/lib64/libnvidia-encode.so	libnvidia-encode.so.1
+usr/lib64/libnvidia-encode.so.1	libnvidia-encode.so.550.67
+usr/lib64/libnvidia-fbc.so	libnvidia-fbc.so.1
+usr/lib64/libnvidia-fbc.so.1	libnvidia-fbc.so.550.67
+usr/lib64/libnvidia-ml.so	libnvidia-ml.so.1
+usr/lib64/libnvidia-ml.so.1	libnvidia-ml.so.550.67
+usr/lib64/libnvidia-nvvm.so	libnvidia-nvvm.so.4
+usr/lib64/libnvidia-nvvm.so.4	libnvidia-nvvm.so.550.67
+usr/lib64/libnvidia-opencl.so.1	libnvidia-opencl.so.550.67
+usr/lib64/libnvidia-opticalflow.so	libnvidia-opticalflow.so.1
+usr/lib64/libnvidia-opticalflow.so.1	libnvidia-opticalflow.so.550.67
+usr/lib64/libnvidia-ptxjitcompiler.so	libnvidia-ptxjitcompiler.so.1
+usr/lib64/libnvidia-ptxjitcompiler.so.1	libnvidia-ptxjitcompiler.so.550.67
+usr/lib64/libnvoptix.so.1	libnvoptix.so.550.67
+usr/lib64/libvdpau_nvidia.so	vdpau/libvdpau_nvidia.so.550.67
+usr/lib64/vdpau/libvdpau_nvidia.so.1	libvdpau_nvidia.so.550.67
+usr/lib64/xorg/modules/extensions/libglxserver_nvidia.so	libglxserver_nvidia.so.550.67
+
+Making symbolic link creation script:
+( cd usr/bin ; rm -rf nvidia-uninstall )
+( cd usr/bin ; ln -sf nvidia-installer nvidia-uninstall )
+( cd usr/lib64/gbm ; rm -rf nvidia-drm_gbm.so )
+( cd usr/lib64/gbm ; ln -sf ../libnvidia-allocator.so.1 nvidia-drm_gbm.so )
+( cd usr/lib64 ; rm -rf libEGL_nvidia.so.0 )
+( cd usr/lib64 ; ln -sf libEGL_nvidia.so.550.67 libEGL_nvidia.so.0 )
+( cd usr/lib64 ; rm -rf libGLESv1_CM_nvidia.so.1 )
+( cd usr/lib64 ; ln -sf libGLESv1_CM_nvidia.so.550.67 libGLESv1_CM_nvidia.so.1 )
+( cd usr/lib64 ; rm -rf libGLESv2_nvidia.so.2 )
+( cd usr/lib64 ; ln -sf libGLESv2_nvidia.so.550.67 libGLESv2_nvidia.so.2 )
+( cd usr/lib64 ; rm -rf libGLX_indirect.so.0 )
+( cd usr/lib64 ; ln -sf libGLX_nvidia.so.550.67 libGLX_indirect.so.0 )
+( cd usr/lib64 ; rm -rf libGLX_nvidia.so.0 )
+( cd usr/lib64 ; ln -sf libGLX_nvidia.so.550.67 libGLX_nvidia.so.0 )
+( cd usr/lib64 ; rm -rf libcuda.so )
+( cd usr/lib64 ; ln -sf libcuda.so.1 libcuda.so )
+( cd usr/lib64 ; rm -rf libcuda.so.1 )
+( cd usr/lib64 ; ln -sf libcuda.so.550.67 libcuda.so.1 )
+( cd usr/lib64 ; rm -rf libcudadebugger.so.1 )
+( cd usr/lib64 ; ln -sf libcudadebugger.so.550.67 libcudadebugger.so.1 )
+( cd usr/lib64 ; rm -rf libnvcuvid.so )
+( cd usr/lib64 ; ln -sf libnvcuvid.so.1 libnvcuvid.so )
+( cd usr/lib64 ; rm -rf libnvcuvid.so.1 )
+( cd usr/lib64 ; ln -sf libnvcuvid.so.550.67 libnvcuvid.so.1 )
+( cd usr/lib64 ; rm -rf libnvidia-allocator.so )
+( cd usr/lib64 ; ln -sf libnvidia-allocator.so.1 libnvidia-allocator.so )
+( cd usr/lib64 ; rm -rf libnvidia-allocator.so.1 )
+( cd usr/lib64 ; ln -sf libnvidia-allocator.so.550.67 libnvidia-allocator.so.1 )
+( cd usr/lib64 ; rm -rf libnvidia-cfg.so )
+( cd usr/lib64 ; ln -sf libnvidia-cfg.so.1 libnvidia-cfg.so )
+( cd usr/lib64 ; rm -rf libnvidia-cfg.so.1 )
+( cd usr/lib64 ; ln -sf libnvidia-cfg.so.550.67 libnvidia-cfg.so.1 )
+( cd usr/lib64 ; rm -rf libnvidia-encode.so )
+( cd usr/lib64 ; ln -sf libnvidia-encode.so.1 libnvidia-encode.so )
+( cd usr/lib64 ; rm -rf libnvidia-encode.so.1 )
+( cd usr/lib64 ; ln -sf libnvidia-encode.so.550.67 libnvidia-encode.so.1 )
+( cd usr/lib64 ; rm -rf libnvidia-fbc.so )
+( cd usr/lib64 ; ln -sf libnvidia-fbc.so.1 libnvidia-fbc.so )
+( cd usr/lib64 ; rm -rf libnvidia-fbc.so.1 )
+( cd usr/lib64 ; ln -sf libnvidia-fbc.so.550.67 libnvidia-fbc.so.1 )
+( cd usr/lib64 ; rm -rf libnvidia-ml.so )
+( cd usr/lib64 ; ln -sf libnvidia-ml.so.1 libnvidia-ml.so )
+( cd usr/lib64 ; rm -rf libnvidia-ml.so.1 )
+( cd usr/lib64 ; ln -sf libnvidia-ml.so.550.67 libnvidia-ml.so.1 )
+( cd usr/lib64 ; rm -rf libnvidia-nvvm.so )
+( cd usr/lib64 ; ln -sf libnvidia-nvvm.so.4 libnvidia-nvvm.so )
+( cd usr/lib64 ; rm -rf libnvidia-nvvm.so.4 )
+( cd usr/lib64 ; ln -sf libnvidia-nvvm.so.550.67 libnvidia-nvvm.so.4 )
+( cd usr/lib64 ; rm -rf libnvidia-opencl.so.1 )
+( cd usr/lib64 ; ln -sf libnvidia-opencl.so.550.67 libnvidia-opencl.so.1 )
+( cd usr/lib64 ; rm -rf libnvidia-opticalflow.so )
+( cd usr/lib64 ; ln -sf libnvidia-opticalflow.so.1 libnvidia-opticalflow.so )
+( cd usr/lib64 ; rm -rf libnvidia-opticalflow.so.1 )
+( cd usr/lib64 ; ln -sf libnvidia-opticalflow.so.550.67 libnvidia-opticalflow.so.1 )
+( cd usr/lib64 ; rm -rf libnvidia-ptxjitcompiler.so )
+( cd usr/lib64 ; ln -sf libnvidia-ptxjitcompiler.so.1 libnvidia-ptxjitcompiler.so )
+( cd usr/lib64 ; rm -rf libnvidia-ptxjitcompiler.so.1 )
+( cd usr/lib64 ; ln -sf libnvidia-ptxjitcompiler.so.550.67 libnvidia-ptxjitcompiler.so.1 )
+( cd usr/lib64 ; rm -rf libnvoptix.so.1 )
+( cd usr/lib64 ; ln -sf libnvoptix.so.550.67 libnvoptix.so.1 )
+( cd usr/lib64 ; rm -rf libvdpau_nvidia.so )
+( cd usr/lib64 ; ln -sf vdpau/libvdpau_nvidia.so.550.67 libvdpau_nvidia.so )
+( cd usr/lib64/vdpau ; rm -rf libvdpau_nvidia.so.1 )
+( cd usr/lib64/vdpau ; ln -sf libvdpau_nvidia.so.550.67 libvdpau_nvidia.so.1 )
+( cd usr/lib64/xorg/modules/extensions ; rm -rf libglxserver_nvidia.so )
+( cd usr/lib64/xorg/modules/extensions ; ln -sf libglxserver_nvidia.so.550.67 libglxserver_nvidia.so )
+
+Unless your existing installation script already contains the code
+to create these links, you should append these lines to your existing
+install script. Now's your chance. :^)
+
+Would you like to add this stuff to the existing install script and
+remove the symbolic links ([y]es, [n]o)? y
+
+
+Removing symbolic links:
+removed './usr/lib64/libnvidia-fbc.so'
+removed './usr/lib64/libGLESv2_nvidia.so.2'
+removed './usr/lib64/xorg/modules/extensions/libglxserver_nvidia.so'
+removed './usr/lib64/libGLESv1_CM_nvidia.so.1'
+removed './usr/lib64/libnvidia-ml.so.1'
+removed './usr/lib64/libnvidia-allocator.so.1'
+removed './usr/lib64/libnvidia-opticalflow.so'
+removed './usr/lib64/libcudadebugger.so.1'
+removed './usr/lib64/libnvidia-cfg.so.1'
+removed './usr/lib64/libcuda.so.1'
+removed './usr/lib64/libnvoptix.so.1'
+removed './usr/lib64/gbm/nvidia-drm_gbm.so'
+removed './usr/lib64/libvdpau_nvidia.so'
+removed './usr/lib64/libnvidia-ptxjitcompiler.so.1'
+removed './usr/lib64/libnvidia-allocator.so'
+removed './usr/lib64/libnvcuvid.so'
+removed './usr/lib64/libnvidia-ml.so'
+removed './usr/lib64/libGLX_nvidia.so.0'
+removed './usr/lib64/libcuda.so'
+removed './usr/lib64/libnvidia-encode.so.1'
+removed './usr/lib64/libGLX_indirect.so.0'
+removed './usr/lib64/libnvidia-opticalflow.so.1'
+removed './usr/lib64/libnvidia-encode.so'
+removed './usr/lib64/libnvidia-nvvm.so'
+removed './usr/lib64/libnvidia-nvvm.so.4'
+removed './usr/lib64/libEGL_nvidia.so.0'
+removed './usr/lib64/libnvidia-cfg.so'
+removed './usr/lib64/libnvidia-opencl.so.1'
+removed './usr/lib64/vdpau/libvdpau_nvidia.so.1'
+removed './usr/lib64/libnvidia-ptxjitcompiler.so'
+removed './usr/lib64/libnvcuvid.so.1'
+removed './usr/lib64/libnvidia-fbc.so.1'
+removed './usr/bin/nvidia-uninstall'
+
+Updating your ./install/doinst.sh...
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root.root ([y]es, [n]o)? n
+
+Creating Slackware package:  /tmp/nvidia-driver-550.67-x86_64-1_SBo.tgz
+
+./
+etc/
+etc/OpenCL/
+etc/OpenCL/vendors/
+etc/OpenCL/vendors/nvidia.icd
+etc/X11/
+etc/X11/glvnd/
+etc/X11/glvnd/egl_vendor.d/
+etc/X11/glvnd/egl_vendor.d/10_nvidia.json
+etc/vulkan/
+etc/vulkan/icd.d/
+etc/vulkan/icd.d/nvidia_icd.json
+etc/vulkan/implicit_layer.d/
+etc/vulkan/implicit_layer.d/nvidia_layers.json
+install/
+install/doinst.sh
+install/slack-desc
+lib/
+lib/firmware/
+lib/firmware/nvidia/
+lib/firmware/nvidia/550.67/
+lib/firmware/nvidia/550.67/gsp_ga10x.bin
+lib/firmware/nvidia/550.67/gsp_tu10x.bin
+usr/
+usr/bin/
+usr/bin/nvidia-bug-report.sh
+usr/bin/nvidia-cuda-mps-control
+usr/bin/nvidia-cuda-mps-server
+usr/bin/nvidia-debugdump
+usr/bin/nvidia-installer
+usr/bin/nvidia-modprobe
+usr/bin/nvidia-ngx-updater
+usr/bin/nvidia-persistenced
+usr/bin/nvidia-powerd
+usr/bin/nvidia-settings
+usr/bin/nvidia-sleep.sh
+usr/bin/nvidia-smi
+usr/bin/nvidia-xconfig
+usr/doc/
+usr/doc/nvidia-driver-550.67/
+usr/doc/nvidia-driver-550.67/LICENSE
+usr/doc/nvidia-driver-550.67/NVIDIA_Changelog
+usr/doc/nvidia-driver-550.67/README.Slackware
+usr/doc/nvidia-driver-550.67/README.txt
+usr/doc/nvidia-driver-550.67/html/
+usr/doc/nvidia-driver-550.67/html/acknowledgements.html
+usr/doc/nvidia-driver-550.67/html/addressingcapabilities.html
+usr/doc/nvidia-driver-550.67/html/addtlresources.html
+usr/doc/nvidia-driver-550.67/html/appendices.html
+usr/doc/nvidia-driver-550.67/html/audiosupport.html
+usr/doc/nvidia-driver-550.67/html/commonproblems.html
+usr/doc/nvidia-driver-550.67/html/configlaptop.html
+usr/doc/nvidia-driver-550.67/html/configmultxscreens.html
+usr/doc/nvidia-driver-550.67/html/configtwinview.html
+usr/doc/nvidia-driver-550.67/html/depth30.html
+usr/doc/nvidia-driver-550.67/html/displaydevicenames.html
+usr/doc/nvidia-driver-550.67/html/dma_issues.html
+usr/doc/nvidia-driver-550.67/html/dpi.html
+usr/doc/nvidia-driver-550.67/html/dynamicboost.html
+usr/doc/nvidia-driver-550.67/html/dynamicpowermanagement.html
+usr/doc/nvidia-driver-550.67/html/editxconfig.html
+usr/doc/nvidia-driver-550.67/html/egpu.html
+usr/doc/nvidia-driver-550.67/html/faq.html
+usr/doc/nvidia-driver-550.67/html/flippingubb.html
+usr/doc/nvidia-driver-550.67/html/framelock.html
+usr/doc/nvidia-driver-550.67/html/gbm.html
+usr/doc/nvidia-driver-550.67/html/glxsupport.html
+usr/doc/nvidia-driver-550.67/html/gpunames.html
+usr/doc/nvidia-driver-550.67/html/gsp.html
+usr/doc/nvidia-driver-550.67/html/i2c.html
+usr/doc/nvidia-driver-550.67/html/index.html
+usr/doc/nvidia-driver-550.67/html/installationandconfiguration.html
+usr/doc/nvidia-driver-550.67/html/installdriver.html
+usr/doc/nvidia-driver-550.67/html/installedcomponents.html
+usr/doc/nvidia-driver-550.67/html/introduction.html
+usr/doc/nvidia-driver-550.67/html/kernel_open.html
+usr/doc/nvidia-driver-550.67/html/kms.html
+usr/doc/nvidia-driver-550.67/html/knownissues.html
+usr/doc/nvidia-driver-550.67/html/minimumrequirements.html
+usr/doc/nvidia-driver-550.67/html/newusertips.html
+usr/doc/nvidia-driver-550.67/html/ngx.html
+usr/doc/nvidia-driver-550.67/html/nvidia-debugdump.html
+usr/doc/nvidia-driver-550.67/html/nvidia-ml.html
+usr/doc/nvidia-driver-550.67/html/nvidia-peermem.html
+usr/doc/nvidia-driver-550.67/html/nvidia-persistenced.html
+usr/doc/nvidia-driver-550.67/html/nvidia-smi.html
+usr/doc/nvidia-driver-550.67/html/nvidiasettings.html
+usr/doc/nvidia-driver-550.67/html/openglenvvariables.html
+usr/doc/nvidia-driver-550.67/html/optimus.html
+usr/doc/nvidia-driver-550.67/html/powermanagement.html
+usr/doc/nvidia-driver-550.67/html/primerenderoffload.html
+usr/doc/nvidia-driver-550.67/html/procinterface.html
+usr/doc/nvidia-driver-550.67/html/profiles.html
+usr/doc/nvidia-driver-550.67/html/programmingmodes.html
+usr/doc/nvidia-driver-550.67/html/randr14.html
+usr/doc/nvidia-driver-550.67/html/retpoline.html
+usr/doc/nvidia-driver-550.67/html/selectdriver.html
+usr/doc/nvidia-driver-550.67/html/sli.html
+usr/doc/nvidia-driver-550.67/html/supportedchips.html
+usr/doc/nvidia-driver-550.67/html/vdpausupport.html
+usr/doc/nvidia-driver-550.67/html/wayland-issues.html
+usr/doc/nvidia-driver-550.67/html/xcompositeextension.html
+usr/doc/nvidia-driver-550.67/html/xconfigoptions.html
+usr/doc/nvidia-driver-550.67/html/xineramaglx.html
+usr/doc/nvidia-driver-550.67/html/xrandrextension.html
+usr/doc/nvidia-driver-550.67/html/xwayland.html
+usr/doc/nvidia-driver-550.67/nvidia-dbus.conf
+usr/doc/nvidia-driver-550.67/nvidia-driver.SlackBuild
+usr/doc/nvidia-driver-550.67/samples/
+usr/doc/nvidia-driver-550.67/samples/nvidia-persistenced-init.tar.bz2
+usr/doc/nvidia-driver-550.67/supported-gpus/
+usr/doc/nvidia-driver-550.67/supported-gpus/LICENSE
+usr/doc/nvidia-driver-550.67/supported-gpus/supported-gpus.json
+usr/lib64/
+usr/lib64/gbm/
+usr/lib64/libEGL_nvidia.so.550.67
+usr/lib64/libGLESv1_CM_nvidia.so.550.67
+usr/lib64/libGLESv2_nvidia.so.550.67
+usr/lib64/libGLX_nvidia.so.550.67
+usr/lib64/libcuda.so.550.67
+usr/lib64/libcudadebugger.so.550.67
+usr/lib64/libnvcuvid.so.550.67
+usr/lib64/libnvidia-allocator.so.550.67
+usr/lib64/libnvidia-api.so.1
+usr/lib64/libnvidia-cfg.so.550.67
+usr/lib64/libnvidia-egl-gbm.so.1.1.1
+usr/lib64/libnvidia-egl-wayland.so.1.1.13
+usr/lib64/libnvidia-eglcore.so.550.67
+usr/lib64/libnvidia-encode.so.550.67
+usr/lib64/libnvidia-fbc.so.550.67
+usr/lib64/libnvidia-glcore.so.550.67
+usr/lib64/libnvidia-glsi.so.550.67
+usr/lib64/libnvidia-glvkspirv.so.550.67
+usr/lib64/libnvidia-gpucomp.so.550.67
+usr/lib64/libnvidia-gtk2.so.550.67
+usr/lib64/libnvidia-gtk3.so.550.67
+usr/lib64/libnvidia-ml.so.550.67
+usr/lib64/libnvidia-ngx.so.550.67
+usr/lib64/libnvidia-nvvm.so.550.67
+usr/lib64/libnvidia-opencl.so.550.67
+usr/lib64/libnvidia-opticalflow.so.550.67
+usr/lib64/libnvidia-pkcs11-openssl3.so.550.67
+usr/lib64/libnvidia-pkcs11.so.550.67
+usr/lib64/libnvidia-ptxjitcompiler.so.550.67
+usr/lib64/libnvidia-rtcore.so.550.67
+usr/lib64/libnvidia-tls.so.550.67
+usr/lib64/libnvidia-wayland-client.so.550.67
+usr/lib64/libnvoptix.so.550.67
+usr/lib64/nvidia/
+usr/lib64/nvidia/wine/
+usr/lib64/nvidia/wine/_nvngx.dll
+usr/lib64/nvidia/wine/nvngx.dll
+usr/lib64/vdpau/
+usr/lib64/vdpau/libvdpau_nvidia.so.550.67
+usr/lib64/xorg/
+usr/lib64/xorg/modules/
+usr/lib64/xorg/modules/drivers/
+usr/lib64/xorg/modules/drivers/nvidia_drv.so
+usr/lib64/xorg/modules/extensions/
+usr/lib64/xorg/modules/extensions/libglxserver_nvidia.so.550.67
+usr/man/
+usr/man/man1/
+usr/man/man1/nvidia-cuda-mps-control.1.gz
+usr/man/man1/nvidia-installer.1.gz
+usr/man/man1/nvidia-modprobe.1.gz
+usr/man/man1/nvidia-persistenced.1.gz
+usr/man/man1/nvidia-settings.1.gz
+usr/man/man1/nvidia-smi.1.gz
+usr/man/man1/nvidia-xconfig.1.gz
+usr/share/
+usr/share/applications/
+usr/share/applications/nvidia-settings.desktop
+usr/share/egl/
+usr/share/egl/egl_external_platform.d/
+usr/share/egl/egl_external_platform.d/10_nvidia_wayland.json
+usr/share/egl/egl_external_platform.d/15_nvidia_gbm.json
+usr/share/icons/
+usr/share/icons/hicolor/
+usr/share/icons/hicolor/128x128/
+usr/share/icons/hicolor/128x128/apps/
+usr/share/icons/hicolor/128x128/apps/nvidia-settings.png
+usr/share/nvidia/
+usr/share/nvidia/nvidia-application-profiles-550.67-key-documentation
+usr/share/nvidia/nvidia-application-profiles-550.67-rc
+usr/share/pixmaps/
+usr/share/pixmaps/nvidia-settings.png
+var/
+var/log/
+var/log/nvidia-installer.log
+
+Slackware package /tmp/nvidia-driver-550.67-x86_64-1_SBo.tgz created.
+
+
++==============================================================================
+| Installing new package /tmp/nvidia-driver-550.67-x86_64-1_SBo.tgz
++==============================================================================
+
+Verifying package nvidia-driver-550.67-x86_64-1_SBo.tgz.
+Installing package nvidia-driver-550.67-x86_64-1_SBo.tgz:
+PACKAGE DESCRIPTION:
+# nvidia-driver (Proprietary Binary Nvidia Video Driver)
+#
+# This is the proprietary binary video driver from nvidia for
+# the x.org X server. This package does not include the kernel
+# module - it is included in the nvidia-kernel package.
+#
+# See /usr/doc/nvidia-driver-550.67/README.Slackware
+# for more information.
+#
+# https://www.nvidia.com
+#
+Executing install script for nvidia-driver-550.67-x86_64-1_SBo.tgz.
+Package nvidia-driver-550.67-x86_64-1_SBo.tgz installed.
+Cleaning for nvidia-driver-550.67...
+Verifying package nvidia-driver-550.67-x86_64-1_SBo.tgz.
+Installing package nvidia-driver-550.67-x86_64-1_SBo.tgz:
+PACKAGE DESCRIPTION:
+# nvidia-driver (Proprietary Binary Nvidia Video Driver)
+#
+# This is the proprietary binary video driver from nvidia for
+# the x.org X server. This package does not include the kernel
+# module - it is included in the nvidia-kernel package.
+#
+# See /usr/doc/nvidia-driver-550.67/README.Slackware
+# for more information.
+#
+# https://www.nvidia.com
+#
+Executing install script for nvidia-driver-550.67-x86_64-1_SBo.tgz.
+Package nvidia-driver-550.67-x86_64-1_SBo.tgz installed.
+Verifying package nvidia-kernel-550.67_6.6.27-x86_64-1_SBo.tgz.
+Installing package nvidia-kernel-550.67_6.6.27-x86_64-1_SBo.tgz:
+PACKAGE DESCRIPTION:
+# nvidia-kernel (Kernel Interface for the nvidia driver)
+#
+# This is the kernel module needed by the binary nvidia-driver.
+#
+Executing install script for nvidia-kernel-550.67_6.6.27-x86_64-1_SBo.tgz.
+Package nvidia-kernel-550.67_6.6.27-x86_64-1_SBo.tgz installed.
+
+WARNING: Unable to locate/open X configuration file.
+
+New X configuration file written to '/etc/X11/xorg.conf'
+
+bash-5.2# 
+

@@ -3,34 +3,24 @@
 # Assume these are not working yet.  I know installSoftware.sh does need some work.
 
 ## Introduction
-The purpose is to describe the scripts that will used to install the software and configure the system for slackware 15.0 distribution.
+The purpose to describe the scripts that will used to install the software and configure the system 
+for a slackware 15.0 distribution.
 
 ## Prerequisite
-A new version of slackware 15.0 This link provides the slackware 15.0 with the most current patches [Location of Slackware 15. with current patches](https://slackware.uk/people/alien-current-iso/slackware64-current-iso/).  For my machine grub has had a problem installing so I have been using ELILO.
-
-
-## Setup mount the drive the configuraiton scripts
-
-mkdir /mnt/transfer<br>
-mount /dev/sda1 /mnt/transfer
+A new version of slackware 15.0 installed and the scripts must be excecuted as the user root.
 
 ## Scripts
-Should be executed in the following order and must be executed aas root
+Should be executed in the following order.
 
-| Script                       | Description                                                                  |
-| :------------------          | :---------:                                                                  |
-| **Post Installation**        |                                                                              |
-| adduser.sh                   | Add a normal to the systeem.  Need one parameter login                       | 
-| giveUsersRootAccess.sh       | Allows normal user to execute root commands                                  |  
-| uncommentCurrentMirror.sh    | Uncomment the location where updates for slackware will be retrieved         |
-| **Upgrade to current**       |                                                                              |
-| writeBlockers.sh             | Block the kernel from being updated since it could cause the update to fail. |
-| update.sh                    | Updates the Slackware distro using slackpkg                                  |
-| **Setup SBOTools**           |                                                                              |
-| installSBOTools.sh           | Install SBO Tools to install new software                                    |
-| sboToolsConfigure.sh         | Configure SBO Tools                                                          |
-| **Install Nvidia**           |                                                                              |
-| installNvidia.sh             | Does not work with Hyprland yet                                              |
-| installSoftware.sh           | Install Software need for work and entertainment                             |
-| oneTimeConfigure.sh          | Execute commands needed after installation                                   |
-| configure.sh                 | Execute commands needed when a shell is started                              |
+| Script                    | Description                                      |
+| :------------------       | :---------:                                      |
+| adduser.sh                | Add a normal to the systeem.                     |
+| giveUsersRootAccess.sh    | Allows normal user to execute root commands      |  
+| uncommentCurrentMirror.sh | Does not work yet                                |
+| writeBlockers.sh          | Block the kernel from being updated              |
+| update.sh                 | Updates the Slackware distro                     |
+| installSBOTools.sh        | Install SBO Tools to install new software        |
+| installNvidia.sh          | Does not work with Hyprland yet                  |
+| installSoftware.sh        | Install Software need for work and entertainment |
+| oneTimeConfigure.sh       | Execute commands needed after installation       |
+| configure.sh              | Execute commands needed when a shell is started  |

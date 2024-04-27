@@ -20,3 +20,4 @@ brew install zsh
 brew install powerlevel10k
 brew install zsh-autosuggestions
 brew install zsh-fast-syntax-highlighting
+brew install --cask postman
