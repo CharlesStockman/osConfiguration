@@ -4,7 +4,7 @@ The purpose is to describe the scripts that will be used to install the software
 ## Prerequisite
 [Using the instructions](https://wiki.alpinelinux.org/wiki/Installation) install Alpine. 
 
-The first suprise was step 1 -- "to select the keyboard" and two selections need to made.  For my setup the<br> 
+The first suprise was selecting the keyboard and two selections need to made.  For my setup I used "us"for both answers.<br> 
   &emsp;**keymap:** is **us**<br>
   &emsp;**keymap:** is **layout** is **us**
 <hr>
@@ -17,20 +17,24 @@ The second surpise was the way the networking was configured.  When installing a
 
 It will take a few seconds, but the last line should discuss a lease being obtained.
 <hr>
-The third suprise was which NTP Clinent should be used.  I chose the default (chronu)<br>
 
+The third surprise was which time zone are you in.  Please do not select EST or your date will be one hour behind.<br>
+&emsp;**Which timezone are you in** is **America/New_York**
+<hr>
+
+The foruth suprise was which NTP Client should be used?  I chose the default (chrony)<br>
 &emsp;**Which NTP Client to run:** is **chrony**
 <hr>
 
-The fourth surprise was that it talked about which SSH Server to exeucte.<br>
+The fifth surprise was that it talked about which SSH Server to exeucte.<br>
 &emsp;**Which ssh server:** is **openssh**<br>
 <hr>
 
-The fifth surprise was that it ask if you want to allow root login.  I choose the default of prohibiting the password<br>
+The sixth surprise was that it ask if you want to allow root login.  I choose the default of prohibiting the password<br>
 &emsp;**Allow root ssh login:** is **prohibit-password**
 <hr>
 
-The Sixth surpise was that it asked how would you like to use it.  I choose "sys" which creates the boot, swap and "/" partition<br>
+The Seventh surpise was that it asked how would you like to use it.  I choose "sys" which creates the boot, swap and "/" partition<br>
 &emsp;**How would you like to use it:** is **sys**
 
 
