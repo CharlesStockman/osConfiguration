@@ -45,7 +45,7 @@ Should be executed in the following order.
 | Script                    | Description                                                        |
 | :------------------       | :---------:                                                        |
 | **Post Install**                                                                               |
-| adduser.sh                | Add a normal to the system.                                        |
+| adduser.sh                | Add a normal user to the system.                                   |
 | giveUsersRootAccess.sh    | Allows normal user to execute root commands                        |  
 | uncommentCurrentMirror.sh | Uncomments the last mirror to get access to the current repository | 
 | **Upgrade**                                                                                    |         
