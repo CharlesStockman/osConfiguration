@@ -49,7 +49,7 @@ Should be executed in the following order.
 | adduser.sh                | Add a normal user to the system.  (currently does not work         |
 | giveUsersRootAccess.sh    | Allows normal user to execute root commands                        |  
 | uncommentCurrentMirror.sh | Uncomments the last mirror to get access to the current repository | 
-| **Install Infrastructure  |                                                                    |
+| **Install Infrastructure**|                                                                    |
 | **Install Hardware**      |                                                                    | 
 | installNvidia.sh          | Install the Nvidida Drivers                                        |
 | **Install Software**                                                                           |
