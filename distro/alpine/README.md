@@ -44,19 +44,14 @@ Should be executed in the following order.
 
 | Script                    | Description                                                        |
 | :------------------       | :---------:                                                        |
+| intallSoftware.sh         | Install all the software that will be configured by the scripts    |
 | **Post Install**                                                                               |
-| adduser.sh                | Add a normal user to the system.                                   |
+| adduser.sh                | Add a normal user to the system.  (currently does not work         |
 | giveUsersRootAccess.sh    | Allows normal user to execute root commands                        |  
 | uncommentCurrentMirror.sh | Uncomments the last mirror to get access to the current repository | 
-| **Upgrade**                                                                                    |         
-| writeBlockers.sh          | Block the kernel from being updated                                |
-| update.sh                 | Updates the Slackware distro                                       |
-| **Updgrade to Current**                                                                        |
-| installSBOTools.sh        | Install SBO Tools to install new software                          |
-| sboToolsConfigure.sh      | Configrue SBO Tools                                                |
-| **Install Nvidia**        |                                                                    | 
+| **Install Infrastructure  |                                                                    |
+| **Install Hardware**      |                                                                    | 
 | installNvidia.sh          | Install the Nvidida Drivers                                        |
-| setModeSet.sh             | set nvidia-drm.modeset=1 for Hyprland to work                      |
 | **Install Software**                                                                           |
 | installSoftware.sh        | Install Software need for work and entertainment                   |
 | oneTimeConfigure.sh       | Execute commands needed after installation                         |
