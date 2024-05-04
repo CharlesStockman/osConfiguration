@@ -50,7 +50,9 @@ Should be executed in the following order.
 | giveUsersRootAccess.sh    | Allows normal user to execute root commands                        |  
 | uncommentCurrentMirror.sh | Uncomments the last mirror to get access to the current repository | 
 | **Install Infrastructure**|                                                                    |
-| **Install Hardware**      |                                                                    | 
+| installDbus.sh            | A message bus sytem that provides a mechanism for IPC              |
+| installElogind            | Integrates PAM to know the set of users that are logged in.        | 
+|**Install Hardware**       |                                                                    | 
 | installNvidia.sh          | Install the Nvidida Drivers                                        |
 | **Install Software**                                                                           |
 | installSoftware.sh        | Install Software need for work and entertainment                   |
