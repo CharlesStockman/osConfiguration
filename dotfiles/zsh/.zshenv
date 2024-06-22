@@ -7,3 +7,6 @@
 #fpath=( fpath=$(brew --prefix)/share/zsh-completions $fpath )
 
 export ZDOTDIR=`ls -l $HOME/.zshenv | awk '{print $NF}' | xargs dirname`
+
+#export PATH=/nix/var/nix/profiles/default/bin/nix:/opt/homebrew/bin:$PATH
+export PATH=/opt/homebrew/bin:$PATH
