@@ -1,7 +1,7 @@
 #
 # Install and configure elogoind
 #
-# Manages necesssary features foir most desktop environments and Wayland compsoitors and set XDG Environment Variables
+# Manages necesssary features for most desktop environments and Wayland compsoitors and set XDG Environment Variables
 #
 
 xbps-install --yes elogind

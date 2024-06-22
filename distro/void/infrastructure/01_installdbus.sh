@@ -1,7 +1,7 @@
 #
 # Intstall and Configure DBUS
 #
-# IPC mechanism used by ysersoace siftware ub KUbyx
+# Distributed IPC Mechanism used for prccess communication
 #
 xbps-install --yes dbus
 
