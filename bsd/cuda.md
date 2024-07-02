@@ -18,7 +18,7 @@
 &emsp;- Install FreeBSD with a Window Manager, Development Tools and AMD Graphic Drivers at a mininium<br/>
 &emsp;- Install RocM for Hip ( helps to understand AMD's CUDA )<br/>
 &emsp;- Find a Test Suite and understnad how much of the CUDA Language it understands<br/>
-&emps;- Find a collection of CUDA Executables to Test<br/>
+&emap;- Find a collection of CUDA Executables to Test<br/>
 &emsp;- Unserstand KLUDA and HIP.  Do they different probglems or the same problem.  KLUDA is for binaries and HIP is to compile<br/>
 &emsp;- Crete an install script and test script for the solution<br/>
 
