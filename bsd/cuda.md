@@ -6,13 +6,13 @@
 |Flow           |Path 1 : The computer is able to run CUDA Applications               |
 |               |Path 2 : The computer can compile the CUDA Language                  |
 |Pre-Conditions |The Actor ( Computer ) must have and AMD Chip                        |
-|Post-Condition |The Actor ( Computer ) can comile and run applicsations needing CUDA |
+|Post-Condition |The Actor ( Computer ) can compile and run applicsations needing CUDA |
 
 # Assumptions 
 &emsp;- All work will be using AMD Graphics<br/>
 &emsp;- Installation and Testing should be made as portable as possible.<br/>
 
-# High Level Deisgin
+# High Level Design
 
 ## List of Questions to be anwered.
 &emsp;- Install FreeBSD with a Window Manager, Development Tools and AMD Graphic Drivers at a mininium<br/>
