@@ -22,7 +22,7 @@ All the scripts should be run in root
 There some programs that are not in the void repositories since the void team is trying to maintain the integratity and make sure that the repositories are workng for the majority of the software.  However, 
 there is another to install software such as Wayland on the void.
 
-|Directory|Script|Explanantion|
-|---------|------|------------|
-|externalBuilds|buildExternal.sh|Creates the needed environment and compiles the software based on a template|
-|externalBuilds|InstallExtPackages.sh|Install the new created packages|
+|Directory|Script|Explanantion|Who Executes
+|---------|------|------------|------------|
+|externalBuilds|buildExternal.sh|Creates the needed environment and compiles the software based on a template| root |
+|externalBuilds|InstallExtPackages.sh|Install the new created packages| non root user |
