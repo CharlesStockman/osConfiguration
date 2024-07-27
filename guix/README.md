@@ -59,8 +59,11 @@ Boot the iso and the installer will be started.
 
 ### Modify the script created by the installer
 
-@Todo -- Attach the original file and the new
-
+Changes to made to use the NonGNU
+<ul>
+  <li>for the use-modules list add (nongnu packages linux) and (guix-channels)</li>
+  <li>After (operating-system add (kernel linux) and on the next line (firmware (list linux-firmware))</li>
+</ul>
 (use-modules (guix-channels))
 
 Install the new distribution
@@ -68,6 +71,7 @@ Install the new distribution
 /mnt -= where we install the distributions ex. /mnt at the end of teh command 
 
 ```sh
+# time-machine -- tell GUIX to use the specified channels and have time machine call sytem init installed on /mnt
 guix time-machine -C /mnt/etc/channels.scm -- system init /mnt/etc/config.scm /mnt
 ```
 
