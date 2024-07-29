@@ -64,14 +64,14 @@ Changes to made to use the NonGNU
   <li>for the use-modules list add (nongnu packages linux) and (guix-channels)</li>
   <li>After (operating-system add (kernel linux) and on the next line (firmware (list linux-firmware))</li>
 </ul>
-(use-modules (guix-channels))
 
 Install the new distribution
--- means passing along system init /mnt/etc/config.scm /mtn
-/mnt -= where we install the distributions ex. /mnt at the end of teh command 
+
 
 ```sh
 # time-machine -- tell GUIX to use the specified channels and have time machine call sytem init installed on /mnt
+# "--" means passing along system init /mnt/etc/config.scm /mnt
+# /mnt is where the new installation will be installed.
 guix time-machine -C /mnt/etc/channels.scm -- system init /mnt/etc/config.scm /mnt
 ```
 
