@@ -65,13 +65,18 @@ Changes to made to use the NonGNU
   <li>After (operating-system add (kernel linux) and on the next line (firmware (list linux-firmware))</li>
 </ul>
 
-Install the new distribution
+Install the New Distribution
 
 
 ```sh
 # time-machine -- tell GUIX to use the specified channels and have time machine call sytem init installed on /mnt
 # "--" means passing along system init /mnt/etc/config.scm /mnt
 # /mnt is where the new installation will be installed.
+
+Update the Configuration
+```sh
+guix pull
+```
 guix time-machine -C /mnt/etc/channels.scm -- system init /mnt/etc/config.scm /mnt
 ```
 
