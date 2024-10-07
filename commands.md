@@ -8,9 +8,9 @@
 
 ## Unix Command Line Commands 
 ## Commands providing Information about the systems
-|Command|Description|
-|-------|-----------|
-| lsblk | A commands that dispaly the devide id, size and mountpoint |
+|Command|Description|Example
+|-------|-----------|---------|
+| lsblk | A commands that dispaly the devide id, size and mountpoint and label | lsblk -f |
 
 ## Commands used in installation
 
@@ -27,6 +27,11 @@
 |fatlabel | Adds a label to a partition with a microsoft filesystem (ex. vfat ) | fatlabel /dev/nvme0n1p1 "BOOT" | 
 |e2label  | Adds a label to a partition with a linux filesystem (ex. ext2/ext3/ext4 ) | e2label /dev/nvme0n1p2 "Gentoo" | 
 |swaplabel | Adds a label to a partition with a swap filesystem ( ex. swap filesystem ) | swaplabel /dev/nvme0n1p3 -L "Swap" |
+
+### Swap Partition Commands
+|Command|Description| example |
+|-------|-----------|---------|
+|swapon | Enable device and files for paging and swapping | swapon /dev/nvme0n1p3 |
 
 ## Distro Commands 
 
