@@ -11,6 +11,7 @@
 |Command|Description|Example
 |-------|-----------|---------|
 | lsblk | A commands that dispaly the devide id, size and mountpoint and label | lsblk -f |
+| swapon | Displays information about the file and partition | swapon --summary |
 
 ## Commands used in installation
 
