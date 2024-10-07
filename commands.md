@@ -12,15 +12,23 @@
 |-------|-----------|
 | lsblk | A commands that dispaly the devide id, size and mountpoint |
 
-## Distro Commands 
+## Commands used in installation
 
-### Creating Filesystems
-
+### Creating Filesystems on partitions
 |Command|Description| example |
 |-------|-----------|---------|
-|mkfs.vfat | Create a Fat32 File System on the specific partition | mkfs.vfat -F 32 /dev/nvme0n1p |
-|mkfs.ext4 | Create an ext4 File System on the specific partition | mkfs.ext4 /dev/nvme0n1p       |
-|mkswap    | Create a  swap file system on a specific partition   | mkswap /dev/nvme0n1p          |
+|mkfs.vfat | Create a Fat32 File System on the specific partition | mkfs.vfat -F 32 /dev/nvme0n1p1 |
+|mkfs.ext4 | Create an ext4 File System on the specific partition | mkfs.ext4 /dev/nvme0n1p2       |
+|mkswap    | Create a  swap file system on a specific partition   | mkswap /dev/nvme0n1p3          |
+
+### Adding a human readable string to each partition
+|Command|Description| example |
+|-------|-----------|---------|
+|fatlabel | Adds a label to a partition with a microsoft filesystem (ex. vfat ) | fatlabel /dev/nvme0n1p1 "BOOT" | 
+|e2label  | Adds a label to a partition with a linux filesystem (ex. ext2/ext3/ext4 ) | e2label /dev/nvme0n1p2 "Gentoo" | 
+|swaplabel | Adds a label to a partition with a swap filesystem ( ex. swap filesystem ) | swaplabel /dev/nvme0n1p3 -L "Swap" |
+
+## Distro Commands 
 
 ### Void
 
