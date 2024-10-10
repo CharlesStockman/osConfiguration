@@ -7,6 +7,14 @@
 | fwsetup | At Grub Window click "c" to get to the command line<br>fwsetup will send you to the bios program. 
 
 ## Unix Command Line Commands 
+
+## Commands for accessing web including web
+|Command|Description|Example|
+|-------|-----------|---------|
+|curl   | Retrieve the contents of a text file and send it to STDOUT | `curl -s http://www.gtlib.gatech.edu/pub/gentoo/releases/amd64/autobuilds/latest-stage3-amd64-nomultilib-openrc.txt |
+|curl   | download a file | curl $url --output /mnt/gentoo/stage3.xz |
+|tar    | Extract an archive | tar xpvf stage3.xz --xattrs-include='*.*' --numeric-owner ; rm /mnt/gentoo/stage3.xz ) |
+
 ## Commands providing Information about the systems
 |Command|Description|Example
 |-------|-----------|---------|
@@ -54,4 +62,18 @@
 |sv status /var/service/* | Show all services and their status ( running or not )|
 | ln -s /etc/sv/dbus /var/service | Starts a service at startup |
 | sv start <service> | Start the service now.|
+
+<!--
+## Shell one liners
+|Code|Description|
+|----|-----------|
+|[-d /mnt/gentoo[] || mkdir --parents /mnt/gentoo | If /mnt/gentoo does exist then create the directory or directories |
+-->
+
+## Commands Described Later
+<ul>
+  <li>mount</li>
+  <li>grep</li>
+  <li>cut</li>
+</ul>
 
