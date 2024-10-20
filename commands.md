@@ -8,7 +8,7 @@
 
 ## Unix Command Line Commands 
 
-## Commands for accessing web including web
+## Commands for accessing web 
 |Command|Description|Example|
 |-------|-----------|---------|
 |curl   | Retrieve the contents of a text file and send it to STDOUT | `curl -s http://www.gtlib.gatech.edu/pub/gentoo/releases/amd64/autobuilds/latest-stage3-amd64-nomultilib-openrc.txt |
@@ -20,6 +20,7 @@
 |-------|-----------|---------|
 | lsblk | A commands that dispaly the devide id, size and mountpoint and label | lsblk -f |
 | swapon | Displays information about the file and partition | swapon --summary |
+| nproc | Print the number of processing units available to the current process, which may be less than the number of online processors | nproc |
 
 ## Commands used in installation
 
