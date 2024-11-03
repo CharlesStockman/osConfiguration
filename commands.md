@@ -18,6 +18,7 @@
 ## Commands providing Information about the systems
 |Command|Description|Example
 |-------|-----------|---------|
+| Free  | Get the memory in Gigabytes ( Return an Integer ) | free --giga \| awk 'NR==2 { print $2 / 2 )' |
 | lsblk | A commands that dispaly the devide id, size and mountpoint and label | lsblk -f |
 | swapon | Displays information about the file and partition | swapon --summary |
 | nproc | Print the number of processing units available to the current process, which may be less than the number of online processors | nproc |
