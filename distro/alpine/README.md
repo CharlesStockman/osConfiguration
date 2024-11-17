@@ -62,9 +62,9 @@ Configure SSH Server executable.<br>
 <hr>
 
 Configure the disk -- choose "sys" which creates the boot, swap and "/" partition<br>
-**which disk(s) would you like ot use ( or '?' for help or 'none')[none]** is **nvme0n1** -- Choose first disk from list of "Available disks" above
-&emsp;**How would you like to use it:** is **sys**
-&emsp;**Erase the avove disk(s) and continue (y/n) [n]** is **y**
+**which disk(s) would you like ot use ( or '?' for help or 'none')[none]** is **nvme0n1** -- Choose first disk from list of "Available disks" above<br>
+&emsp;**How would you like to use it:** is **sys**<br>
+&emsp;**Erase the avove disk(s) and continue (y/n) [n]** is **y**<br>
 <br>
 
 reboot
