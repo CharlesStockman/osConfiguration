@@ -61,13 +61,15 @@ Configure SSH Server executable.<br>
 &emsp'**Enter ssh key or URL for root (or 'none') [none]** is **none**
 <hr>
 
-Configure the disk -- choose "sys" which creates the boot, swap and "/" partition<br>
-**which disk(s) would you like ot use ( or '?' for help or 'none')[none]** is **nvme0n1** -- Choose first disk from list of "Available disks" above<br>
+Configure the disk<br> 
+Choose "sys" which creates the boot, swap and "/" partition<br>
+Choose thye disk from list of "Available disks" above<br>
+&emsp;**which disk(s) would you like ot use ( or '?' for help or 'none')[none]** is **nvme0n1**<br>
 &emsp;**How would you like to use it:** is **sys**<br>
 &emsp;**Erase the avove disk(s) and continue (y/n) [n]** is **y**<br>
 <br>
 
-reboot
+Exeucte the command reboot
 
 ## Create User
 
@@ -80,6 +82,7 @@ Provide the login<br>
 **Enter ssh key or URL** is **none**
 
 ### Provide Root Access for the user
-
-
-
+doas -- Related to sudo, but is more lightweight and secure
+adduser <username> wheel 
+apk add doas 
+echo "permit persist :wheel" > /etc/doas.d/doas.conf
