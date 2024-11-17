@@ -41,6 +41,7 @@ Configure the time zone are you in.  Please do not select EST or your date will 
 
 Configure the Proxy<br>
 &emsp;**Http/FTP proxy URL (e.g. 'http://proxy:8000' or 'none')[none]** is **none**
+<hr>
 
 Configure NTP Client?  I chose the default (chrony)<br>
 &emsp;**Which NTP Client to run:** is **chrony**
@@ -60,30 +61,25 @@ Configure SSH Server executable.<br>
 &emsp'**Enter ssh key or URL for root (or 'none') [none]** is **none**
 <hr>
 
-The Seventh surpise was that it asked how would you like to use it.  I choose "sys" which creates the boot, swap and "/" partition<br>
+Configure the disk -- choose "sys" which creates the boot, swap and "/" partition<br>
+**which disk(s) would you like ot use ( or '?' for help or 'none')[none]** is **nvme0n1** -- Choose first disk from list of "Available disks" above
 &emsp;**How would you like to use it:** is **sys**
+&emsp;**Erase the avove disk(s) and continue (y/n) [n]** is **y**
+<br>
 
+reboot
 
+## Create User
 
-## Scripts
-Should be executed in the following order.
+Execute setup-user command to confgiure a new user with root privileges ( wheel group )
 
-| Script                    | Description                                                        |
-| :------------------       | :---------:                                                        |
-| intallSoftware.sh         | Install all the software that will be configured by the scripts    |
-| **Post Install**                                                                               |
-| adduser.sh                | Add a normal user to the system.  (currently does not work         |
-| giveUsersRootAccess.sh    | Allows normal user to execute root commands                        |  
-| uncommentCurrentMirror.sh | Uncomments the last mirror to get access to the current repository | 
-| **Install Infrastructure**|                                                                    |
-| installDbus.sh            | A message bus sytem that provides a mechanism for IPC              |
-| installElogind            | Integrates PAM to know the set of users that are logged in.        | 
-|**Install Hardware**       |                                                                    | 
-| installNvidia.sh          | Install the Nvidida Drivers                                        |
-| **Install Software**                                                                           |
-| installSoftware.sh        | Install Software need for work and entertainment                   |
-| oneTimeConfigure.sh       | Execute commands needed after installation                         |
-| configure.sh              | Execute commands needed when a shell is started                    |
+Provide the login<br>
+**Setup a user? (enter a lower-case loginame, or 'no')** is **cstockman**
+**Full name for user** is **Charles Stockman**
+**New Password:** is **Enter your password**
+**Enter ssh key or URL** is **none**
+
+### Provide Root Access for the user
 
 
 
