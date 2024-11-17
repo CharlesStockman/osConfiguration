@@ -67,22 +67,22 @@ Choose thye disk from list of "Available disks" above<br>
 &emsp;**which disk(s) would you like ot use ( or '?' for help or 'none')[none]** is **nvme0n1**<br>
 &emsp;**How would you like to use it:** is **sys**<br>
 &emsp;**Erase the avove disk(s) and continue (y/n) [n]** is **y**<br>
-<br>
+<hr>
 
 Exeucte the command reboot
 
 ## Create User
 
 Execute setup-user command to confgiure a new user with root privileges ( wheel group )
-
-Provide the login<br>
-**Setup a user? (enter a lower-case loginame, or 'no')** is **cstockman**
-**Full name for user** is **Charles Stockman**
-**New Password:** is **Enter your password**
-**Enter ssh key or URL** is **none**
+&emsp;**Setup a user? (enter a lower-case loginame, or 'no')** is **cstockman**<br/>
+&emsp;**Full name for user** is **Charles Stockman**<br/>
+&emsp;**New Password:** is **Enter your password**<br/>
+&emsp;**Enter ssh key or URL** is **none**
+<hr>
 
 ### Provide Root Access for the user
-doas -- Related to sudo, but is more lightweight and secure
-adduser <username> wheel 
-apk add doas 
-echo "permit persist :wheel" > /etc/doas.d/doas.conf
+doas -- Related to sudo, but is more lightweight and secure<br/>
+&emsp;**adduser <username> wheel<br/>** 
+&emsp;**apk add doas<br/>** 
+&emsp;**echo "permit persist :wheel" > /etc/doas.d/doas.conf**
+<hr>
