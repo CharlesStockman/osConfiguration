@@ -86,7 +86,7 @@ doas -- Related to sudo, but is more lightweight and secure<br/>
 &emsp;**apk add doas<br/>** 
 &emsp;**echo "permit persist :wheel" > /etc/doas.d/doas.conf**
 <hr>
-
+-+
 ## Enable Community Repostiory
 
 Decided to not work from the edge repository since I want to focus on learning commands and want to use this as a daily driver.
@@ -106,3 +106,7 @@ cat /etc/apk/repostiories and the line that end in community should not be comme
 </ol>
 
 ### Installing Low Level Applications
+|Command|Description|
+|-------|-----------|
+|apk add mesa-dri-gallium | necessary Mesa drivers.|
+|apk add mesa-va-galliumm | VA-API drivers, for hardware accelerated video encoding and decoding |
