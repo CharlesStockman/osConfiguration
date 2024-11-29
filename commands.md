@@ -117,3 +117,6 @@ security, and prevents applications from directly manipulating critical system r
 |Component|Description|
 |---------|-----------|
 |Direct Rendering Manager (DRM) | A Linux component that manages access to graphics hardware<br><br>The Kernel Mode Setting (KMS) is a part of the DRM system that sets the video mode in kernel space instead of userspace. Further, KMS configures and initializes the graphics hardware on boot and dynamically.<br><br>&emsp;&emsp;This flexibility also enables proper error handling and output.<br><br>&emsp;&emsp;To ensure we use KMS, we should disable kernel options such as vga, video, and other framebuffer drivers such as ubesafb.<br><br>&emsp;&emsp;KMS executes at or right after the initramfs boot stage.
+
+## VP-API
+An open source application programming interface that allows applications such as VLC media player or GStreamer to use hardware video acceleration capabilities, usually provided by the graphics processing unit (GPU). It is implemented by the free and open-source library libva, combined with a hardware-specific driver, usually provided together with the GPU driver.
