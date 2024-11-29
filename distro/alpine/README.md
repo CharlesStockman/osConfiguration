@@ -96,10 +96,13 @@ Add Community Repository<br>
 
 cat /etc/apk/repostiories and the line that end in community should not be commented
 
-## Adding some extra software for the Graphics Section
-In the instructions for the graphics section the lspci was used, but it is not installed on the system
+## Adding Low Level Graphic Drviers for Wayland
+### Install KMS
+<ol>
+  <li>Add the radeon or amdgpu and fbcon modules to /etc/modules: echo amdgpu >> /etc/modules ; echo fbcon >> /etc/modules</li>
+  <li>Enable the kms feature by adding *kms* to the features variable, e.g., Contents of /etc/mkinitfs/mkinitfs.conf</li>
+  <li>Execute mkinitfs</li>
+  <li>Reboot to test the configuration</li>
+</ol>
 
-Add pciutils
-&emsp;**apk add pciutils**
-
-Check /usr/bin for lspci
+### Installing Low Level Applications
