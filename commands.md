@@ -111,3 +111,9 @@ User space is the memory area where user-level applications and processes run. I
 When a user application needs to perform a system-level operation (like reading a file or network communication), it makes a system call. This transitions the process from 
 user space to kernel space, where the kernel performs the requested operation, and then returns control back to the user space.This separation ensures system stability, 
 security, and prevents applications from directly manipulating critical system resources.
+
+## Linux Components
+
+|Component|Description|
+|---------|-----------|
+|Direct Rendering Manager (DRM) | A Linux component that manages access to graphics hardware<br><br>The Kernel Mode Setting (KMS) is a part of the DRM system that sets the video mode in kernel space instead of userspace. Further, KMS configures and initializes the graphics hardware on boot and dynamically.<br><br>&emsp;&emsp;This flexibility also enables proper error handling and output.<br><br>&emsp;&emsp;To ensure we use KMS, we should disable kernel options such as vga, video, and other framebuffer drivers such as ubesafb.<br><br>&emsp;&emsp;KMS executes at or right after the initramfs boot stage.
