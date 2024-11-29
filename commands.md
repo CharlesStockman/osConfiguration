@@ -79,3 +79,35 @@
   <li>cut</li>
 </ul>
 
+# Notes
+
+## Kernel Space vs User Space
+
+### Kernel Space:
+Kernel space is a privileged memory area where the operating system's core (the kernel) runs. This is where the most critical and sensitive operations of the computer 
+system take place. In kernel space:
+
+<ol>
+<li>The operating system has full hardware access</li>
+<li>Low-level system operations are performed</li>
+<li>Device drivers runL</li>
+<li>Memory management occurs</li>
+<li>Process scheduling is handled</li>
+<li>System calls are processed</li>
+</ol>
+
+User Space:
+User space is the memory area where user-level applications and processes run. It's a restricted environment with limited access to system resources. In user space:
+
+<ol>
+<li>Regular applications execute</li>
+<li>Processes have limited privileges</li>
+<li>Direct hardware access is prevented</li>
+<li>Memory is protected from other processes</li>
+<li>Applications communicate with the kernel through system calls</li>
+</ol>
+
+### Interaction Process:
+When a user application needs to perform a system-level operation (like reading a file or network communication), it makes a system call. This transitions the process from 
+user space to kernel space, where the kernel performs the requested operation, and then returns control back to the user space.This separation ensures system stability, 
+security, and prevents applications from directly manipulating critical system resources.
