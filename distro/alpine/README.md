@@ -96,7 +96,7 @@ Add Community Repository<br>
 
 cat /etc/apk/repostiories and the line that end in community should not be commented
 
-## Adding Low Level Graphic Drviers for Wayland
+## Adding Low Level Graphic Drivers for Wayland
 ### Install KMS
 <ol>
   <li>Add the radeon or amdgpu and fbcon modules to /etc/modules: echo amdgpu >> /etc/modules ; echo fbcon >> /etc/modules</li>
