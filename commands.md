@@ -55,6 +55,11 @@
 | xbps-query --list-pkgs | list all installed packages|
 | xbps-query --yes <package> | Installs a packages |
 
+### Alpine
+|Command|Descriptions|
+|-----|-------------|
+| apk update | Updates the system based on the information found in /etc/apk/repositories ( repsoitories and alpine version ) |
+
 ## Init 
 
 ### RC
