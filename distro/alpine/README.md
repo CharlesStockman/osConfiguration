@@ -105,8 +105,15 @@ cat /etc/apk/repostiories and the line that end in community should not be comme
   <li>Reboot to test the configuration</li>
 </ol>
 
-### Installing Low Level Applications
+### Installing Low Level Graphic Drivers
 |Command|Description|
 |-------|-----------|
 |apk add mesa-dri-gallium | necessary Mesa drivers.|
 |apk add mesa-va-galliumm | VA-API drivers, for hardware accelerated video encoding and decoding |
+
+## Setup for Latest Updates
+<li>vi /etc/apk/repositories and change the version # to the "latest-stable"/li>
+<li>Whenever you want to update then execute the following commands</li>
+```
+apk update
+```
