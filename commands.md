@@ -58,7 +58,7 @@
 ### Alpine
 |Command|Descriptions|
 |-----|-------------|
-| apk update | Updates the list of available softeafre based on the information found in /etc/apk/repositories ( repsoitories and alpine version ) |
+| apk update  | Updates the list of available software based on the information found in /etc/apk/repositories ( repsoitories and alpine version ) |
 | apk upgrade | upgrades the system from the lsit of software that was retrieved from apk update |
 
 ## Init 
