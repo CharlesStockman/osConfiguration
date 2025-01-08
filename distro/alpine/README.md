@@ -114,6 +114,10 @@ cat /etc/apk/repostiories and the line that end in community should not be comme
 ## Setup for Latest Updates
 <li>vi /etc/apk/repositories and change the version # to the "latest-stable"/li>
 <li>Whenever you want to update then execute the following commands</li>
+
 ```
 apk update
 ```
+
+## Future Plans
+I have decided to experiment with GUIX and will only be using Alpine for software that I cannot get from GUIX and installing flatpak.
