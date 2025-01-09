@@ -23,3 +23,7 @@ The init system will autotmatically execute guix-daemon ( A daemon used for buil
   chmod +x guix-install.sh
   sudo ./guix-install.sh
 ```
+
+### Questions Asked While Installing
+<li>Ask for password to perform root commands </li>
+<li></li>
