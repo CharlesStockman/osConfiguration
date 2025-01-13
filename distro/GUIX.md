@@ -16,6 +16,10 @@ Currently my use of GUIX will be the primary location where I get most of my pac
 
 The init system will autotmatically execute guix-daemon ( A daemon used for building and installing packages from GUIX)
 
+### Prerequisites 
+<li>bash</li>
+<li>xz</li>
+
 ## Install gui
 ```
   cd /tmp
@@ -25,5 +29,10 @@ The init system will autotmatically execute guix-daemon ( A daemon used for buil
 ```
 
 ### Questions Asked While Installing
-<li>Ask for password to perform root commands </li>
-<li></li>
+<li>Ask for password to perform root commands (answer enter password)</li>
+<li>Press Return which acts a pause to read the information</li>
+<li>(Twoice for 2 differetnt keys)Ask Permission to instrall the public key required for verification of Guix binary signature (answer should be yes)</li>
+<li><Would you like the Guix deaemon to automatically discover substitute servers on the local network (answer no)/li>
+<li>Permit downloading pre-build package binares fromt he broject's build farms? (answer yes)</li>
+<li>Customize user's bash shell prompt for Guix [Y/n]</li>
+
