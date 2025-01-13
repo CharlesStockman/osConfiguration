@@ -64,6 +64,7 @@
 
 ### Guix
 |Command|Description|
+|-------|-----------|
 |guix install <softwre> | install the package |
 
 ## Init 
