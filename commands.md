@@ -65,7 +65,8 @@
 ### Guix
 |Command|Description|
 |-------|-----------|
-|guix install <softwre> | install the package |
+|guix install <softwre> | install the package and execute source ~/.guix-profile/etc/profile to execute the command from the command line|
+|guix package -I        | check if a package has been install locally |
 
 ## Init 
 
