@@ -7,6 +7,7 @@ Currently my use of GUIX will be the primary location where I get most of my pac
 ### Architecture 
 <li>All packages built and installed  will be stored in the /gnu/store</li>
 <li>Creates different users on the system to do parallel builds.</li>
+<li>Whenever a package is installed by a user the dependencies are download so the application can be isolated from the system.</li>
 
 ### Init Systems Supported by GUI
 <li>systemd</li>
