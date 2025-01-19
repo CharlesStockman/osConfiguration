@@ -1,6 +1,6 @@
 # GUIX as a Package Manager
 
-## Introduciton
+## Introduction
 
 Currently my use of GUIX will be the primary location where I get most of my packages.  For now, I will be using GUIX package manger on two foreign distributions: Alpine Linux and Nitrux.
 
@@ -27,6 +27,7 @@ The init system will autotmatically execute guix-daemon ( A daemon used for buil
   wget https://git.savannah.gnu.org/cgit/guix.git/plain/etc/guix-install.sh
   chmod +x guix-install.sh
   sudo ./guix-install.sh
+```
 
 ### Questions Asked While Installing
 <li>Ask for password to perform root commands (answer enter password)</li>
