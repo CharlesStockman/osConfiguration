@@ -21,13 +21,12 @@ The init system will autotmatically execute guix-daemon ( A daemon used for buil
 <li>bash</li>
 <li>xz</li>
 
-## Install gui
+## Install Guix
 ```
   cd /tmp
   wget https://git.savannah.gnu.org/cgit/guix.git/plain/etc/guix-install.sh
   chmod +x guix-install.sh
   sudo ./guix-install.sh
-```
 
 ### Questions Asked While Installing
 <li>Ask for password to perform root commands (answer enter password)</li>
@@ -40,4 +39,20 @@ The init system will autotmatically execute guix-daemon ( A daemon used for buil
 
 #### <b>Notes</b>
 <li>Import keys Before running: wget https://sv.gnu.org/people/viewgpg.php?user_id=15145' -q0 - | sudo -i gpg --improt -</li>
+
+## Configure Guix for a user
+```
+guix pull
+guix upgrade
+```
+
+## Install Docker
+```
+  guix install dockerd
+  guix install docker
+  guix install docker-cli
+
+  user: doas usermod -ag docker <username>
+```
+
 
