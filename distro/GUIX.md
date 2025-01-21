@@ -56,4 +56,13 @@ guix upgrade
   user: doas usermod -ag docker <username>
 ```
 
+## Install AMD Roc
+|Package|Description|
+|-------|-----------|
+|rocm-opencl-runtime| Install Opencl |
+|rocm-comgr| ???                     |
+|rocm-cmake| ???                     |
+|rocm-bandwidth-test| ???            |
+|rocm-device-libs| ???               |
+|rocr-runtime| ???                   |
 
