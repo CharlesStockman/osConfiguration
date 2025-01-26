@@ -23,6 +23,11 @@
 | swapon | Displays information about the file and partition | swapon --summary |
 | nproc | Print the number of processing units available to the current process, which may be less than the number of online processors | nproc |
 
+## Commands for Rocm 
+| Command | Description |
+|---------|-------------|
+| rocminfo | Displays data about Hetrogenous System Archictecture: Attributes and Agents ( devices ) |
+
 ## Commands used in installation
 
 ### Creating Filesystems on partitions
