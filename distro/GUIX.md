@@ -65,4 +65,6 @@ guix upgrade
 |rocm-bandwidth-test| ???            |
 |rocm-device-libs| ???               |
 |rocr-runtime| ???                   |
+|rocminfo    | Displays data about Hetrogenous System Archictecture: Attributes and Agents ( devices ) |
 
+However, this still not install hipcc 
