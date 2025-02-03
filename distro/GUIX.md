@@ -38,9 +38,6 @@ The init system will autotmatically execute guix-daemon ( A daemon used for buil
 <li>Customize user's bash shell prompt for Guix (anser no)</li>
 <br>
 
-#### <b>Notes</b>
-<li>Import keys Before running: wget https://sv.gnu.org/people/viewgpg.php?user_id=15145' -q0 - | sudo -i gpg --improt -</li>
-
 ## Configure Guix for a user
 ```
 guix pull
