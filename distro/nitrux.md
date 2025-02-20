@@ -9,13 +9,15 @@ In order to install Nitrux Os, the following instructions should be used [Nitrux
 # Configuration
 ## FlatPak
 Nitrux has flatpak installed by default and will be used for the following purposes:
-&emsp;&emsp;<li>Install Software where the source code is not needed.</li>
-&emsp;&emps;<li>Install Software that you want to evaluate</li>
+<ol>
+<li>Install Software where the source code is not needed.</li>
+<li>Install Software that you want to evaluate</li>
+</ol>
 
 Also flatpak is already configured to retrieve flatpaks from flathub.
 
 ## Dock ( Plasma Panels )
 ### Adding an Applications to the Doc
 Goto the Application Launcher ( Should be first item on the of the dock ) and click to get a list of applictions.  Select the application and drag onto the dock
-### Dekete an Application on the Doc
+### Delete an Application on the Doc
 Rigt Click on the applicaiton on the doc and select "Unpin From Task Manager"
