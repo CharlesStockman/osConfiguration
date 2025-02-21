@@ -15,6 +15,10 @@ Nitrux has flatpak installed by default and will be used for the following purpo
 
 Also flatpak is already configured to retrieve flatpaks from flathub.
 
+|Purpose|Command|
+|-------|-------|
+|Install Software | flatpak --assumeyes install flathub org.libreoffice.LibreOffice |
+
 ## Dock ( Plasma Panels )
 ### Adding an Applications to the Doc
 Goto the Application Launcher ( Should be first item on the of the dock ) and click to get a list of applictions.  Select the application and drag onto the dock
