@@ -18,6 +18,15 @@ Also flatpak is already configured to retrieve flatpaks from flathub.
 |Purpose|Command|
 |-------|-------|
 |Install Software | flatpak --assumeyes install flathub org.libreoffice.LibreOffice |
+|List flatpaks on local drive | flatpak list |
+|Search for flatpaks in flathub | flatpak search <search string> |
+
+###
+Notes on flatpak
+|Flatpak|Issue|Solution|
+|-------|-----|--------|
+|Zed|Had trouble running in wayland | execute env WAYLAND_DISPLAY=$WAYLAND_DISPLAY|
+|Helix| Had trouble running in wayland | execute env WAYLAND_DISPLAY=$WAYLAND_DISPLAY flatpak run com.helix_editor.Helix|
 
 ## Dock ( Plasma Panels )
 ### Adding an Applications to the Doc
