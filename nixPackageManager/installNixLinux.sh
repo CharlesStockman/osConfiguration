@@ -3,5 +3,11 @@
 # On nonsystemd systems it must be isntalled for each user on the system
 #
 
-sh <(curl -L https://nixos.org/nix/install) --no-daemon
+# Initial Install
+curl -L https://nixos.org/nix/install.sh
+sh ./install.sh --no-daemon 
+
+# Execute
+. /home/cstockman/.nix-profile/etc/profile.d/nix.sh
+
 
