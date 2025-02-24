@@ -7,7 +7,7 @@
 curl -L https://nixos.org/nix/install.sh
 sh ./install.sh --no-daemon 
 
-# Execute
+# Execute the initialization script
 . /home/cstockman/.nix-profile/etc/profile.d/nix.sh
 
 
