@@ -72,6 +72,7 @@
 |-------|-----------|
 |guix install <softwre> | install the package and execute source ~/.guix-profile/etc/profile to execute the command from the command line|
 |guix package -I        | check if a package has been install locally |
+|guix package -A        | List available packages |
 |guix describe          | Displays information about the channels configured ( Guix will always be configured by default ).  Provides info about the repository, current commit and branch |
 |guix pull list-generations | Displays each generation of all channels the system is configrued for and for each generation includes the (repository, branch, commit ) |
 
