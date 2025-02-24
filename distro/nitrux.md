@@ -33,3 +33,7 @@ Notes on flatpak
 Goto the Application Launcher ( Should be first item on the of the dock ) and click to get a list of applictions.  Select the application and drag onto the dock
 ### Delete an Application on the Doc
 Rigt Click on the applicaiton on the doc and select "Unpin From Task Manager"
+
+## Nix
+Problem : Guix is not installing on Nitrux, so I had to install Nix.
+[Nix Installation Instructions](../nixPackageManager/installNixLinux.sh)
