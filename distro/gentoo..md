@@ -29,7 +29,7 @@ The purpose of this document is to explain how Gentoo was installed on my comput
 
 | Section | Description                                                                                               | Link                                       |
 |---------|-----------------------------------------------------------------------------------------------------------|--------------------------------------------|
-| Basic   | Installs a basic linux system including kernel, boot loader, Terminal and timezone/language configuration | [ Basic Installation ](installationBasic) |
+| Basic   | Installs a basic linux system including kernel, boot loader, Terminal and timezone/language configuration | [ Basic Installation ](installationBasic.md) |
 
 The original directions are found in the Gentoo Handbook at: 
 [Gentoo Handbook](https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/Media)
