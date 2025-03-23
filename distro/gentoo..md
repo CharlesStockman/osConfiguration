@@ -62,8 +62,8 @@ Script to create the Gentoo the installation transferred using USB.
 <ol>
     <li>Research which filesystem ( ext4, btfs, jfs... ) will provide more value than ext4 </li>
     <li>03_Setting-the-Date.sh -- The time is not correct it is given in UTC, but the conervsion to EST is the wrong time.</li>
-    <li>04_Install_Stage_3.sh is not able to download the latest stage3 compessed file which is a bug.  Can we generate this dynamically ?</i>
-    <li>05_Modify_Make_Conf.sh</li>li>
+    <li>04_Install_Stage_3.sh is not able to download the latest stage3 compessed file which is a bug.  Can generate this dynamically ?</i>
+    <li>05_Modify_Make_Conf.sh</li>
     <li>Understand the differences between GCC and CLANG.  Which is the best for the Linux Distribution </li>
     <li>Calculate the number of compilations min ( # of threads , memory / 2 -- for the -J number of threads </li>
     <li>For kernel building lookat the Hybrid and Full Manual approach</li>
