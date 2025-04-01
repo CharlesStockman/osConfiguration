@@ -79,8 +79,6 @@ GENTOO_MIRRORS -- Where the source and binary builds metadata are retrieved.
 
 <b>Action</b>Execute 05_Modify_Make_Conf.sh <br>
 <b>Result</b>Verify that /mnt/gentoo/portage/make.conf has march=native<br>
-<b>Action</b>Execute 05_Create_Repos_Conf.sh<br>
-<b>Result</b>Verify that /mnt/gentoo/etc/portage/repos.conf/gentoo.conf exist
 
 ### Copy DNS Information to /etc
 
