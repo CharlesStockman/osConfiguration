@@ -68,12 +68,12 @@ For MakeOpts --jobs -- How many parallel compilations should happen when install
 
 <b>No actions defined for this informational section</b>
 
-### Configuring make.conf and Creating gentoo.conf
+### Configuring make.conf
 
 In this section the following done 
 > * Select number of parallel computations 
 > * Find and Configure the best mirros
-> * Copy the files needed for getting metadata from the mirrors
+> * Added the compile options for C, C++ and Rust
 
 GENTOO_MIRRORS -- Where the source and binary builds metadata are retrieved.
 
@@ -87,6 +87,8 @@ GENTOO_MIRRORS -- Where the source and binary builds metadata are retrieved.
 
 ### Mounting the necessary filesystems
 
+<b>This step is not longer necessary and has beeen replaces with arch-chroot /mnt/gentoo</b>
+
 | Filesystem | Description                                                                                |
 |------------|--------------------------------------------------------------------------------------------|
 | /proc/     | pseudo filesystem from which the linux kernel exposes information to the environment       |
@@ -94,7 +96,6 @@ GENTOO_MIRRORS -- Where the source and binary builds metadata are retrieved.
 | /dev/      | A regular files system partially managed by a Linux device mangager ( example udev )       |
 | /run/      | A temporary file system used for the files genernated at run time ( ex. PID files or locks |
 
-<b>Action</b> Execute 07_Mount_FileSystems.sh
 
 ## Chroot Operations 
 
