@@ -104,17 +104,17 @@ GENTOO_MIRRORS -- Where the source and binary builds metadata are retrieved.
 Root will be changed from the USB to the drive where GENTOO will be installed.  To gain access the install scripts 
 follow the instructions in the section : "Create the Mount Point" 
 
-<b>Actual</b>:  execute . ./10_After_Chroot.sh 
+<b>Actual</b>:  execute . ./07_Chroot.sh and ./08_After_Chroot.sh 
 <b>Reason</b>: Verify the prompt starts with : (chroot) (livecd)
 
 ## Post Chroot
 
 ### Mount the Boot Partition
 
-Important when compiling the kernel and installing the bootloader
+Important when installing the bootloader
 
 <b>Actual</b>: Execute 11_Mount_Boot.sh
-<b>Reason</b>: Execute df and verify /boot is present
+<b>Reason</b>: Execute df and verify /efi is present
 
 ### Update the Gentoo Ebuild Directory
 
