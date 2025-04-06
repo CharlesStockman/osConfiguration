@@ -78,6 +78,12 @@
 |guix describe          | Displays information about the channels configured ( Guix will always be configured by default ).  Provides info about the repository, current commit and branch |
 |guix pull list-generations | Displays each generation of all channels the system is configrued for and for each generation includes the (repository, branch, commit ) |
 
+### Gentoo
+|Command|Description|
+|-------|-----------|
+|eselect news list | list all new articles |
+
+
 ## Init 
 
 ### RC
