@@ -66,6 +66,7 @@ Script to create the Gentoo the installation transferred using USB.
     <li>05_Modify_Make_Conf.sh: Understand more about compiler options and other languages such as linux</li>
     <li>Understand the differences between GCC and CLANG.  Which is the best for the Linux Distribution </li>
     <li>Calculate the number of compilations min ( # of threads , memory / 2 -- for the -J number of threads ) </li>
+    <li>The profile number may be different each time.  We might need to create an iso to bypass those first instructions</li>
     <li>For kernel building lookat the Hybrid and Full Manual approach</li>
     <li>Dynamically create an fstab</li>
     <li>For <*> the output decribe the rules for the correct passwd it consuing so get rid of it.</li>
