@@ -82,7 +82,12 @@
 |Command|Description|
 |-------|-----------|
 |eselect news list | list all new articles |
+|esleect profile list | list all profiles |
 
+### Use Flags 
+|Flag|Desicrption|Reason for use|
+|----|-----------|--------------|
+|nls|Add Native Language Support (using gettext - GNU locale utilities) | Need for the initial build (md) |
 
 ## Init 
 
