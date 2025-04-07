@@ -113,20 +113,26 @@ follow the instructions in the section : "Create the Mount Point"
 
 Important when installing the bootloader
 
-<b>Actual</b>: Execute 11_Mount_Boot.sh
+<b>Actual</b>: Execute 09_Mount_Boot.sh
 <b>Reason</b>: Execute df and verify /efi is present
 
 ### Update the Gentoo Ebuild Directory
 
 Update the Gentoo Ebuild directory with the metadata about the ebuilds available
 
-<b>Action</b>: Execute 12_Ebuild_Repository.sh<br>
+At this step you can read the new with such commands as 
+<li>eselect news list</li>
+<li></li>
+
+<b>Action</b>: Execute 10_Ebuild_Repository.sh<br>
 <b>Result</b>: Make sure there was no error messages
 
 ### Choosing the right profile and Update the World
  
 A profile specifies the USE, CFLAGS and other important variables.  It also locks the system to a certain range of 
-package versions.  An example of the profile is the one that I have selected: 
+package versions.  To see all profiles execute "eselect profile list". 
+
+<b>Need to verfiy this, but the numbers may change and may need to verify the profile number</b>
 
 @world set = system set + selected set
 system set = packages required for a standard software package to run
@@ -135,14 +141,14 @@ select set = installed by the user
 The list of profiles can be viewed using : eselect profile list<br>
 The list of use variables: root #less /var/db/repos/gentoo/profiles/use.desc
 
-<b>Action</b> Execute 13_Update_world.sh
+<b>Action</b> Execute 11_Update_world.sh
 <b>Result</b> Verify that there are no errors
 
 ### Configure for the Timezone
 
-Select a timezone from /usr/share/zoneinfo.  An Example my timezone is US/Eastern
+Select a timezone from /usr/share/zoneinfo.  An Example: my timezone is US/Eastern
 
-<b>Action</b> Execute 14_Timezone.sh
+<b>Action</b> Execute 12_Timezone.sh
 <b>Result</b> Verify there are no errors
 
 ### Configure for the locale
@@ -153,8 +159,8 @@ A locale is the the language that the computer will use for the display and the 
     <li>Display the date and times using the correct format</li>
 </ul>
 
-<b>Action</b> Execute 15_Locale.sh
-<b>Result</b> verify that /etc/env.d/02locale has the locale selected
+<b>Action</b> Execute 13_Local_Language.sh
+<b>Result</b> verify there are no errors
 
 ### Configure the kernel
 
