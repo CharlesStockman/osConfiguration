@@ -67,6 +67,8 @@ Script to create the Gentoo the installation transferred using USB.
     <li>Understand the differences between GCC and CLANG.  Which is the best for the Linux Distribution </li>
     <li>Calculate the number of compilations min ( # of threads , memory / 2 -- for the -J number of threads ) </li>
     <li>The profile number may be different each time.  We might need to create an iso to bypass those first instructions</li>
+    <li>Investigate -- move the creation of the fstab first since the firmware might find it helpful to know this information </li>
+    <li>Investigate -- move the installing the kernel before the firmware since the firmst seems to need it.
     <li>For kernel building lookat the Hybrid and Full Manual approach</li>
     <li>Dynamically create an fstab</li>
     <li>For <*> the output decribe the rules for the correct passwd it consuing so get rid of it.</li>
