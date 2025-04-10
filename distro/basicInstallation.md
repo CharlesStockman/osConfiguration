@@ -182,8 +182,8 @@ when I configure my own kernel.
 | emerge --depclean                                             | Reclaim disk pages by trimming stale packages |
 | emerge --prune sys-kernel/gentoo-kernel sys-kernel/gentoo-bin | clean up old kernel versions                  |
 
-<b>Action</b>: Execute 16_Install_firmware.sh
-<b>Action</b>: Execute 17_kernel.sh
+<b>Action</b>: Execute 14_Install_firmware.sh
+<b>Action</b>: Execute 15_kernel.sh
 
 ### Copy the fstab
 
@@ -192,7 +192,7 @@ file system.
 
 The script will copy the aleread create fstab to /etc/fstab.
 
-<b>Action</b> execute 18_Create_fstab.h
+<b>Action</b> execute 16_Create_fstab.h
 
 ### Configure the network
 
