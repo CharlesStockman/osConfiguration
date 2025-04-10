@@ -71,7 +71,7 @@ Script to create the Gentoo the installation transferred using USB.
     <li>Investigate -- move the installing the kernel before the firmware since the firmst seems to need it.
     <li>For kernel building lookat the Hybrid and Full Manual approach</li>
     <li>Dynamically create an fstab</li>
-    <li>For <*> the output decribe the rules for the correct passwd it consuing so get rid of it.</li>
+    <li>For <*> the output decribe the rules for the correct passwd it consuing so get rid of the stdout and verify that the password has been changed.</li>
     <li>Select a Looger : Select sysklogd, syslog-ng, metalog</li>
     <li>Which cron to use cronie, dcron, fcron,bcron</li>
     <li>You might get a warning stating that the /etc/localtime can be changed to a 
