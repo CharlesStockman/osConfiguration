@@ -13,9 +13,7 @@
 |-------|-----------|---------|
 |curl   | Retrieve the contents of a text file and send it to STDOUT | `curl -s http://www.gtlib.gatech.edu/pub/gentoo/releases/amd64/autobuilds/latest-stage3-amd64-nomultilib-openrc.txt |
 |curl   | download a file | curl $url --output /mnt/gentoo/stage3.xz |
-|tar    | Extract an archive | tar xpvf stage3.xz --xattrs-include='*.*' --numeric-owner ; rm /mnt/gentoo/stage3.xz ) |
-
-## Commands providing Information about the systems
+|tar    | Extract an archive | tar xpvf stage3.xz --xattrs-include='*.*' --numeric-owner |
 |Command|Description|Example
 |-------|-----------|---------|
 | Free  | Get the memory in Gigabytes ( Return an Integer ) | free --giga \| awk 'NR==2 { print $2 / 2 )' |
