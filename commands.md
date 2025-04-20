@@ -14,6 +14,9 @@
 |curl   | Retrieve the contents of a text file and send it to STDOUT | `curl -s http://www.gtlib.gatech.edu/pub/gentoo/releases/amd64/autobuilds/latest-stage3-amd64-nomultilib-openrc.txt |
 |curl   | download a file | curl $url --output /mnt/gentoo/stage3.xz |
 |tar    | Extract an archive | tar xpvf stage3.xz --xattrs-include='*.*' --numeric-owner |
+
+## Informational Commands
+
 |Command|Description|Example
 |-------|-----------|---------|
 | Free  | Get the memory in Gigabytes ( Return an Integer ) | free --giga \| awk 'NR==2 { print $2 / 2 )' |
@@ -49,47 +52,10 @@
 
 ## Distro Commands 
 
-### Void
-
-|Command|Descriptions|
-|-------|------------|
-| xbps-install --sync --update --yes | update the system|
-| xbps-query --repository <package name> | Get information about a single package |
-| xbps-query --list-pkgs | list all installed packages|
-| xbps-query --yes <package> | Installs a packages |
-
-### Alpine
-|Command|Descriptions|
-|-----|-------------|
-| apk add <software> | Installs Software |
-| apk update  | Updates the list of available software based on the information found in /etc/apk/repositories ( repsoitories and alpine version ) |
-| apk upgrade | upgrades the system from the lsit of software that was retrieved from apk update |
-
-### Guix
-|Command|Description|
-|-------|-----------|
-|guix install <softwre> | install the package and execute source ~/.guix-profile/etc/profile to execute the command from the command line|
-|guix package -I        | check if a package has been install locally |
-|guix package -A        | List available packages |
-|guix describe          | Displays information about the channels configured ( Guix will always be configured by default ).  Provides info about the repository, current commit and branch |
-|guix pull list-generations | Displays each generation of all channels the system is configrued for and for each generation includes the (repository, branch, commit ) |
-
-## Init 
-
-### RC
-
-|Command|Description|
-|-------|-----------|
-|sv status /var/service/* | Show all services and their status ( running or not )|
-| ln -s /etc/sv/dbus /var/service | Starts a service at startup |
-| sv start <service> | Start the service now.|
-
-<!--
 ## Shell one liners
 |Code|Description|
 |----|-----------|
 |[-d /mnt/gentoo[] || mkdir --parents /mnt/gentoo | If /mnt/gentoo does exist then create the directory or directories |
--->
 
 ## Commands Described Later
 <ul>
@@ -97,6 +63,9 @@
   <li>grep</li>
   <li>cut</li>
 </ul>
+
+## Init 
+
 
 # Notes
 
