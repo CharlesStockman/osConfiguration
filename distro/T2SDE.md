@@ -36,5 +36,25 @@ The purpose is to allow the selection of the installation source
 ## Stage 2
 Install the systems
 
-On the command enter install which will take to a window
+<li>On the command enter stone to start the GUI Installer</li><br>
+
+<b>Select one of the following keyboard mappings</b>
+&emsp;<li>Select US</li>
+
+<b>Storge Setup: Partitions and Mount Ports</b>
+<ol>
+<li>Select UEFI partition and select "mount existing ext4 filesystem" to bring up the "Mount Device" Dialog Box</li>
+<li>In the "Mount Device" Diaglog Device verify "/boot/efi" is present and click ok</li>
+<li>Select partition will contain the programs/data and select "mount existing ext4 filesystem" to bring up the "Mount Device" Dialog Box</li>
+<li>In the "Mount Device" Diaglog Device verify "/" is present and click ok</li>
+</ol>
+
+<b>On the screen from pervious instructions</b>
+<ol>
+  <li>Select "Install the sytem ... to bring up the "Package Management" Dialog Box"</li>
+  <li>Select "Start gasgui Package Manager (recommended) to bring up "Select and de-select packages." "</li>
+  <li>Select "All Packages and Select the finsh button"</li>
+</ol>
+
+
 
