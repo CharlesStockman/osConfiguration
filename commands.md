@@ -23,6 +23,7 @@
 | lsblk | A commands that dispaly the devide id, size and mountpoint and label | lsblk -f |
 | swapon | Displays information about the file and partition | swapon --summary |
 | nproc | Print the number of processing units available to the current process, which may be less than the number of online processors | nproc |
+| id  | displays the uid, gid and groups | id root |
 
 ## Commands for Rocm 
 | Command | Description |
