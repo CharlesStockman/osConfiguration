@@ -4,13 +4,24 @@ Overall the installation can be asily done by an intermediate or advnace linux d
 less than an hour
 
 ## First Steps 
-<b>Perform the initial list of packages</b>
+<b>Download the initial list of packages</b>
 
 ```
 (cd /usr/src/t2-src ; t2 up  )
 ```
 
-<b>Create an user for the system (provides shell, groups and creates home directory</b>
+<b>Configure your system</b>
+Ths tools will let you Optimize the system, select the kernel, Retry buidling broken pagckages, Create debug information and much more.
+
+<b>Upgrade the system</b>
+
+```
+cd /sur/src/t2-src
+t2 up
+t2 upgrade
+```
+
+<b>Create an user for the system (provides shell, groups and creates home directory)</b>
 ```
 sh createCstockmanUser.sh
 ```
@@ -19,5 +30,8 @@ sh createCstockmanUser.sh
 |Command|Description|
 |-------|-----------|
 |( cd /usr/src/t2-src ; t2 up ) | Download/Updates the iniital source packages |
-|( cd /usr/src/t2-src ; ./scripts/Emerge-Pkg neofech | Installs a package      |
+|( cd /usr/src/t2-src ; ./scripts/Emerge-Pkg neofetch | Installs a package     |
 
+# Packages Installed 
+<li>git</li>
+&emsp;<li>asscidoc -- Convert asciidoc content to html5 </li>
