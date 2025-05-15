@@ -34,6 +34,11 @@ sh createCstockmanUser.sh
 |( cd /usr/src/t2-src ; t2 up ) | Download/Updates the iniital source packages |
 |( cd /usr/src/t2-src ; ./scripts/Emerge-Pkg neofetch | Installs a package     |
 
-# Packages Installed 
-<li>git</li>
-&emsp;<li>asscidoc -- Convert asciidoc content to html5 </li>
+# Packages Installed
+
+| package | optionals | Built |
+|---------|-----------|-------|
+| git     | list not recorded | Yes |
+| python  | none              | Yes |
+| bat     | none              | No  |
+| eza     | none              | No  | 
