@@ -15,6 +15,8 @@ Ths tools will let you Optimize the system, select the kernel, Retry buidling br
 
 <b>Upgrade the system</b>
 
+Before doing the first upgrade of the system then Python should be installed or there are certain packages that will not be installed.
+
 ```
 cd /sur/src/t2-src
 t2 up
