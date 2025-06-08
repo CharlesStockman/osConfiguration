@@ -7,7 +7,7 @@
 #
 # -F -- Force
 
-drive=/dev/nvme0np
+drive=/dev/nvme0n1p
 partition1=${drive}1
 partition2=${drive}2
 partition3=${drive}3
