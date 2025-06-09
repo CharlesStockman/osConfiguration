@@ -2,22 +2,20 @@
 
 ## Introduction
 
-Install GUIX modularity.  For exmaple, could install direclty to hardware or WSL2
+Install GUIX modularity.  For example, could install directly to hardware or WSL2
 
 ### Architecture 
 <li>All packages built and installed  will be stored in the /gnu/store</li>
 <li>Creates different users on the system to do parallel builds.</li>
-<li>Whenever a package is installed by a user the dependencies are download so the application can be isolated from the system.</li>
+<li>Whenever a user installs a package the dependencies are download so the application can be isolated from the system.</li>
 
-The init system will autotmatically execute guix-daemon ( A daemon used for building and installing packages from GUIX)
+The init system will automatically execute guix-daemon ( A daemon used for building and installing packages from GUIX)
 
 ## Install Guix
 
 <li>download https://ftpmirror.gnu.org/gnu/guix/guix-system-install-1.4.0.x86_64-linux.iso">x86_64 and burn to iso</li>
 <li>Assumption: The partitions have created earlier --  format the partitions using: sh ../scripts/fileTypeForPartition.sh</li>
-<li></li>
 
-<
 <br><br>
 ### Questions Asked While Installing
 <li>Ask for password to perform root commands (answer enter password)</li>
