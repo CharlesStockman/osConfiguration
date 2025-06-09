@@ -2,33 +2,23 @@
 
 ## Introduction
 
-Currently my use of GUIX will be the primary location where I get most of my packages.  For now, I will be using GUIX package manger on two foreign distributions: Alpine Linux and Nitrux.
+Install GUIX modularity.  For exmaple, could install direclty to hardware or WSL2
 
 ### Architecture 
 <li>All packages built and installed  will be stored in the /gnu/store</li>
 <li>Creates different users on the system to do parallel builds.</li>
 <li>Whenever a package is installed by a user the dependencies are download so the application can be isolated from the system.</li>
 
-### Init Systems Supported by GUI
-<li>systemd</li>
-<li>OpenRC</li>
-<li>sysv-init</li>
-<li>upstart</li>
-
 The init system will autotmatically execute guix-daemon ( A daemon used for building and installing packages from GUIX)
 
-### Prerequisites 
-<li>bash</li>
-<li>xz</li>
-
 ## Install Guix
-```
-  cd /tmp
-  wget https://git.savannah.gnu.org/cgit/guix.git/plain/etc/guix-install.sh
-  chmod +x guix-install.sh
-  sudo ./guix-install.sh
-```
 
+<li>download https://ftpmirror.gnu.org/gnu/guix/guix-system-install-1.4.0.x86_64-linux.iso">x86_64 and burn to iso</li>
+<li>Assumption: The partitions have created earlier --  format the partitions using: sh ../scripts/fileTypeForPartition.sh</li>
+<li></li>
+
+<
+<br><br>
 ### Questions Asked While Installing
 <li>Ask for password to perform root commands (answer enter password)</li>
 <li>Press Return which acts a pause to read the information</li>
