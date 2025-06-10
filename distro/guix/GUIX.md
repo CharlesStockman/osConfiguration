@@ -9,12 +9,53 @@ Install GUIX modularity.  For example, could install directly to hardware or WSL
 <li>Creates different users on the system to do parallel builds.</li>
 <li>Whenever a user installs a package the dependencies are download so the application can be isolated from the system.</li>
 
+#### Definitions
+%base-packages
+%base-services
+
+#### Base Services
+<b>Core System Services:</b>
+| Service | Description |
+|---------|-------------|
+|shepherd-root-service | The init system/service manager|
+|user-processes-service | Manages user login processes |
+|host-name-service | Sets the system hostname |
+|mingetty-service | Provides login prompts on virtual terminals (tty1, tty2, etc.) |
+|nscd-service | Name service cache daemon for DNS lookups |
+|syslog-service |  System logging daemon |
+|urandom-seed-service |  Entropy/random number generation |
+|guix-service - The Guix daemon for package management
+
+<b>File System Services:</b>
+| Service | Description |
+|---------|-------------|
+| root-file-system-service |  Mounts the root filesystem |
+| file-system-service | Handles other filesystem mounts |
+| user-unmount-service | Unmounts user filesystems on shutdown |
+
+<b>Hardware Support:</b>
+| Service | Description |
+|---------|-------------|
+| udev-service |  Device management |
+| console-font-service |  Console font configuration |
+
+
+
 The init system will automatically execute guix-daemon ( A daemon used for building and installing packages from GUIX)
 
 ## Install Guix
 
+<b>Assumptions</b>
+<ol>
+  <li>Create partition 1 for UFFI</li>
+  <li>Create partition 2 for swap</li>
+  <li>Create partition 3 for root which contains configration, work and executable files </li>
+</ol>
+
 <li>download https://ftpmirror.gnu.org/gnu/guix/guix-system-install-1.4.0.x86_64-linux.iso">x86_64 and burn to iso</li>
-<li>Assumption: The partitions have created earlier --  format the partitions using: sh ../scripts/fileTypeForPartition.sh</li>
+<li>Format the partitions using: sh ../scripts/fileTypeForPartition.sh</li>
+<li>Mount and turn the swap on by executing sh ../scripts/setup_filesystems.sh</li>
+<li>instal_system.sh</li>
 
 <br><br>
 ### Questions Asked While Installing
