@@ -10,7 +10,7 @@ Install GUIX modularity.  For example, could install directly to hardware or WSL
 <li>Whenever a user installs a package the dependencies are download so the application can be isolated from the system.</li>
 
 #### Definitions
-%base-packages
+%base-packages<br>
 %base-services
 
 #### Base Services
