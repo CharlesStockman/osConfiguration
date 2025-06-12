@@ -52,9 +52,10 @@ The init system will automatically execute guix-daemon ( A daemon used for build
 </ol>
 
 <b>Installation</b>
-<li>download https://ftpmirror.gnu.org/gnu/guix/guix-system-install-1.4.0.x86_64-linux.iso">x86_64 and burn to iso</li>
-<li>Inser the boot usb and mount the ubs with the installation files ( ex. fileTypeForPartition.sh )
-<li>Format the partitions using: sh ../scripts/fileTypeForPartition.sh</li>
+<li>download <a href="https://ftpmirror.gnu.org/gnu/guix/guix-system-install-1.4.0.x86_64-linux.iso">GUIX Installer</a> and burn to an USB Stick</li>
+<li>Insert the boot usb so a terminal appears</li>
+<li>( mkdir -p /mnt/transfer ; mount /dev/sdb1 /mnt/ransfer )</li>
+<li>Format the partitions using: ( cd /mnt/transfer/osconfiguration/distro/guix/scripts ; sh fileTypeForPartition.sh)</li>
 <li>Mount and turn the swap on by executing sh ../scripts/setup_filesystems.sh</li>
 <li>sh ../install_system.sh</li>
 <li>reboot the system</li>
