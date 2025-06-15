@@ -8,9 +8,9 @@
              (gnu services)
              (gnu services networking)
              (gnu system file-systems)
-             (gnu system users)
              (gnu system shadow)
-             (gnu system linux-initrd))
+             (gnu system linux-initrd)
+	     (gnu packages linux))
 
 (operating-system
   (locale "en_US.utf8")

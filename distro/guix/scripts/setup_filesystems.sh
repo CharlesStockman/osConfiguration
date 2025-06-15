@@ -1,8 +1,13 @@
 #!/bin/sh
 
-mount /dev/nvme0n1p3 /mnt
+boot="/dev/nvme0n1p1"
+swap="/dev/nvme0n1p2"
+work="/dev/nvme0n1p3"
+
+mount $work /mnt
 
 mkdir -p /mnt/boot/efi
-mount /dev/nvme0n1p1 /mnt/boot/efi
+mount $boot /mnt/boot/efi
 
-swapon /dev/nvme0n1p2
+mkswap $swap 
+swapon $swap
