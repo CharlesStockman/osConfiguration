@@ -62,6 +62,7 @@ The init system will automatically execute guix-daemon ( A daemon used for build
 <b>Install</b>
 <li>Format the partitions using: ( cd /mnt/transfer/distro/guix/scripts ; sh fileTypeForPartition.sh)</li>
 <li>Mount and turn the swap on by using: ( cd /mnt/transfer/disto/guix/scripts ; sh setup_filesystems.sh)</li>
+<li>Setup the channels needed to install the software: ( cd /mnt/transfer/distro/guix/scripts ; sh channels.scm</li>
 <li>Install system: ( cd /mnt/transfer/distro/guix/scripts ; sh ./install_system.sh)</li>
 <li>reboot the system</li>
 <li>Change your user's password</li>
