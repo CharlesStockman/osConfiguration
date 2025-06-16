@@ -57,13 +57,13 @@ The init system will automatically execute guix-daemon ( A daemon used for build
 <li>Insert the boot usb so a terminal appears</li><br>
 
 <b>Installation Files</b>
-<li>copy distro/guix to an USB Stick</li>
+<li>copy distro/guix to an USB Stick and scripts/fileTypeForPartition.sh</li>
 <li>( mkdir -p /mnt/transfer ; mount /dev/sdb1 /mnt/ransfer )</li><br>
 
 <b>Install</b>
 <li>Format the partitions using: ( cd /mnt/transfer/guix/scripts ; sh fileTypeForPartition.sh)</li>
 <li>Mount and turn the swap on by using: ( cd /mnt/transfer/guix/scripts ; sh setup_filesystems.sh)</li>
-<li>Setup the channels needed to install the software: ( cd /mnt/transfer/guix/scripts ; sh channels.scm</li>
+<li>Setup the channels needed to install the software: ( cd /mnt/transfer/guix/scripts ; sh channels.scm)</li>
 <li>Install system: ( cd /mnt/transfer/guix/scripts ; sh ./install_system.sh)</li>
 <li>reboot the system</li>
 <li>Change your user's password</li>
