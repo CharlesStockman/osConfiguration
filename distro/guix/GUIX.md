@@ -5,6 +5,7 @@
 Install GUIX modularity.  For example, could install directly to hardware or WSL2
 
 ### Architecture 
+<li>Channels -- Repositories of different software ex: nonguix for linux firmware</li>
 <li>All packages built and installed  will be stored in the /gnu/store</li>
 <li>Whenever a user installs a package the dependencies are download so the application can be isolated from the system.</li>
 
@@ -60,10 +61,10 @@ The init system will automatically execute guix-daemon ( A daemon used for build
 <li>( mkdir -p /mnt/transfer ; mount /dev/sdb1 /mnt/ransfer )</li><br>
 
 <b>Install</b>
-<li>Format the partitions using: ( cd /mnt/transfer/distro/guix/scripts ; sh fileTypeForPartition.sh)</li>
-<li>Mount and turn the swap on by using: ( cd /mnt/transfer/disto/guix/scripts ; sh setup_filesystems.sh)</li>
-<li>Setup the channels needed to install the software: ( cd /mnt/transfer/distro/guix/scripts ; sh channels.scm</li>
-<li>Install system: ( cd /mnt/transfer/distro/guix/scripts ; sh ./install_system.sh)</li>
+<li>Format the partitions using: ( cd /mnt/transfer/guix/scripts ; sh fileTypeForPartition.sh)</li>
+<li>Mount and turn the swap on by using: ( cd /mnt/transfer/guix/scripts ; sh setup_filesystems.sh)</li>
+<li>Setup the channels needed to install the software: ( cd /mnt/transfer/guix/scripts ; sh channels.scm</li>
+<li>Install system: ( cd /mnt/transfer/guix/scripts ; sh ./install_system.sh)</li>
 <li>reboot the system</li>
 <li>Change your user's password</li>
 
