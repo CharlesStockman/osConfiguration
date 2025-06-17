@@ -10,18 +10,39 @@ less than an hour
 (cd /usr/src/t2-src ; t2 up  )
 ```
 
-<b>Configure your system</b>
-Ths tools will let you Optimize the system, select the kernel, Retry buidling broken pagckages, Create debug information and much more.
+### Download new packages
 
+```
+( cd /usr/src/t2-src ; t2 upgrade
+```
+
+### Upgrade the system
 <b>Upgrade the system</b>
-
-Before doing the first upgrade of the system then Python should be installed or there are certain packages that will not be installed.
 
 ```
 cd /sur/src/t2-src
 t2 up
 t2 upgrade
 ```
+
+### Tangent: Upgrade produced errors
+
+When I did my first system upgrade, I was met with a series of 54 errors.  Here is the process that I used to upgrde my system
+
+<li>using the script command capture the output of the upgrade so the data can be analyzed </li>
+
+```
+script
+t2 upgrade
+
+# Control-D to save the file as typescript
+# Output should be "file saved to typescript"
+```
+
+|Issue|Solution|Orignal Isssue Count|Fixed Issue Count|
+|-----|--------|--------------------|-----------------|
+|Could NOT find Python3 ( mssing Python3_EXECUTABLE Interpreter||
+
 
 <b>Create an user for the system (provides shell, groups and creates home directory)</b>
 ```
@@ -42,3 +63,6 @@ sh createCstockmanUser.sh
 | python  | none              | Yes |
 | bat     | none              | No  |
 | eza     | none              | No  | 
+
+<b>Configure your system</b>
+Ths tools will let you Optimize the system, select the kernel, Retry buidling broken pagckages, Create debug information and much more.
