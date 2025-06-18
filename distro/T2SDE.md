@@ -4,26 +4,19 @@ Overall the installation can be asily done by an intermediate or advnace linux d
 less than an hour
 
 ## First Steps 
-<b>Download the initial list of packages</b>
+
+### Download metadata with new version and packages
 
 ```
 (cd /usr/src/t2-src ; t2 up  )
 ```
 
-### Download new packages
+### Install currevnt versions of the software
 
 ```
-( cd /usr/src/t2-src ; t2 upgrade
+( cd /usr/src/t2-src ; t2 upgrade )
 ```
 
-### Upgrade the system
-<b>Upgrade the system</b>
-
-```
-cd /sur/src/t2-src
-t2 up
-t2 upgrade
-```
 
 ### Tangent: Upgrade produced errors
 
@@ -41,7 +34,7 @@ t2 upgrade
 
 |Issue|Solution|Orignal Isssue Count|Fixed Issue Count|
 |-----|--------|--------------------|-----------------|
-|Could NOT find Python3 ( mssing Python3_EXECUTABLE Interpreter||
+|Could NOT find Python3 ( mssing Python3_EXECUTABLE Interpreter|54|40|t2 install python|
 
 
 <b>Create an user for the system (provides shell, groups and creates home directory)</b>
@@ -53,7 +46,7 @@ sh createCstockmanUser.sh
 |Command|Description|
 |-------|-----------|
 |( cd /usr/src/t2-src ; t2 up ) | Download/Updates the iniital source packages |
-|( cd /usr/src/t2-src ; ./scripts/Emerge-Pkg neofetch | Installs a package     |
+|( cd /usr/src/t2-src ; t2 install python ) | Installs a package     |
 
 # Packages Installed
 
