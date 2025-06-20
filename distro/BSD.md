@@ -24,6 +24,5 @@ pkg intall doas
 
 |Command|Description|
 |-------|-----------|
-|
 |service -e |Show services that are enabled|
 |service -l |List all scripts in /usr/local//etc/rc.d and /usr/local/etc/rc|
