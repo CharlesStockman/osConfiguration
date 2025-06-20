@@ -29,12 +29,13 @@ script
 t2 upgrade
 
 # Control-D to save the file as typescript
-# Output should be "file saved to typescript"
+# Output should be "Script done"
 ```
 
 |Issue|Solution|Orignal Isssue Count|Fixed Issue Count|
 |-----|--------|--------------------|-----------------|
-|Could NOT find Python3 ( mssing Python3_EXECUTABLE Interpreter|54|40|t2 install python|
+|Could NOT find Python3 ( mssing Python3_EXECUTABLE Interpreter|54|38|t2 install python|
+|meson: command not found |38|41|t2 install meson |
 
 
 <b>Create an user for the system (provides shell, groups and creates home directory)</b>
