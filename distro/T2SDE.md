@@ -37,6 +37,8 @@ t2 upgrade
 |Ninja: command not found | t2 install ninja |
 |Could NOT find Python3 ( mssing Python3_EXECUTABLE Interpreter|t2 install python|
 |meson: command not found |t2 install meson |
+|perl not found|t2 install perl|
+
 
 
 <b>Create an user for the system (provides shell, groups and creates home directory)</b>
