@@ -19,11 +19,12 @@
 
 |Command|Description|Example
 |-------|-----------|---------|
-| Free  | Get the memory in Gigabytes ( Return an Integer ) | free --giga \| awk 'NR==2 { print $2 / 2 )' |
-| lsblk | A commands that dispaly the devide id, size and mountpoint and label | lsblk -f |
+| free  | Shows the total, used, free, shared, buff/cache | free --giga |
+| lsblk | A commands that dispaly the devide id, file type and version, size and amount used,  mountpoint and label | lsblk -f |
 | swapon | Displays information about the file and partition | swapon --summary |
 | nproc | Print the number of processing units available to the current process, which may be less than the number of online processors | nproc |
 | id  | displays the uid, gid and groups | id root |
+| fzf | fuzzy finder which enhances search ( file, git etc..) | Examples:<br>&emsp;find . type -f \| fzf<br>&emsp;history\|fzf<br>&emsp;git branch \| fzf<br><br><br>fzf -q cbt |
 
 ## Commands for Rocm 
 | Command | Description |
