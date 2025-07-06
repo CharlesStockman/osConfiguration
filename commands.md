@@ -54,6 +54,15 @@
 
 ## Distro Commands 
 
+### Void
+
+|Command|Descriptions|
+|-------|------------|
+| xbps-install --sync --update --yes | update the system|
+| xbps-query --repository <package name> | Get information about a single package |
+| xbps-query --list-pkgs | list all installed packages|
+| xbps-query --yes <package> | Installs a packages |
+
 ## Shell one liners
 |Code|Description|
 |----|-----------|
