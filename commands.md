@@ -67,6 +67,8 @@
 |Code|Description|
 |----|-----------|
 |[-d /mnt/gentoo[] || mkdir --parents /mnt/gentoo | If /mnt/gentoo does exist then create the directory or directories |
+| ip route get 1.2.3.4 \| awk '{print $7'} | command queries the Linux kernel's routing table to determine how traffic would be routed to the IP address 1.2.3.4<br>Produces output where the 7 element is the machines ip addr |
+
 
 ## Commands Described Later
 <ul>
