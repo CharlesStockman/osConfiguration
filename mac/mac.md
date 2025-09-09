@@ -1,3 +1,16 @@
+# Installing Tahoe Beta 
+
+<ol>
+<li>Join Apple Beta Software Program - Head over to Apple's Beta Software Program website and sign up using your Apple Account credentials, then agree to the terms and conditions if required How to Install macOS Tahoe Public Beta 3 - MacRumors.</li>
+<li>Access System Settings - Open System Settings on your Mac and select General ➝ Software Update How to Install macOS Tahoe Public Beta 3 - MacRumors.</li>
+<li>
+Enable Beta Updates - Look for "Beta Updates" and click the info (i) symbol next to it How to Install macOS Tahoe Public Beta 3 - MacRumors, then choose the Public Beta option and apply How to install macOS Tahoe beta step by step.
+</li>
+<li>
+Download and Install - Hit the Upgrade Now button to start downloading the macOS Tahoe 26 beta macOS Tahoe 26 is ready to try out: here’s how to download the public beta | Tom's Guide once it appears as available.
+</li>
+</ol>
+
 # Macintosh Configuration
 
 ## Settings
