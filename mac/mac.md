@@ -2,6 +2,8 @@
 
 ## Creating a Bootable Image
 
+A Bootable image is useful if the latest version of the Mac OS does not install and you need to rollback.
+
 ### Download the macOS Installer:
 
 <ol>
