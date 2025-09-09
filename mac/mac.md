@@ -1,6 +1,6 @@
 # Installing Tahoe Beta 
 
-## Creatomg a Bootable Image
+## Creating a Bootable Image
 
 ### Download the macOS Installer:
 
