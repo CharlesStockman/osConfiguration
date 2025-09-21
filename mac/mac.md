@@ -1,62 +1,32 @@
-# Installing Tahoe Beta 
 
-## Creating a Bootable Image
+# Creating a Bootable Image
 
 A Bootable image is useful if the latest version of the Mac OS does not install and you need to rollback.
 
-### Download the macOS Installer:
+## Download the macOS Installer:
 
 <ol>
-<li>Get the installer - Download your desired macOS version from the Mac App Store or Apple's support website (the installer will be saved to your Applications folder as "Install macOS [Version Name].app").
-</li>
-<li>Verify the download - Ensure the full installer downloaded completely (it should be several GB in size).
-</li>
+<li>Get the installer - Download your desired macOS version from the Mac App Store or Apple's support website (the installer will be saved to your Applications folder as "Install macOS [Version Name].app").</li>
+<li>Verify the download - Ensure the full installer downloaded completely (it should be several GB in size).</li>
 </ol>
 
-### Prepare the USB Drive:
+## Prepare the USB Drive:
 
 <ol>
-<li>Insert USB drive - Connect a USB flash drive or external disk with at least 16GB of available storage.
-</li>
-<li>
-Open Disk Utility - Launch Disk Utility from Applications > Utilities or search via Spotlight.
-Erase the drive - Select your USB drive, click "Erase," choose "Mac OS Extended (Journaled)" format, and name it something memorable like "MyVolume".
-</li>
+<li>Insert USB drive - Connect a USB flash drive or external disk with at least 16GB of available storage.</li>
+<li>Erase the drive - Select your USB drive, click "Erase," choose "Mac OS Extended (Journaled)" format</li>
 </ol>
 
-### Create the Bootable Installer:
+## Create the Bootable Installer:
 
 <ol>
-<li>  
-Open Terminal - Launch Terminal from Applications > Utilities.
-</li>
-<li>
-Run the createinstallmedia command - Type the appropriate command for your macOS version, for example: sudo /Applications/Install\ macOS\ Ventura.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume
-</li>
-<li> 
-Enter your password - Provide your admin password when prompted and confirm by typing "Y" when asked.
-</li>
-<li>
-Wait for completion - The process will take 20-30 minutes to complete, showing progress updates.
-</li>  
+<li> Open Terminal</li>
+<li>Run the create install media command - sudo Applications/Install\ macOS\ Ventura.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume</li>
+<li>Enter your password - Provide your admin password when prompted and confirm by typing "Y" when asked.</li>
+<li>Wait for completion - The process will take 20-30 minutes to complete, showing progress updates.</li>  
 </ol>
 
-
-
-## Install Tahoe
-
-<ol>
-<li>Join Apple Beta Software Program - Head over to Apple's Beta Software Program website and sign up using your Apple Account credentials, then agree to the terms and conditions if required How to Install macOS Tahoe Public Beta 3 - MacRumors.</li>
-<li>Access System Settings - Open System Settings on your Mac and select General ➝ Software Update How to Install macOS Tahoe Public Beta 3 - MacRumors.</li>
-<li>
-Enable Beta Updates - Look for "Beta Updates" and click the info (i) symbol next to it How to Install macOS Tahoe Public Beta 3 - MacRumors, then choose the Public Beta option and apply How to install macOS Tahoe beta step by step.
-</li>
-<li>
-Download and Install - Hit the Upgrade Now button to start downloading the macOS Tahoe 26 beta macOS Tahoe 26 is ready to try out: here’s how to download the public beta | Tom's Guide once it appears as available.
-</li>
-</ol>
-
-### Finalize and Test:
+## Finalize and Test:
 
 <ol>
 <li>  
@@ -68,6 +38,8 @@ Test the bootable drive - Restart your Mac while holding the Option key to acces
 </ol>
 
 The USB drive will be renamed to "Install macOS [Version]" once the process completes successfully.
+
+
 
 # Macintosh Configuration
 
