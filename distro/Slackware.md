@@ -6,6 +6,7 @@ I decided this was an oppurtunity to learn more about what commands are needed t
 # Prerequisites
 
 ## Create/Find a boot USB
+The USB will be used to boot the computer that slackware will be installed on and will provides the command need to build the distro.
 
 ## Create Disk Partitions
 |Partition|File System|Description|
@@ -15,8 +16,27 @@ I decided this was an oppurtunity to learn more about what commands are needed t
 |/dev/nvme0n1p3 | ext4 | Where all the files and executables exist |\
 
 ## Use a wired connection
+The main goal is to setup the distro.  Having a wired connection is easing then settup wireless since a wired only need an ethernet cable in order to work.
 
-## 
+## Get all the pakcages from the Slackware Current Iso
+```
+  # Copy the slackware current to the USB Stick
+  cp slackware64-current-install-dvd.iso <USB Stick>
+
+  # Using the boot USB start the computer that slackware will be installed
+
+  # Mount the USB that the slackware current iso is found which will called the <Data USB>
+  mkdir /mnt/data
+  mount <Data USB> /mnt/data
+
+  # Mount the iso found on the <Data USB>
+  mkdir /mnt/data2
+  mount slackware64-current-install-dvd.iso /mnt/data2
+
+
+```
+</li>
+</ol>
 
 ## Installing 
 
