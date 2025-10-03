@@ -58,6 +58,13 @@ The main goal is to setup the distro.  Having a wired connection is easing then 
 Boot the machine using a Linux Bootable USB.  For example the one that you create in section "Create/Find a bootable USB"
 Format partitions:
 
+### Clone the OS Configuration Repository
+The OS Configuration Repositiory will contain scripts to install distributions, aliases, configuration files and more.  
+
+```
+git clone https://github.com/CharlesStockman/osConfiguration.git
+```
+
 bash# EFI partition MUST be FAT32
 
 mkfs.vfat -F 32 /dev/sdX1
