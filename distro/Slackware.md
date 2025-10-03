@@ -5,15 +5,20 @@ I decided this was an oppurtunity to learn more about what commands are needed t
 
 # Prerequisites
 
-## Create/Find a boot USB
-The USB will be used to boot the computer that slackware will be installed on and will provides the command need to build the distro.
+## Download a Slackware Current ISO
+[Current Slackware ISO](https://slackware.uk/people/alien-current-iso/slackware64-current-iso/slackware64-current-install-dvd.iso)
+
+## Create/Find a bootable USB
+The USB will be used to boot the computer that slackware will be installed on and will provides the commands needed to build the distro.
+
+A good choice is the following: [Bootable Gentoo USB](https://distfiles.gentoo.org/releases/amd64/autobuilds/20250928T160345Z/install-amd64-minimal-20250928T160345Z.iso)
 
 ## Create Disk Partitions
 |Partition|File System|Description|
 |---------|-----------|-----------|
 |/dev/nvme0n1p1 | vfat ( EFI System) | A boot loader |
 |/dev/nvme0n1p2 | swap | swap |
-|/dev/nvme0n1p3 | ext4 | Where all the files and executables exist |\
+|/dev/nvme0n1p3 | ext4 | Where all the files and executables exist |
 
 ## Use a wired connection
 The main goal is to setup the distro.  Having a wired connection is easing then settup wireless since a wired only need an ethernet cable in order to work.
@@ -33,65 +38,28 @@ The main goal is to setup the distro.  Having a wired connection is easing then 
   mkdir /mnt/data2
   mount slackware64-current-install-dvd.iso /mnt/data2
 
+  # Create a command which creates a space separated list of directories from the slackware iso containing *.txz files to be installed
+  # For the find -not -name '.' will filter the current directory from the list
+  # For paste -s merges lines from a single file into one line instead of merging multiple files side-by-side
+  directoryList=`find . -maxdepth 1 -type d -not -name '.' | paste -sd ' ' -`
 
+  # Copy the files and the directory structure from the slackware iso to the USB to make installing easier.
+  for directory in $directoryList
+  do
+     mkdir -p /mnt/data/packages/$directory
+     cp /mnt/data2/slackware64/$directory/*.txz /mnt/data/packages/$directory
+  done
 ```
-</li>
-</ol>
 
-## Installing 
+## Installing
 
-Get a USB Stick that contains a boot distro
+### Boot the linux machines
 
-Complete Installation Process
-Step 1: Preparation
-Download Slackware:
-bash# Get Slackware from a mirror
-# You can use wget or rsync
-# Example for Slackware 15.0:
-wget -r -np -nH --cut-dirs=2 -R "index.html*" \
-  https://mirrors.slackware.com/slackware/slackware64-15.0/slackware64/
-Check your current disk layout:
-bashlsblk
-fdisk -l
-Step 2: Partition Your Disk
-For UEFI systems (since you're using ELILO):
-bash# Use gdisk for GPT partition table (required for UEFI)
-gdisk /dev/sdX
-
-# Create partitions:
-# 1. EFI System Partition: 512MB, type EF00
-# 2. Swap: 2-4GB, type 8200
-# 3. Root: 40GB+, type 8300
-# 4. Home: remaining space, type 8300
-Example gdisk commands:
-o (create new GPT)
-n (new partition)
-  Partition number: 1
-  First sector: (default)
-  Last sector: +512M
-  Hex code: EF00
-
-n (new partition)
-  Partition number: 2
-  First sector: (default)
-  Last sector: +4G
-  Hex code: 8200
-
-n (new partition)
-  Partition number: 3
-  First sector: (default)
-  Last sector: +40G
-  Hex code: 8300
-
-n (new partition)
-  Partition number: 4
-  First sector: (default)
-  Last sector: (default - use rest)
-  Hex code: 8300
-
-w (write changes)
+Boot the machine using a Linux Bootable USB.  For example the one that you create in section "Create/Find a bootable USB"
 Format partitions:
+
 bash# EFI partition MUST be FAT32
+
 mkfs.vfat -F 32 /dev/sdX1
 
 # Swap
