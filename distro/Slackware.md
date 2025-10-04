@@ -49,6 +49,8 @@ The main goal is to setup the distro.  Having a wired connection is easing then 
      mkdir -p /mnt/data/packages/$directory
      cp /mnt/data2/slackware64/$directory/*.txz /mnt/data/packages/$directory
   done
+
+  umount /mnt/data2
 ```
 
 ## Installing
@@ -62,8 +64,26 @@ Format partitions:
 The OS Configuration Repositiory will contain scripts to install distributions, aliases, configuration files and more.  
 
 ```
+cd
 git clone https://github.com/CharlesStockman/osConfiguration.git
 ```
+
+### Create the Filesystems
+
+Create the filesystems for the partitions ( UEFI Boot, Swap, Os )
+
+A good practice is to put a label on each drive.  A label useful for the follwoing reasons
+<ol>
+  <li>Human Readable</li>
+  <li>Inserting an Removing USB Sticks can shuffle device names ( ex. /dev/sda1, /dev/sdb1)</li>
+  <li>Labels remain constnat when the device name changes</li>
+</ol>
+
+```
+cd scripts/installation
+sh ./createFilesystems.sh
+```
+
 
 bash# EFI partition MUST be FAT32
 
