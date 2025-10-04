@@ -93,20 +93,7 @@ cd scripts/installation
 sh ./activateSwapPartition.sh
 ```
 
-# Swap
-mkswap /dev/sdX2
-swapon /dev/sdX2
-
-# Root
-mkfs.ext4 /dev/sdX3
-
-# Home
-mkfs.ext4 /dev/sdX4
-Step 3: Mount Target Partitions
-bash# Mount root
-mount /dev/sdX3 /mnt
-
-# Create necessary directories
+### Create necessary directories
 mkdir -p /mnt/{boot/efi,home,proc,sys,dev,dev/pts}
 
 # Mount EFI partition
