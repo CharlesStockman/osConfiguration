@@ -80,14 +80,18 @@ A good practice is to put a label on each drive.  A label useful for the follwoi
 </ol>
 
 ```
+cd
 cd scripts/installation
 sh ./createFilesystems.sh
 ```
 
+### Turn on Swapping
 
-bash# EFI partition MUST be FAT32
-
-mkfs.vfat -F 32 /dev/sdX1
+```
+cd
+cd scripts/installation
+sh ./activateSwapPartition.sh
+```
 
 # Swap
 mkswap /dev/sdX2
