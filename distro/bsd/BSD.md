@@ -35,11 +35,25 @@ The two defaults are sshd and dumpdev, but I have choosen ntpd, ntpd_sync_on_sta
 | moused | PS/2 mouse pointer on console since I will be using Terminal applications |
 
 <b>Final Configuration</b><br>
-Install the Freebsd Handbook
+Select the "Install the Freebsd Handbook"
 
-
+<b>Install</b>
 
 ## Post Installation
+
+### Install Software needed for Post Installation
+
+The only software needed is git used to clone the osConfiguration directory which will contain the configuration scripts.
+
+<ol>
+  <li>pkg install git</li>
+  <li>git clone https://CharlesStockman/osConfiguration.git</li>
+</ol>
+
+### doas
+The doas command provides a way to perform commands as another user. It aims to be a a simplified and lightweight replacement for sudo
+
+
 
 ### Upgrade the system
 ```
@@ -48,7 +62,14 @@ freebsd-update install
 ```
 
 ### pkg 
-A binary package manager, but may try ports in the future
+A binary package manager
+
+#### Commands
+|Command|Explanation|
+|-------|-----------|
+|pkg search <string> | Search for the string as part of the name or the description |
+|pkg install &lt;package name&gt; | Installs the package |
+|pkg info -D -a | Show all messages from all installed packages|
 
 ### Doas
 
