@@ -53,7 +53,18 @@ The only software needed is git used to clone the osConfiguration directory whic
 ### doas
 The doas command provides a way to perform commands as another user. It aims to be a a simplified and lightweight replacement for sudo
 
+```
+cd
+cd osConfiguraiton/distro/bsd/scripts/postInstall
+sh ./doas.sh
+```
 
+### Create an User
+<b>Difference between adduser and pw</b>
+<ul>
+<li>adduser: Interactive, beginner-friendly, asks questions</li>
+<li>pw: Command-line, scriptable, requires you to specify everything</li>
+</ul>
 
 ### Upgrade the system
 ```
