@@ -55,7 +55,7 @@ The doas command provides a way to perform commands as another user. It aims to 
 
 ```
 cd
-cd osConfiguraiton/distro/bsd/scripts/postInstall
+cd osConfiguration/distro/bsd/scripts/postInstall
 sh ./doas.sh
 ```
 
