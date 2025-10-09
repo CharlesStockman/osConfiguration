@@ -66,6 +66,25 @@ sh ./doas.sh
 <li>pw: Command-line, scriptable, requires you to specify everything</li>
 </ul>
 
+### Login Class
+A login class in FreeBSD is a way to define resource limits and environment settings for groups of users. It's configured in /etc/login.conf.
+
+<b>What login classes control</b>
+|Item|Description|
+|---|------------|
+|Resource limits|CPU time, memory usage, file sizes, open files|
+|Process priorities|Nice values, scheduling priorities|
+|Environment variables|PATH, timezone, language settings|
+|Session settings|Idle timeouts, password requirements|
+|Accounting|Usage tracking and quota|
+
+<b>Default login classes</b>
+|default|Standard users (used if nothing specified)|
+|-------|------------------------------------------|
+|root|Root account with fewer restrictions|
+|daemon|System daemons and services|
+|staff|Administrative staff (more resources than default)|
+
 ### Upgrade the system
 ```
 freebsd-update fetch
