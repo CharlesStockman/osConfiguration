@@ -1,6 +1,6 @@
 #! /bin/tcsh
 
-if ( $#argv == 2 ) then
+if ( $#argv != 2 ) then
     echo "$0 needs two arguments ( -u, --username ) and ( -p, --password )
     exit 1
 endif
