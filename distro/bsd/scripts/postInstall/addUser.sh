@@ -24,12 +24,14 @@ while ( $#argv > 0 )
     shift argv
 end
 
+set groups=""
+
 # Create user with all options specified
 # -n username          : Username (login name)
 # -c "Full Name"       : Full name (GECOS field/comment)
-# -u 1234              : UID (user ID)
+# -u 1234              : UID (user ID), will not use to allow pw to choose an uid
 # -g logingroup        : Primary login group (default: same as username) 
-#                      :     will allow pw to choose since for now this script will only create reglar users
+#                      :     will not use -g to allow pw to choose since for now this script will only create reglar users
 # -G wheel,operator    : Additional groups (comma-separated)
 # -L default           : Define resource limits and environment settings for groups of users
 # -s /bin/tcsh         : Shell
@@ -40,14 +42,14 @@ end
 # Create user and set password in one step
 echo "$userpass" | doas pw useradd \
     -n $username \
-    -u $uid \
     -g $username \
     -G $groups \
-    -L $loginclass \
+    -L default \
     -s /bin/tsch \
     -d /home/$username \
     -m \
     -h 0
+    
 if ($status == 0) then
     echo "User $username created with password"
     doas pw usershow $username
