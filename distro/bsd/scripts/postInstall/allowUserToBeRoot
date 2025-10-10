@@ -1,0 +1,28 @@
+if ( $#argv != 1 ) then
+   echo "$0 needs one argument ( -u, --username )
+   exit 1
+endif
+
+switch ($argv[1])
+   case "-u":
+   case "--user":
+      shift argv
+      set username = "$argv[1]"
+      breaksw
+   default:
+      echo "$0 -- Error: Unknow option $argv[1]"
+      exit 1
+endsw
+
+which doas >& /dev/null
+if ( $status != 0 ) then
+   echo "$0 -- please install doas ( execute doas.sh )
+endif
+
+id $username >& /dev/null
+if ( $status != 0 ) then
+   echo "$0 -- please create the user $username"
+   exit 1
+endif 
+
+pw usermod username -G wheel,doas
