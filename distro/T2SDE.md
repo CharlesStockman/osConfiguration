@@ -1,7 +1,9 @@
 # Installation
 
-Overall the installation can be asily done by an intermediate or advnace linux developer easily ( I did the installation in 
-less than an hour
+Overall the installation can be asily done by an intermediate or advnace linux developer easily less than an hour
+
+Disk Layout
+
 
 ## First Steps 
 
