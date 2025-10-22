@@ -1,12 +1,9 @@
 # Purpose 
-My machine did not recognize a boot slackware iso ( though did recognize other bootable iso(s) )
+My machine did not recognize a boot slackware iso though did recognize other bootable iso(s)
 
 I decided this was an oppurtunity to learn more about what commands are needed to install an actual linux system since in the future, I could be installing other distros such as ( Gentoo, T2SDE or GUIX as examples ).
 
 # Prerequisites
-
-## Download a Slackware Current ISO
-[Current Slackware ISO](https://slackware.uk/people/alien-current-iso/slackware64-current-iso/slackware64-current-install-dvd.iso)
 
 ## Create/Find a bootable USB
 The USB will be used to boot the computer that slackware will be installed on and will provides the commands needed to build the distro.
@@ -16,12 +13,40 @@ A good choice is the following: [Bootable Gentoo USB](https://distfiles.gentoo.o
 ## Create Disk Partitions
 |Partition|File System|Description|
 |---------|-----------|-----------|
-|/dev/nvme0n1p1 | vfat ( EFI System) | A boot loader |
+|/dev/nvme0n1p1 | vfat ( EFI System) | A boot loader
 |/dev/nvme0n1p2 | swap | swap |
-|/dev/nvme0n1p3 | ext4 | Where all the files and executables exist |
+|/dev/nvme0n1p3 | ext4 | Where all the files and executables exist 
 
-## Use a wired connection
-The main goal is to setup the distro.  Having a wired connection is easing then settup wireless since a wired only need an ethernet cable in order to work.
+# Setting up the machine for installation
+1. Boot the machine with the bootable USB create in prerequisites
+2. Plug in the USB that contains the scripts to install Slackware on the machine and perform the following shell command
+```
+mkdir -p /mnt/transfer
+mount /dev/sdb1 /mnt/transfer
+```
+
+# Installation
+All scripts will be found in /mnt2/transfer/slackware
+
+Create a directory /mnt2 that will mount the directories where slackware will be intallled
+
+## Before Chroot
+
+### Format Paritions
+```
+cd /mnt/transfer/slackware
+sh ./01_formatPartitions.sh 
+```
+### Mount Partitions
+Mounts the /mnt ( where slackware will be installed and /mnt/boot/efi )
+```
+sh ./02_mountPartitions.sh
+```
+
+## After Chroot
+## Reboot
+
+
 
 ## Get all the pakcages from the Slackware Current Iso
 ```
