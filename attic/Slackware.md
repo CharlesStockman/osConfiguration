@@ -26,7 +26,7 @@ mount /dev/sdb1 /mnt/transfer
 ```
 
 # Installation
-All scripts will be found in /mnt2/transfer/slackware
+All scripts will be found in /mnt/transfer/slackware
 
 Create a directory /mnt2 that will mount the directories where slackware will be intallled
 
@@ -38,10 +38,23 @@ cd /mnt/transfer/slackware
 sh ./01_formatPartitions.sh 
 ```
 ### Mount Partitions
-Mounts the /mnt ( where slackware will be installed and /mnt/boot/efi )
+Mounts the /mnt2 ( where slackware will be installed and /mnt/boot/efi )
 ```
 sh ./02_mountPartitions.sh
 ```
+### Download Packages
+Download all packages from a Slackware current directory
+```
+sh ./03_downloadPackages.sh
+```
+### Install the packages
+The packages will be installed on /mnt2 
+```
+sh ./04_installPackages.sh
+```
+
+## Chroot 
+
 
 ## After Chroot
 ## Reboot
