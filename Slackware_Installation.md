@@ -20,7 +20,8 @@ Advantages of Ventoy
 <li>Supports both UEFI and Legacy boot</li>
 <li>Better compatibility than many other tools</li>
 </ul>
-On Linux:
+
+<b>Important Note -- These instructions will not work on a macintosh.  Please use linux.</b>
 
 # Installation 
 
@@ -34,21 +35,23 @@ Linux or Macintosh: ventoy-x.x.xx-linux.tar.gz
 
 ## Identify Your USB Drive
 
-```
-diskutil list
+Have only one USB drive installed that can have the data on the drive erased
 
-# Look for your USB drive disk!
-#The USB will typically be labeled with its size and name.
+```
+lsblk
+
+# Look for your USB drive find the USB Drive and its mountpoint
 ```
 
 ## Umount the USB (but don't eject)
 
 ```
-# Replace X with your actual disk number (e.g., disk2).
-diskutil unmountDisk /dev/diskX
+umount <mountpoint associated with the mountpoint>
 ```
 
 ## Install Ventoy
+
+Become root using sudo <username>
 
 ```
 # Extract Ventoy
@@ -59,8 +62,8 @@ cd ventoy-*
 sudo sh Ventoy2Disk.sh -i /dev/diskX
 
 # You'll be prompted:
-# - Enter your Mac password
 #- Confirm the installation (type `y`)
+#- All the data on the disk /dev/sda will be lost!!!
 ```
 
 ## Add ISO Files
