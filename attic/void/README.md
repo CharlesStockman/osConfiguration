@@ -25,7 +25,7 @@ cd clone
 git clone https://github.com/CharlesStockman/osConfiguration.git
 ```
 
-### Source all the aliases 
+### Source the aliases 
 ```
 cd $HOME/git/distro/void/general
 . ./aliases.sh
