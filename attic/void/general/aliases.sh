@@ -3,5 +3,5 @@
 #
 
 alias listPackagesOnLocalMachine="xbps-query --list-pkg"
-alias sv="status /var/service/*"
+alias listServices="sv status /var/service/*"
 alias updateWorld="xbps-install --sync --update --yes"
