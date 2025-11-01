@@ -65,3 +65,35 @@ Key Uses
 cd $HOME/osConfigurtion/distro/void/infrastructure/
 sh ./Installdbus.sh
 ```
+
+#### Session Management 
+
+<b>Seatd</b>
+seatd: Focused purely on seat/device management
+seatd: Minimal dependencies, very lightweight
+seatd: Best for minimal Wayland setups where you only need device access
+seatd: Works with libseat-compatible compositors
+
+
+<b>elogind</b>
+elogind: Broader session management including power, seats, and user sessions
+elogind: More dependencies but still lighter than full systemd
+elogind: When you need full logind compatibility (polkit, power management, etc.)
+elogind: Drop-in replacement for systemd-logind APIs
+
+
+
+<b>Turnstile</b>
+turnstile: Designed for runit/dinit service supervisors
+
+
+Dependencies:
+
+
+Use Cases:
+
+turnstile: When you need user services on non-systemd systems
+
+Compatibility:
+
+turnstile: Complements elogind/seatd, doesn't replace them
