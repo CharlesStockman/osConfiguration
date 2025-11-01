@@ -31,4 +31,11 @@ cd $HOME/git/distro/void/general
 . ./aliases.sh
 ```
 
+### Seup the Infrastrcture
+```
+sudo xbps-install void-repo-nonfree
+sudo xbps-install void-repo-multilib
+sudo xbps-install void-repo-multilib-nonfree
+```
+
 ### Creating 
