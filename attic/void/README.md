@@ -60,3 +60,8 @@ Key Uses
      <li>Application integration (apps talking to each other)</li>
    </ul>
 </ul>
+
+```
+cd $HOME/osConfigurtion/distro/void/infrastructure/
+sh ./Installdbus.sh
+```
