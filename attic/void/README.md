@@ -31,11 +31,32 @@ cd $HOME/git/distro/void/general
 . ./aliases.sh
 ```
 
-### Seup the Infrastrcture
+### Setup the Infrastrcture
 ```
 sudo xbps-install --yes void-repo-nonfree
 sudo xbps-install --yes void-repo-multilib
 sudo xbps-install --yes void-repo-multilib-nonfree
 ```
 
-### Creating 
+### Setup the Infrastrcture
+
+#### Dbus 
+
+D-Bus (Desktop Bus) is an inter-process communication (IPC) system that allows multiple programs running on the same computer to communicate with each other.
+
+Key Uses
+<ul>
+<li>System-level operations:</li>
+   <ul>
+      <li>Hardware management (detecting USB devices, network connections)</li>
+      <li>System services (power management, login sessions)</li>
+      <li>Device notifications (battery status, disk mounting)</li>
+   </ul>
+<li>Desktop applications:</li>
+   <ul>
+     <li>Media player controls (Spotify, VLC responding to keyboard media keys)</li>
+     <li>Notifications (desktop notification popups)</li>
+     <li>Screen sharing and clipboard management</li>
+     <li>Application integration (apps talking to each other)</li>
+   </ul>
+</ul>
