@@ -33,9 +33,9 @@ cd $HOME/git/distro/void/general
 
 ### Seup the Infrastrcture
 ```
-sudo xbps-install void-repo-nonfree
-sudo xbps-install void-repo-multilib
-sudo xbps-install void-repo-multilib-nonfree
+sudo xbps-install --yes void-repo-nonfree
+sudo xbps-install --yes void-repo-multilib
+sudo xbps-install --yes void-repo-multilib-nonfree
 ```
 
 ### Creating 
