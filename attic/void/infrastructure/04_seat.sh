@@ -5,4 +5,3 @@
 xbps-install --yes seatd 
 ln -s /etc/sv/seatd /var/service
 usermod -g _seatd root
-usermod -g _seatd cstockman
