@@ -2,7 +2,6 @@
 
 This is a distro that is not aimed at the beginner, but the more experienced user so my suggestion is to use the void handbook to install the distro -- [Void Handbook](https://docs.voidlinux.org/)
 
-
 ## Post Install
 
 <b>Assumptions</b>
@@ -40,7 +39,7 @@ sudo xbps-install --yes void-repo-multilib-nonfree
 
 ### Setup the Infrastrcture
 
-#### Dbus 
+#### Inter-process Communcation 
 
 D-Bus (Desktop Bus) is an inter-process communication (IPC) system that allows multiple programs running on the same computer to communicate with each other.
 
@@ -62,7 +61,7 @@ Key Uses
 </ul>
 
 ```
-cd $HOME/osConfigurtion/distro/void/infrastructure/
+cd $HOME/osConfiguration/distro/void/infrastructure/
 sh ./Installdbus.sh
 ```
 
@@ -74,13 +73,14 @@ Session management is the system that tracks and controls user login sessions an
 <li>seatd: Focused purely on seat/device management</li>
 <li>seatd: Minimal dependencies, very lightweight</li>
 <li>seatd: Best for minimal Wayland setups where you only need device access</li>
-<li>seatd: Works with libseat-compatible compositors</li>
+<li>seatd: Works with libseat-compatible compositors</li><br>
 
 <b>elogind</b>
 <li>elogind: Broader session management including power, seats, and user sessions</li>
 <li>elogind: More dependencies but still lighter than full systemd</li>
 <li>elogind: When you need full logind compatibility (polkit, power management, etc.)</li>
-<li>elogind: Drop-in replacement for systemd-logind APIs</li>
+<li>elogind: Drop-in replacement for systemd-logind APIs</li><br>
+
 
 ```
 cd $HOME/osConfigurtion/distro/void/infrastructure/
