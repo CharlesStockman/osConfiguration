@@ -70,16 +70,16 @@ sh ./Installdbus.sh
 Session management is the system that tracks and controls user login sessions and their associated resources.
 
 <b>Seatd</b>
-<li>seatd: Focused purely on seat/device management</li>
-<li>seatd: Minimal dependencies, very lightweight</li>
-<li>seatd: Best for minimal Wayland setups where you only need device access</li>
-<li>seatd: Works with libseat-compatible compositors</li><br>
+<li>Focused purely on seat/device management</li>
+<li>Minimal dependencies, very lightweight</li>
+<li>Best for minimal Wayland setups where you only need device access</li>
+<li>Works with libseat-compatible compositors</li><br>
 
 <b>elogind</b>
-<li>elogind: Broader session management including power, seats, and user sessions</li>
-<li>elogind: More dependencies but still lighter than full systemd</li>
-<li>elogind: When you need full logind compatibility (polkit, power management, etc.)</li>
-<li>elogind: Drop-in replacement for systemd-logind APIs</li><br>
+<li>Broader session management including power, seats, and user sessions</li>
+<li>More dependencies but still lighter than full systemd</li>
+<li>When you need full logind compatibility (polkit, power management, etc.)</li>
+<li>Drop-in replacement for systemd-logind APIs</li><br>
 
 
 ```
@@ -96,3 +96,20 @@ Handles user-level service management (starting user daemons and background serv
 <li>turnstile: Designed for runit/dinit service supervisors</li>
 <li>tunrnstile: When you need user services on non-systemd systems</li>
 <li>turnstile: Complements elogind/seatd, doesn't replace them</li>
+
+#### Setup XDG_DIR
+
+XDG_RUNTIME_DIR is a temporary runtime directory for the current user session. It's part of the XDG Base Directory Specification.What It's Used ForPrimary purposes:
+
+<b>Uses</b>
+<ul>
+  <li>Wayland socket files - The compositor creates socket files here (e.g., wayland-0, wayland-1)</li>
+  <li>IPC (Inter-Process Communication) - Apps communicate with the compositor through these sockets</li>
+  <li>Session-specific temporary files - PulseAudio, PipeWire, systemd user services, D-Bus, etc.</li>
+  <li>Application runtime data - PID files, locks, temporary caches</li>
+</ul>
+
+```
+cd $HOME/osConfigurtion/distro/void/postInstall
+sh ./04_setXDG.sh
+```
