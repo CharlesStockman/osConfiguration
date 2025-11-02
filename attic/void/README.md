@@ -112,4 +112,5 @@ XDG_RUNTIME_DIR is a temporary runtime directory for the current user session. I
 ```
 cd $HOME/osConfigurtion/distro/void/postInstall
 sh ./04_setXDG.sh
+epport XDG_RUNTIME_DIR=/ruyn/user/0
 ```
