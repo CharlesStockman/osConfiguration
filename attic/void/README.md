@@ -68,32 +68,31 @@ sh ./Installdbus.sh
 
 #### Session Management 
 
-<b>Seatd</b>
-seatd: Focused purely on seat/device management
-seatd: Minimal dependencies, very lightweight
-seatd: Best for minimal Wayland setups where you only need device access
-seatd: Works with libseat-compatible compositors
+Session management is the system that tracks and controls user login sessions and their associated resources.
 
+<b>Seatd</b>
+<li>seatd: Focused purely on seat/device management</li>
+<li>seatd: Minimal dependencies, very lightweight</li>
+<li>seatd: Best for minimal Wayland setups where you only need device access</li>
+<li>seatd: Works with libseat-compatible compositors</li>
 
 <b>elogind</b>
-elogind: Broader session management including power, seats, and user sessions
-elogind: More dependencies but still lighter than full systemd
-elogind: When you need full logind compatibility (polkit, power management, etc.)
-elogind: Drop-in replacement for systemd-logind APIs
+<li>elogind: Broader session management including power, seats, and user sessions</li>
+<li>elogind: More dependencies but still lighter than full systemd</li>
+<li>elogind: When you need full logind compatibility (polkit, power management, etc.)</li>
+<li>elogind: Drop-in replacement for systemd-logind APIs</li>
 
+```
+cd $HOME/osConfigurtion/distro/void/infrastructure/
+sh ./04_seat.sh
+```
+#### User Management
 
+<b>Not Implemnted yet</b>
+
+Handles user-level service management (starting user daemons and background services)
 
 <b>Turnstile</b>
-turnstile: Designed for runit/dinit service supervisors
-
-
-Dependencies:
-
-
-Use Cases:
-
-turnstile: When you need user services on non-systemd systems
-
-Compatibility:
-
-turnstile: Complements elogind/seatd, doesn't replace them
+<li>turnstile: Designed for runit/dinit service supervisors</li>
+<li>tunrnstile: When you need user services on non-systemd systems</li>
+<li>turnstile: Complements elogind/seatd, doesn't replace them</li>
