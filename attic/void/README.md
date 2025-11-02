@@ -114,3 +114,17 @@ cd $HOME/osConfigurtion/distro/void/postInstall
 sh ./04_setXDG.sh
 epport XDG_RUNTIME_DIR=/ruyn/user/0
 ```
+
+#### Setup Wayland
+
+Wayland is a modern display protocol for Linux that defines how applications communicate with the display server to show graphics on your screen.
+It's the replacement for the older X11/Xorg system.  The main difference is In Wayland, the compositor (like Wayfire, Sway, or GNOME Shell) handles both window management AND display serving, making it simpler, more secure, and more efficient than X11.
+
+```
+# Install base Wayland libraries (if needed)
+sudo xbps-install wayland wayland-protocols
+
+# Check if Wayland libraries are installed
+xbps-query -l | grep wayland
+
+```
