@@ -128,3 +128,9 @@ sudo xbps-install wayland wayland-protocols
 xbps-query -l | grep wayland
 
 ```
+
+<b>Setup Wayfire</b>
+
+```
+xbps-install --sync --update --yes wayfire
+```
