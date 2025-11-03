@@ -115,6 +115,13 @@ sh ./04_setXDG.sh
 epport XDG_RUNTIME_DIR=/ruyn/user/0
 ```
 
+#### Setup Nvidia
+
+```
+cd $HOME/osConfigurtion/distro/void/hardware
+sh ./nvidia.sh
+```
+
 #### Setup Wayland
 
 Wayland is a modern display protocol for Linux that defines how applications communicate with the display server to show graphics on your screen.
@@ -130,7 +137,10 @@ xbps-query -l | grep wayland
 ```
 
 <b>Setup Wayfire</b>
-
 ```
 xbps-install --sync --update --yes wayfire
+
+cd $HOME/osConfigurtion/distro/void/postInstall
+sh ./05_ExportNvidiaWaylandVar.sh
+
 ```
