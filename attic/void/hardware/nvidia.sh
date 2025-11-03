@@ -12,14 +12,11 @@ sudo modprobe nvidia_modeset
 sudo modprobe nvidia_uvm
 sudo modprobe nvidia_drm
 
-to /etc/modules-load.d/nvidia.conf
-
-cat << /etc/modules-load.d/nvidia.conf > EOF
-nvidia
-nvidia_modeset
-nvidia_uvm
-nvidia_drm
-EOF
+# Create nvidai.conf
+nvidia >> /etc/modules-load.d/nvidia.conf
+nvidia_modeset > /etc/modules-load.d/nvidia.conf
+nvidia_uvm > /etc/modules-load.d/nvidia.conf
+nvidia_drm > /etc/modules-load.d/nvidia.conf
 
 # Add nvidia-drm.modeset=1 if not already present
 if ! grep -q "nvidia-drm.modeset=1" /etc/default/grub; then
