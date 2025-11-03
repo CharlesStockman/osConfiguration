@@ -1,10 +1,10 @@
 # Install the video Drivers
 
 # Install NVIDIA proprietary drivers and Wayland support
-sudo xbps-install -S nvidia nvidia-libs-32bit egl-wayland
+sudo xbps-install --sync --yes nvidia nvidia-libs-32bit egl-wayland
 
 # Install required libraries
-sudo xbps-install -S mesa mesa-dri libglvnd
+sudo xbps-install --sync --y mesa mesa-dri libglvnd
 
 # If not loaded, load them manually
 sudo modprobe nvidia
