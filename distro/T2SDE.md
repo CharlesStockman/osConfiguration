@@ -13,7 +13,7 @@ Disk Layout
 (cd /usr/src/t2-src ; t2 up  )
 ```
 
-### Install currevnt versions of the software
+### Install current versions of the software
 
 ```
 ( cd /usr/src/t2-src ; t2 upgrade )
