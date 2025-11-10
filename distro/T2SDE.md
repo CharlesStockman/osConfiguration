@@ -40,9 +40,6 @@ t2 upgrade
 |Could NOT find Python3 ( mssing Python3_EXECUTABLE Interpreter|t2 install python|
 |meson: command not found |t2 install meson |
 |perl not found|t2 install perl|
-|python3 is missing modules: jinja2 | t2 install jinja2|
-|bindgen not found or not executable -- Look throught the log file for mesa -- Last lines check for presence of rust compile and link, but bind not found | t2 install rust-bindgen |
-|Can't locate Locale/gettext.pm in @INC | t2 install perl-gettext |
 
 
 
