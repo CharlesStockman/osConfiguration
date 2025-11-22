@@ -1,10 +1,6 @@
 # Distros
 The section where the distros configuration is stored.  A distro is an operating system which could be linux, freebsd or mac.
 
-|Distro|Reason|
-|------|------|
-|Nitrix|Contains a lot of modern ideas I want use including:<br><ul><li>Hyprland -- Tiling window manager</li><li>OpenRc</li></ul>|
-
 <table>
 <tr>
 <th>Distro</th>
@@ -12,16 +8,7 @@ The section where the distros configuration is stored.  A distro is an operating
 </tr>
 <tr>
 <td>Nitrux</td>
-</tr>
-<tr>
-  <td>Nix</td>
-</tr>
-<li>Guix</li>
-<li>FreeBsd</li>
-<li>T2</li>
-</ul>
-</td>
-<td>Understand Many Modern Unix Features
+  <td>Better Understand Many Modern Unix Features
   <ul>
     <li>Tiling Window Manager</li>
     <li>OpenRc</li>
@@ -29,10 +16,17 @@ The section where the distros configuration is stored.  A distro is an operating
     <li>Immutable</li>
     <li>Many more ideas.</li>
   </ul>
+  <p>Will pair with GUIX which is lisp based ( One implementation of a package manager that offers transactional, reproducible, per-user package management ).</p>
 </td>
-<td>Functional Declaritive DSL to install and configure software</td>
-<td>Functional and Declared DSL to install and configure software, but uses lisp</td>
-<td>A direct descendent of UNIX</td>
-<td>Similarities of Slackware.</td>
+</tr>
+<tr>
+<td>Macintosh</td>
+<td><p>Will pair with NIX which is a functional DSL ( One implementation of a package manager that offers transactional, reproducible, per-user package management ).</p></td>
+<tr>
+<td>FreeBsd</td><td>To try and experiment with how easy it is to work with Cuda, Virtualization and Kubernetes</td>
+</tr>
+<tr>
+  <td>Slackware</td><td>With a virutal machine using T2 SDE.</td>
 </tr>
 </table>
+
