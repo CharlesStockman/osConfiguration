@@ -1,22 +1,26 @@
 #!/usr/bin/env python3
 import os
 import unittest
+import CommandDocumentation
 
 
-class TestCommandDocumenation(unittest.TestCase):
-    def test_CommandDocumenation_exist(self) -> None:
+class TestCommandDocumentation(unittest.TestCase):
+    def test_CommandDocumentation_exist(self) -> None:
         """
-        The test will be a compile time error
-        Advantage is the rest of the test can assume that CommandDocumentation exist
+        The test will be a compile time error.  If the class exist then the test passes
+        Advantage is the rest of the tests can assume that CommandDocumentation exist
         """
-        commandDocumentation = CommandDocumentation()
+        command_documentation = CommandDocumentation.CommandDocumentation()
 
-    # def test_getDirectoriesForPathEnv(self):
-    #    expected = os.getenv("PATH")
-    #    ComamndDocumentation = CommandDocumentation()
-    #    actual
+    def test_getDirectoriesForPathEnv(self):
+        expected = os.getenv("PATH")
+        command_documentation = CommandDocumentation.CommandDocumentation()
+        actual = os.pathsep.join(command_documentation.get_paths_from_environmental_variable())
 
-    #    self.assertEequal(
+        print(expected)
+        print(actual)
 
+        self.assertEqual(expected, actual)
 
-unittest.main()
+if __name__ == "__main__":
+    unittest.main()
