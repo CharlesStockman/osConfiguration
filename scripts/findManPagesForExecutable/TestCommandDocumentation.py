@@ -12,13 +12,13 @@ class TestCommandDocumentation(unittest.TestCase):
         """
         command_documentation = CommandDocumentation.CommandDocumentation()
 
-    def test_getDirectoriesForPathEnv(self):
+    def test_get_paths_from_path_environment(self) -> None:
+        """
+        Test the get_paths_from_path_environment method of CommandDocumentation happy path
+        """
         expected = os.getenv("PATH")
         command_documentation = CommandDocumentation.CommandDocumentation()
-        actual = os.pathsep.join(command_documentation.get_paths_from_environmental_variable())
-
-        print(expected)
-        print(actual)
+        actual = os.pathsep.join(command_documentation.get_paths_from_path_environment())
 
         self.assertEqual(expected, actual)
 
