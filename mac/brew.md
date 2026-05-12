@@ -6,11 +6,12 @@ brew install git
 
 #
 # Setup the environment for homebrew
+# Modify a new and then from another window exeucte zsh to have the brew configuration setup.
 #
 
 # Dumps all the shell commands need to configure the environemnt for brew.
-# Try brew shellenv and observe wath get displayed.
-echo 'eval "${/opt/homebrew/bin/brew shellenv zsh)"' >> $HOME/.zshrc
+# Try brew shellenv and observe what get displayed.
+echo 'eval "${/opt/homebrew/bin/brew shellenv zsh}"' >> $HOME/.zshrc
 
 
 ```
