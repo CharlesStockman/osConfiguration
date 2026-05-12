@@ -3,6 +3,16 @@ Homebrew is a package manager for macOS.  It lets you easily install, update, an
 The core idea: Instead of hunting down websites, downloading installers, and dragging apps around, you just type a command like: 
 ```
 brew install git
+
+#
+# Setup the environment for homebrew
+#
+
+# Dumps all the shell commands need to configure the environemnt for brew.
+# Try brew shellenv and observe wath get displayed.
+echo 'eval "${/opt/homebrew/bin/brew shellenv zsh)"' >> $HOME/.zshrc
+
+
 ```
 and Homebrew handles everything — downloading, installing, and setting <b>git</b> up correctly.
 
