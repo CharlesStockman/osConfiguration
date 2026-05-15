@@ -24,3 +24,22 @@ It uses asymmetric cryptography to establish the connection, then switches to a 
 |SSH Daemon (sshd)|Background service running on the server (the machine being connected to), waiting for incoming connections.|
 |SSH Client|tool on your machine (ssh command) that initiates the connection.|
 |Key pair|Public/private key pair you generate with ssh-keygen. This is an alternative to passwords and is more secure.|
+
+# Prerequisites
+
+## Macintosh
+
+<b>Determine if Remote Login is on or off</b>
+```
+sudo systemsetup -getremotelogin
+```
+
+<b>Turn Remote Login on </b>
+```
+sudo systemsetup -setremotelogin on
+```
+
+<b>Get Address the correct the network interface en1</b>
+```
+ipconfig getifaddr en1
+```
