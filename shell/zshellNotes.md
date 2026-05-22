@@ -22,6 +22,6 @@ Using this configuration since the future plans are to use a command like chemzo
 mkdir $HOME/.config/zsh
 echo "export ZDOTDIR=$HOME/.config/zsh" >> .zshenv
 mv .zsh_history $ZDOTDIR
-mv .zsh_sessions $ZDOTDIR
+mv .zsh_sessions $ZDOTDIR/.zsh_sessions
 # mv any other .z* files except .zshenv ( since it will set the location of the zshell configuration and other files )
 ```
