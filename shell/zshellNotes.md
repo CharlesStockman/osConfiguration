@@ -11,6 +11,11 @@ Notes on the zshell.
 |.zshenv|Set the location of where the Zsh Config files, history and session are found |
 |.zprofile | login-only setup (SSH, servers, TTY) |
 
+# Built In Commands
+|Command|Description|Documentation|
+|-------|-----------|-------------|
+|fc     |Command working with history | [Documentation](https://shapeshed.com/unix-fc/) |
+
 # My Configuration of ZShell
 
 ## Change the location of the zdot files
