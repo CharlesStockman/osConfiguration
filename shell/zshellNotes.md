@@ -8,6 +8,7 @@ Notes on the zshell.
 
 |File|Purpose|
 |----|-------|
+|.zshenv|Set the location of where the Zsh Config files, history and session are found |
 |.zprofile | login-only setup (SSH, servers, TTY) |
 
 # My Configuration of ZShell
