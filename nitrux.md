@@ -12,7 +12,8 @@ To describe the installation and configuration of the Nitrux Operating System
 &emsp;&emsp;AMD
 
 <li>Boot Nitrux from a USB Stick</li>
-<li>Login into Nitrux</li>
+<li>Go to UEFI Firmware Settings and select the USB Drive with the nitrux iso.</li>
+<li>Select "Boot Nitrux Live [Default]</li> and the desktop will appear.</li>
 <li>Open a Terminal and enter the following command</li>
 
 ```
