@@ -18,7 +18,6 @@ To describe the installation and configuration of the Nitrux Operating System
 
 ```
 sudo -E start-calamares
-# The sudo command will ask for the password ( enter the password shown above )
 ```
 
 <li>Fill in all the data that Calamares requires.</li>
