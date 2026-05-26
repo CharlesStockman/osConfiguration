@@ -6,10 +6,20 @@ Notes on the zshell.
 - <a href="https://github.com/rothgar/mastering-zsh/tree/master" target="_blank">Zsh Reference</a>
 # Important Files
 
+## Description of files
 |File|Purpose|
 |----|-------|
 |.zshenv|Set the location of where the Zsh Config files, history and session are found |
 |.zprofile | login-only setup (SSH, servers, TTY) |
+
+## Load Order
+|File|When loaded |
+|--------------|------------------|
+|/etc/zshenv   |Every shell       |
+|~/.zshenv     |Every shell       |
+|/etc/zprofile |Login shells      |
+|~/.zprofile   |Login shells      |
+|~/.zshrc      |Interactive shells|
 
 # Built In Commands
 |Command|Description|Documentation|
