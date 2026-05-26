@@ -27,6 +27,17 @@ Notes on the zshell.
 |-------|-----------|-------------|
 |fc     |Command working with history | [Documentation](https://shapeshed.com/unix-fc/) |
 
+# Differences between $path and $PATH
+In zsh, they are two views of the same data — zsh automatically keeps them in sync:
+
+|Property | $PATH                      | $path                                  |
+|---------|----------------------------|----------------------------------------|
+|Type     | String	                             | Array                        |
+|Format   |	"/usr/bin:/usr/local/bin"            | ("/usr/bin" "/usr/local/bin")|
+|Separator|	Colon-delimited                      | Space-separated elements     |
+|Origin   |	POSIX standard (works in all shells) | zsh-specific                 |
+
+
 # My Configuration of ZShell
 
 ## Change the location of the zdot files
