@@ -8,9 +8,10 @@ Notes on the zshell.
 
 ## Description of files
 |File|Purpose|
-|----|-------|
-|.zshenv|Set the location of where the Zsh Config files, history and session are found |
-|.zprofile | login-only setup (SSH, servers, TTY) |
+|----------|----------------------------------------------------------------|
+|.zshenv   |loaded for every shell.  Contains universal variables           |
+|.zprofile | path and environmental variables for the interactive session   |
+|.zshrc    | Aliases, functions, prompt, plugins defined for a specfic user |
 
 ## Load Order
 |File|When loaded |
