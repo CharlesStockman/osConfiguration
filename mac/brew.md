@@ -32,4 +32,6 @@ echo 'eval "${/opt/homebrew/bin/brew shellenv zsh}"' >> $HOME/.zshrc
 ## Software Installed
 <ul>
   <li>libreOffice</li>
+  <li>nerfonts</li>
+  <li>nerdfonts</li>
 </ul>
