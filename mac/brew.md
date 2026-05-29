@@ -29,9 +29,17 @@ echo 'eval "${/opt/homebrew/bin/brew shellenv zsh}"' >> $HOME/.zshrc
 |brew install <package-name>| Downloads the package binary and install and configures. |
 |brew search <string> | Search through the formula and casks for the string in the package names. |
 
+## Specific Installs
+### Nerd Fonts
+Install all the nerd fonts
+
+```
+brew search '/font-.*-nerd-font/' | awk '{ print $1 }' | xargs brew install
+```
+
 ## Software Installed
 <ul>
   <li>libreOffice</li>
-  <li>nerfonts</li>
+  <li>mole -- mac specific</li>
   <li>nerdfonts</li>
 </ul>
