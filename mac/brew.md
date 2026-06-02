@@ -27,6 +27,7 @@ echo 'eval "${/opt/homebrew/bin/brew shellenv zsh}"' >> $HOME/.zshrc
 |-------|------------|
 |brew doctor| Checks your system for potential problems that could cause Homebrew or installed packages to misbehave.|
 |brew install <package-name>| Downloads the package binary and install and configures. |
+|brew install hello| Verifies that homebrew is installed correctly|
 |brew search <string> | Search through the formula and casks for the string in the package names. |
 
 ## Specific Installs
