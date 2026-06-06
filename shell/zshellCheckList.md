@@ -17,3 +17,8 @@
 |move all files starting with .z into $HOME/.config/zsh |
 |In $ZDOTDIR/.zprofile add typeset -U path | Removes duplicates from the $path and $PATH environemnt variable| 
 |In $ZDOTDIR/.zprofie add to the front of path /opt/homebrew/bin | Get the brew versions of the executable since the version in the brew repository or more up to date.|
+
+<b>History</b>
+|Action|Notes|
+|------|-----|
+|In .zshrc set location using HISTFILE|Value: $ZDOTDIR/zsh/.zsh_history|
