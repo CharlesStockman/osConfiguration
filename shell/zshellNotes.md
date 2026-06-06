@@ -40,19 +40,19 @@ In zsh, they are two views of the same data — zsh automatically keeps them in 
 # Alias
 
 ## Example 1 -- Combining two alias
-alias ss='sudo '
-alias g='git'
-ss g would produce sudo git
+alias ss='sudo '<br>
+alias g='git'<br>
+ss g would produce sudo git<br>
 
 ## Example 2 -- If an alias conflicts with the name of a command it can be escaped with quotes
-alias grep='grep --color=auto'
-echo foo | grep fo    # uses grep --color=auto alias from the previous line
-echo foo | 'grep' fo #  uses the actual grep command
+alias grep='grep --color=auto'<br>
+echo foo | grep fo    # uses grep --color=auto alias from the previous line<br>
+echo foo | 'grep' fo #  uses the actual grep command<br>
 
 ## Example 3 -- Alias where the name is more than letters and numbers 
-alias :q=exit
-alias ..='cd ..'
-alias --='cd -'
+alias :q=exit<br>
+alias ..='cd ..'<br>
+alias --='cd -'<br>
 
 
 
