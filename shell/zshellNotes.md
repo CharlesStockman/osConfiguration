@@ -44,10 +44,17 @@ alias ss='sudo '
 alias g='git'
 ss g would produce sudo git
 
-## Example 2 -- If an alias conflicts with the name of a command it can be escaped with qutes
+## Example 2 -- If an alias conflicts with the name of a command it can be escaped with quotes
 alias grep='grep --color=auto'
 echo foo | grep fo    # uses grep --color=auto alias from the previous line
 echo foo | 'grep' fo #  uses the actual grep command
+
+## Example 3 -- Alias where the name is more than letters and numbers 
+alias :q=exit
+alias ..='cd ..'
+alias --='cd -'
+
+
 
 
 # My Configuration of ZShell
