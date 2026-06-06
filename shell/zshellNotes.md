@@ -37,6 +37,18 @@ In zsh, they are two views of the same data — zsh automatically keeps them in 
 |Separator|	Colon-delimited                      | Space-separated elements     |
 |Origin   |	POSIX standard (works in all shells) | zsh-specific                 |
 
+# Alias
+
+## Example 1 -- Combining two alias
+alias ss='sudo '
+alias g='git'
+ss g would produce sudo git
+
+## Example 2 -- If an alias conflicts with the name of a command it can be escaped with qutes
+alias grep='grep --color=auto'
+echo foo | grep fo    # uses grep --color=auto alias from the previous line
+echo foo | 'grep' fo #  uses the actual grep command
+
 
 # My Configuration of ZShell
 
