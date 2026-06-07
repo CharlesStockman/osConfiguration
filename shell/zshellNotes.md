@@ -54,7 +54,16 @@ alias :q=exit<br>
 alias ..='cd ..'<br>
 alias --='cd -'<br>
 
+## Example 4 -- Global Alias
+alias -g G='| grep'<br>
+echo -e 'zsh\nis\n\great\nhello\ngoodbye' G -A1 hello C      # grep for hello and include 1 line after<br>
 
+## Example 5 -- Global Alias
+alias -g G='| grep'
+alias -g W='| wc -l'
+alias -g GfooW='G foo W'          # Expands to | grep fool | wc -l
+
+# Bin
 
 
 # My Configuration of ZShell
