@@ -63,7 +63,13 @@ alias -g G='| grep'
 alias -g W='| wc -l'
 alias -g GfooW='G foo W'          # Expands to | grep fool | wc -l
 
-# Bin
+# Key Bindings 
+Zsh's line editor (ZLE) intercepts keypresses and maps them to widgets — functions that manipulate the command line.
+
+| Command | Description |
+|---------|-------------|
+|bindkey -L| Display all the keybindings|
+
 
 
 # My Configuration of ZShell
