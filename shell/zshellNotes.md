@@ -70,6 +70,19 @@ Zsh's line editor (ZLE) intercepts keypresses and maps them to widgets — funct
 |---------|-------------|
 |bindkey -L| Display all the keybindings|
 
+# Completions
+## Completions
+After writing part of the command press tab twice and a list of all the options will appear
+
+## Auto Suggestion
+Will Compare what was typed in to the history and will provide a list of suggestions.
+
+## Highlighting
+
+## ZStyle
+General purpose key-value configuration system built into zsh. 
+Completion uses it heavily, but any zsh subsystem can use it.
+
 
 
 # My Configuration of ZShell
