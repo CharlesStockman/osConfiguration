@@ -85,6 +85,7 @@ Completion uses it heavily, but any zsh subsystem can use it.
 
 # Functions
 |Command|Description|
+|-------|-----------|
 |whence -f <function name>| Print a function |
 
 
