@@ -83,6 +83,10 @@ Will Compare what was typed in to the history and will provide a list of suggest
 General purpose key-value configuration system built into zsh. 
 Completion uses it heavily, but any zsh subsystem can use it.
 
+# Functions
+|Command|Description|
+|whence -f <function name>| Print a function |
+
 
 
 # My Configuration of ZShell
