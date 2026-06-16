@@ -86,7 +86,9 @@ Completion uses it heavily, but any zsh subsystem can use it.
 # Functions
 |Command|Description|
 |-------|-----------|
-|whence -f <function name>| Print a function |
+|whence -f \<function name\>| Print a function |
+|whence -v \<function name\>| Shows the absolute path of function|
+
 
 
 
