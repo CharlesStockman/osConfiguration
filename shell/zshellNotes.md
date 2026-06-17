@@ -89,8 +89,20 @@ Completion uses it heavily, but any zsh subsystem can use it.
 |whence -f \<function name\>| Print a function |
 |whence -v \<function name\>| Shows the absolute path of function|
 
+# Variables
+## Parameters
+Variables are a subset of shell parameters which have lots of different values and types. 
+### Examples
+|Command|Description|
+|-------|-----------|
+| echo $! | The pid of the last backgrounded command |
+| echo $$ | The pid of this shell |
+| echo $? | The exit status returned by the last command |
+| echo $_ | The last argument to the previous command |
+| echo $RANDOM | Pseudo-random integer from 0 to 32767 |
+| echo $n | Positional parameter passed to script |
 
-
+## 
 
 # My Configuration of ZShell
 
