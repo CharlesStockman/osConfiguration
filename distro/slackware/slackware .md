@@ -13,7 +13,7 @@ There are some quotes in the slackware community
 > People use Slackware because they prefer understanding, control, and predictability ahead of convenience
 
 <b>Another Quote</b>
-> Slackware uses plain old tgz files, doesn't use systemd, and I can (usually) easily upgrade individual > pieces of software without upsetting some other unrelated stuff.
+> Slackware uses plain old tgz files, doesn't use systemd, and I can (usually) easily upgrade individual pieces of software without upsetting some other unrelated stuff.
 
 <b>Another Quote</b>
 >It's the 'old-school' muscle car of the Linux lineup. If someone wants to learn the nuts-n-bolts of Linux, then Slackware might still be the best choice of distro, as what one gets is a fairly vanilla iteration of Linux with fewer layers of added abstraction, and that makes things less cumbersome and confusing, as one doesn't have to 'dig through a tangled mess to get to the engine' (as is the case with fancy-shmancy new cars).
@@ -22,7 +22,7 @@ There are some quotes in the slackware community
 
 ## Installation of Slackware
 <ul>
-	<li>In the past, I had issues create an slackware iso with BalenaEtcher<br>instead use sudo dd if=slackware64-current-install-dvd.iso of=/dev/sdX bs=4M status=progress oflag=sync</li>
+	<li>In the past, I had issues creating a slackware iso with BalenaEtcher<br>instead use sudo dd if=slackware64-current-install-dvd.iso of=/dev/sdX bs=4M status=progress oflag=sync</li>
 	<li>Do not install lilo or elilo since they are considered legacy software.  Grub2 is the modern replacement</li>   
 </ul>
 
@@ -46,14 +46,15 @@ If help is needed for installing I would recommend the following video (first 21
 ### Chroot to the Slackware Installation
 Right now, you're still running off the USB stick's installer environment — not the Slackware system you just installed to disk. The next step is to chroot into that newly installed system so you can work inside it directly.
 
-
+[Chroot and Mount USB with Files ](scripts/chrootAndMountUsb.sh)
 ### Install Grub
 <b>Grub will perform the following actions</b>
 <ul>
 <li>Present the boot menu and allows the user to select an operating system</li>
 <li>Hand off boot arguments that affect how the OS Starts</li>
+</ul>
 
-[Install Grub](osConfiguration/Distros/slackware/scripts/installGrub.sh)
+[Install Grub](scripts/installGrub.sh)
 
 ### Add a User
 In order to add a user to the operating system.  I have create two script
@@ -63,9 +64,9 @@ In order to add a user to the operating system.  I have create two script
 | addUser.sh | Will create a user with sane defaults especially home directory, groups the user belong to and the shell |
 | allowUserSudo.sh | Allow a normal user to peform root responsbilities |
 
-[addUser.sh](osConfiguration/Distros/slackware/scripts/addUser.sh)
+[addUser.sh](scripts/addUser.sh)
 
-[allowUserSudo.sh](osConfiguration/Distros/slackware/scripts/allowUserSudo.sh)
+[allowUserSudo.sh](scripts/allowUserSudo.sh)
 
 ### Reboot
 At this point we may need to reboot since the network is not up.
@@ -88,7 +89,7 @@ After rebooting the network will be active.
 
 To allow Slackware to upgrade itself we need to select a repository and download the keys used to upgrade the software.
 
-[Uncomment Mirror and Download GPG Kyes](osConfiguration/Distros/slackware/scripts/uncommentMirrorAndGetGPG.sh)
+[Uncomment Mirror and Download GPG Kyes](osConfiguration/distro/slackware/scripts/uncommentMirrorAndGetGPG.sh)
 
 [Instructions for upgrading slackware](#upgrade-slackware-Daily)
 
@@ -101,7 +102,7 @@ To allow Slackware to upgrade itself we need to select a repository and download
 	<li>Create the repository containing the packages that can installed on your system</li>
 </ol>
 
-[Install sbo tools and Repository of installable software](osConfiguration/Distros/slackware/installSbo.sh)
+[Install sbo tools and Repository of installable software](osConfiguration/distro/slackware/installSbo.sh)
 
 ## Recurring Tasks
 
@@ -120,7 +121,7 @@ Do not atteempt the "slackpkg clean since it might remove the builds from slackb
 
 The purpose of these tools is to interact with slackbuilds.org to install and update software that slackware does not have.
 
-To install use: [SBOInstall](osConfiguration/Distros/slackware/scripts/installSbo.sh)
+To install use: [SBOInstall](osConfiguration/distro/slackware/scripts/installSbo.sh)
 
 | Command  | Description                                                                               |
 |----------|------------------------------------------------------------------------------------       |
