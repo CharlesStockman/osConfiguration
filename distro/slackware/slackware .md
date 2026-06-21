@@ -26,6 +26,14 @@ There are some quotes in the slackware community
 	<li>Do not install lilo or elilo since they are considered legacy software.  Grub2 is the modern replacement</li>   
 </ul>
 
+<b>Disk Partitions Used</b>
+## Create Disk Partitions
+|Partition|File System|Description|
+|---------|-----------|-----------|
+|/dev/nvme0n1p1 | vfat ( EFI System) | A boot loader
+|/dev/nvme0n1p2 | swap | swap |
+|/dev/nvme0n1p3 | xfs | Where all the files and executables exist 
+
 If help is needed for installing I would recommend the following video (first 21 minutes should be enough): [Slackware 15 is Released! A Distro You Really Should Try Because You're Worth It!](https://www.youtube.com/watch?v=0yoP9xnh4jI&t=1537s)
 
 ## Post Installation 
