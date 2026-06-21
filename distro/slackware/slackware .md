@@ -78,42 +78,20 @@ After rebooting the network will be active.
     <li>mount /dev/sdb1 /mnt/transfer
 </ul>
 
-### Updating Slackware and Installing/Updating New Software
-<b>Updating a slackware operating system is a two step process</b>
-<ol>
-<li>Upgrade slackware</li>
-<li>From slackbuilds.org install and upgrade new software</li>
-</ol> 
-
-### Slackware Upgrade
-
-To allow Slackware to upgrade itself we need to select a repository and download the keys used to upgrade the software.
-
-[Uncomment Mirror and Download GPG Kyes](osConfiguration/distro/slackware/scripts/uncommentMirrorAndGetGPG.sh)
-
-[Instructions for upgrading slackware](#upgrade-slackware-Daily)
-
-### Download the Repository of Software
-[slackbuilds.org](slackbuilds.org) will be repository where most of our build are retrieve from.
-
-<b>Prerequisites</b>
-<ol>
-	<li>Install the sbotools from https://github.com/pghvlaans/sbotools.git for Slackware 15.0</li>
-	<li>Create the repository containing the packages that can installed on your system</li>
-</ol>
-
-[Install sbo tools and Repository of installable software](osConfiguration/distro/slackware/installSbo.sh)
-
 ## Recurring Tasks
 
 ### Upgrade Slackware
 
-|Command|Description|
-|-------|-----------|
-|slackpkg update 				| Update the package list                       |
-|slackpkg install-new 			| Install any new packages added in the release |
-|slackpkg upgrade-all 			| Upgrade all installed packages                |
+To allow Slackware to upgrade itself we need to select a repository and download the keys used to upgrade the software.
 
+[Uncomment Mirror and Download GPG Kyes](scripts/uncommentMirrorAndGetGPG.sh)
+
+<b>Commands to install/update software from Slackware itself</b>
+<ol>
+<li>slackpkg update -- Update the package list </li>
+<li>slackpkg install-new -- Install any new packages added in the release</li>
+<li>slackpkg upgrade-all -- Upgrade all installed packages</li>
+</ol>
 
 Do not atteempt the "slackpkg clean since it might remove the builds from slackbuilds.org too.
 
@@ -121,7 +99,15 @@ Do not atteempt the "slackpkg clean since it might remove the builds from slackb
 
 The purpose of these tools is to interact with slackbuilds.org to install and update software that slackware does not have.
 
-To install use: [SBOInstall](osConfiguration/distro/slackware/scripts/installSbo.sh)
+[slackbuilds.org](https://slackbuilds.org) will be repository where most of our builds are retrieved from.
+
+<b>Prerequisites</b>
+<ol>
+	<li>Install the sbotools from https://github.com/pghvlaans/sbotools.git for Slackware 15.0</li>
+	<li>Create the repository containing the packages that can installed on your system</li>
+</ol>
+
+[Install sbo tools and Repository of installable software](scripts/installSbo.sh)
 
 | Command  | Description                                                                               |
 |----------|------------------------------------------------------------------------------------       |
@@ -134,5 +120,4 @@ To install use: [SBOInstall](osConfiguration/distro/slackware/scripts/installSbo
 | File Location and Name | Descriptpion |
 |------------------------|--------------|
 | /usr/sbo/repo | The location where all the build instructions is kept ( repository ) |
-| mkintrd.conf  | Add your extra files from your system to initrd |
 
