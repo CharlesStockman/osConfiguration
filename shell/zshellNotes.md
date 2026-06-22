@@ -125,3 +125,21 @@ done
 ```
 
 # Widgets
+A widget is just a named function that ZLE can call in response to a keystroke. Everything that happens at the command line prompt is a widget — moving the cursor, deleting a word, accepting a line. The entire interactive editing experience is built from them.
+
+## Uses 
+
+### Transforming the current buffer
+
+The most common use case — inspect or rewrite what's on the command line before executing it:
+
+<b>Example</b>
+```
+zshfunction sudo-wrapper() {
+    BUFFER="sudo $BUFFER"
+    CURSOR=$#BUFFER
+}
+zle -N sudo-wrapper
+bindkey '^S' sudo-wrapper
+```
+Hit Ctrl-S and it prepends sudo to whatever you've already typed. $BUFFER is the whole line, $CURSOR is the cursor position — those two variables are the core of almost every useful widget.
