@@ -123,3 +123,5 @@ for FILE in $(ls -1); do
     mv ${FILE} ${FILE:r}.${FILE:e:l}
 done
 ```
+
+# Widgets
