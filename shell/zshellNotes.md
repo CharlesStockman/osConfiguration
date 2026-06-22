@@ -102,19 +102,24 @@ Variables are a subset of shell parameters which have lots of different values a
 | echo $RANDOM | Pseudo-random integer from 0 to 32767 |
 | echo $n | Positional parameter passed to script |
 
-## 
+## Parameter Substituion
+${variable action value} syntax where a punctuation mark denotes an action and a string, variable, or command for value. 
 
-# My Configuration of ZShell
+|Substitution|Description|
+|------------|-----------|
+|${var:-foo}        | substitute var with foo if it is unset or set to an empty string |
+|${var:s/foo/bar}   | replace foo for bar (same as ${var/foo/bar} in bash) |
+|${var:h}           | leave "head" of variable path (same as dirname ${var} or ${str%/*} in bash) |
+|${var:t}           | leave "tail" of variable path (same as basename or ${str##*/} in bash) |
+|${var:l}           | convert variable to lowercase (this is ${var,,} in bash) |
+|${var:u} = convert | variable to UPPERCASE (this is ${var^^} in bash) |
 
-## Change the location of the zdot files
-Changing the location of the dotfiles to match the linux standard of having the dotfiles reside in the .conf directory to keep the config files all in on place.
-
-Using this configuration since the future plans are to use a command like chemzoi to manage the configuration file across multiple machines or use a tool from NIX or GUIX to manage my configuration
-
+<b>Example</b>
 ```
-mkdir $HOME/.config/zsh
-echo "export ZDOTDIR=$HOME/.config/zsh" >> .zshenv
-mv .zsh_history $ZDOTDIR
-mv .zsh_sessions $ZDOTDIR/.zsh_sessions
-# mv any other .z* files except .zshenv ( since it will set the location of the zshell configuration and other files )
+for FILE in $(ls -1); do
+    # :r takes filename and removes extension
+    # :e takes extension without filename
+    # :l lowercases text
+    mv ${FILE} ${FILE:r}.${FILE:e:l}
+done
 ```
