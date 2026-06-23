@@ -143,3 +143,32 @@ zle -N sudo-wrapper
 bindkey '^S' sudo-wrapper
 ```
 Hit Ctrl-S and it prepends sudo to whatever you've already typed. $BUFFER is the whole line, $CURSOR is the cursor position — those two variables are the core of almost every useful widget.
+
+### 2. Custom completion behavior
+
+Widgets are what compdef and zstyle ultimately invoke under the hood. If you've worked with compsys you've already been using widgets without necessarily calling them that — expand-or-complete, menu-select, etc. are all widgets you can override or wrap.
+
+### 3. History manipulation beyond what's built in
+
+The built-in history search (Ctrl-R) is a widget (history-incremental-search-backward). You can replace it entirely or wrap it — this is how tools like fzf and atuin hook into your shell; they define their own widget and rebind the key:
+
+### 4. Running external commands mid-edit without losing your buffer
+
+The built-in edit-command-line widget the code below — but knowing it's just a widget means you can customize or replace it.
+
+```
+zshfunction open-editor() {
+    local tmpfile=$(mktemp)
+    echo "$BUFFER" > $tmpfile
+    $EDITOR $tmpfile
+    BUFFER=$(cat $tmpfile)
+    rm $tmpfile
+    zle redisplay
+}
+zle -N open-editor
+bindkey '^X^E' open-editor
+```
+
+### 5. Prompt manipulation and redrawing
+
+zle reset-prompt and zle redisplay are widgets you can call from within other widgets or even from async processes (the pattern behind prompt themes that show git status without blocking).
