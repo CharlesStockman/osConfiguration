@@ -127,13 +127,37 @@ done
 # Widgets
 A widget is just a named function that ZLE can call in response to a keystroke. Everything that happens at the command line prompt is a widget — moving the cursor, deleting a word, accepting a line. The entire interactive editing experience is built from them.
 
+<b>Widgets are generally broken up into different categories. This includes</b>
+<ol>
+    <li>Movement</li>
+    <li>History Control</li>
+    <li>Modifying Text</li>
+    <li>Arguments</li>
+    <li>Completion</li>    
+    <li>Miscellaneous</li>
+    <li>Text Objects</li>
+</ol>
+
+|Command|Description|
+|-------|-----------|
+|zle -al | List all available widgets.  Those starting with a . are read only. |
+
+User widgets will also need to use autoload -U $WIDGET_NAME and zle -N $WIDGET_NAME to be available for bindkey.
+
+<b>The basic commands are:</b>
+```
+autoload -U $WIDGET                # Will fid the file in the fpath with the name $WIDGET
+zle -N $WIDGET                     # -N ( new ) and will make the file available to the command line
+bindkey $KEY_SEQUENCE $WIDGET      #   
+```
+
 ## Uses 
 
 ### Transforming the current buffer
 
 The most common use case — inspect or rewrite what's on the command line before executing it:
 
-<b>Example</b>
+<b>Examples</b>
 ```
 zshfunction sudo-wrapper() {
     BUFFER="sudo $BUFFER"
