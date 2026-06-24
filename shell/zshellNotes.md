@@ -200,3 +200,20 @@ bindkey '^X^E' open-editor
 ### 5. Prompt manipulation and redrawing
 
 zle reset-prompt and zle redisplay are widgets you can call from within other widgets or even from async processes (the pattern behind prompt themes that show git status without blocking).
+
+# Functions
+
+## zmv 
+A user contributed function included with most zsh distributions. It allows you to move, copy, or link files based on pattern matching. You can read more in the functions section.
+
+$ autoload -U zmv  # First load zmv in your .zshrc file or local shell with.
+
+### Examples
+<b>rename all .JPEG extensions to .jpg</b>
+$ zmv '(*).JPEG' '$1.jpg'
+
+<b>replace all spaces in file and folder names with underscore --notice parameter replacement is available from the variables section</b>
+
+$ zmv '(* *)' '${1// /_}'
+
+The zmv widget can also handy copying and symlinking. You can use it with alias zcp='zmv -C' and alias zln='zmv -L' or you can symlink files names zcp and zln in your $fpath to zmv.
