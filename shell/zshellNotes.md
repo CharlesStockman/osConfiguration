@@ -151,6 +151,8 @@ zle -N $WIDGET                     # -N ( new ) and will make the file available
 bindkey $KEY_SEQUENCE $WIDGET      #   
 ```
 
+Now execute a widget by typing alt+x in emacs mode or : in vimcmd mode. Type the name of the widget you want to test and press enter.
+
 ## Uses 
 
 ### Transforming the current buffer
@@ -159,13 +161,15 @@ The most common use case — inspect or rewrite what's on the command line befor
 
 <b>Examples</b>
 ```
-zshfunction sudo-wrapper() {
-    BUFFER="sudo $BUFFER"
-    CURSOR=$#BUFFER
+function prepend-sudo {
+  if [[ $BUFFER != "sudo "* ]]; then
+    BUFFER="sudo $BUFFER"; CURSOR+=5
+  fi
 }
-zle -N sudo-wrapper
-bindkey '^S' sudo-wrapper
+zle -N prepend-sudo
+bindkey -M vicmd s prepend-sudo
 ```
+
 Hit Ctrl-S and it prepends sudo to whatever you've already typed. $BUFFER is the whole line, $CURSOR is the cursor position — those two variables are the core of almost every useful widget.
 
 ### 2. Custom completion behavior
