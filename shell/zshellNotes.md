@@ -217,3 +217,10 @@ $ zmv '(*).JPEG' '$1.jpg'
 $ zmv '(* *)' '${1// /_}'
 
 The zmv widget can also handy copying and symlinking. You can use it with alias zcp='zmv -C' and alias zln='zmv -L' or you can symlink files names zcp and zln in your $fpath to zmv.
+
+# Line Movement
+
+<ol>
+<li> emacs -- bindkey -e </li>
+<li> vi    -- bindkey -v </li>    
+</ol>
