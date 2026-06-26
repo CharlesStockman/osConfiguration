@@ -234,4 +234,34 @@ echo $WORDCHARS to see all the special characters the shell will include as a si
 <li> vi    -- bindkey -v </li>    
 </ol>
 
+# Navigation
+
+## cd
+
+CD_PATH 
+
+CDPATH=.:~:~/projects
+
+<b>Directory Structure</b>
+<ul>~
+    <li>pojects</li>
+    <ul>myrepo
+        <li>src1.c</li>
+    </ul>
+</ul>
+
+
+| Command | Description|
+|---------|------------|
+|cd -     |Previous Directory |
+|cd       |Home Directory |
+|cd myrepo |  When you run cd foo, zsh first checks if foo exists relative to the current directory. If not, it walks through each directory in CDPATH looking for a subdirectory named foo |
+
+# Options
+
+|Option|Description|
+|------|-----------|
+|AUTO_CD | Automatically change into a directory even without cd |
+
+
 
