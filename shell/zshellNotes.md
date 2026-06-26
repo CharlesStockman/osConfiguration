@@ -220,7 +220,18 @@ The zmv widget can also handy copying and symlinking. You can use it with alias 
 
 # Line Movement
 
+<b>For reference:</b>
+<ol>
+<li>^ = Ctrl</li>
+<li>^[ = Alt</li>
+<li>\e or \E = Escape</li>
+</ol>
+
+echo $WORDCHARS to see all the special characters the shell will include as a single word.  This means foo/bar-bazz will be one word to be acted upon.
+
 <ol>
 <li> emacs -- bindkey -e </li>
 <li> vi    -- bindkey -v </li>    
 </ol>
+
+
