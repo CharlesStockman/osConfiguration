@@ -257,6 +257,51 @@ CDPATH=.:~:~/projects
 |cd       |Home Directory |
 |cd myrepo |  When you run cd foo, zsh first checks if foo exists relative to the current directory. If not, it walks through each directory in CDPATH looking for a subdirectory named foo |
 
+```
+$ mkdir -p foo/bar/baz/{today,tomorrow,jan-01,jan-02}/{folder1,folder2}
+
+$ tree -F foo
+foo
+└── bar/
+    └── baz/
+        ├── today/
+        │   ├── folder1/
+        │   └── folder2/
+        ├── tomorrow/
+        │   ├── folder1/
+        │   └── folder2/
+        ├── jan-01/
+        │   ├── folder1/
+        │   └── folder2/
+        └── jan-02/
+            ├── folder1/
+            └── folder2/
+
+# First letter of each name you can get to the directory 
+$ f/b/b/tom/folder2
+
+$ pwd
+foo/bar/baz/tomorrow/folder2
+
+# this also works for partial names
+$ cd today jan-01
+
+$ cd 01 02
+
+$ pwd
+foo/bar/baz/jan-02/folder2
+```
+
+### Navigation Tools
+Some additional homework for the reader is to install and setup one of the following
+
+|Tool|Description|
+|----|-----------|
+|fasd|All in one jump and edit tool with fuzzy matching|
+|autojump|Jump to directories with frequency tracking|
+|z|Jump to most used directories based on 'frecency'|
+|v|Like z but for editing files with vim|
+
 # Options
 
 |Option|Description|
