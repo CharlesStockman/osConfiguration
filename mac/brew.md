@@ -43,4 +43,6 @@ brew search '/font-.*-nerd-font/' | awk '{ print $1 }' | xargs brew install
   <li>libreOffice</li>
   <li>mole -- mac specific</li>
   <li>nerdfonts</li>
+  <li>intellij community edition -- Most compfortable with this editor</li9>
+  <li>helix+++</li>
 </ul>
