@@ -37,7 +37,7 @@ Auto-mount is the (simplest) which uses udev + udisks2, so plugging in a USB dri
 
 <b>Will show the Name of the device ( ex. /dev/sda1 )</b>
 ```
-lsblk will show the Device Name
+lsblk
 ```
 <b>Mount the drive</b>
 ```
