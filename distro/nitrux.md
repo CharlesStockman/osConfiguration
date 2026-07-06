@@ -43,3 +43,12 @@ lsblk
 ```
 udisksctl mount -b /dev/sdX1
 ```
+
+# Edit Files
+micro is the command letter is nitrux's command line editor
+
+<b>The basic commands are</b>
+|Command|Description|
+|-------|-----------|
+|ctrl S |Saves a file|
+|ctrl Q |Quits the editor|
