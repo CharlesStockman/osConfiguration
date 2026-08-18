@@ -101,7 +101,10 @@ To allow Slackware to upgrade itself we need to select a repository and download
 <li>slackpkg upgrade-all -- Upgrade all installed packages</li>
 </ol>
 
-Do not atteempt the "slackpkg clean since it might remove the builds from slackbuilds.org too.
+Do not attempt the "slackpkg clean since it might remove the builds from slackbuilds.org too.
+
+## Homebrew 
+Homebrew is another package repository that might contains tools and libraries that are not found in the slackware distribution or the slackbuilds.org website.
 
 ## SboTools
 
