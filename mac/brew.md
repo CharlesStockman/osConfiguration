@@ -37,7 +37,7 @@ echo 'eval "${/opt/homebrew/bin/brew shellenv zsh}"' >> $HOME/.zshrc
 
 # Dumps all the shell commands need to configure the environment for brew.
 # Try brew shellenv and observe what get displayed.
-echo 'eval "${/opt/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh}"' >> $HOME/.zshrc
+echo 'eval "${/home/linuxbrew/.linuxbrew/bin/brew shellenv}"' >> $HOME/.zshrc
 ```
 
 ## Commands
