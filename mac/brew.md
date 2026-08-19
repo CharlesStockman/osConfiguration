@@ -7,6 +7,8 @@ brew install git
 and Homebrew handles everything — downloading, installing, and setting <b>git</b> up correctly.
 
 ## Installation
+
+### Macintosh
 <b>Prerequisite: Verify that xcode has been installed</b>
 
 ```
@@ -14,12 +16,28 @@ and Homebrew handles everything — downloading, installing, and setting <b>git<
 
 #
 # Setup the environment for homebrew
-# Modify a new and then from another window exeucte zsh to have the brew configuration setup.
+# Modify a new and then from another window execute zsh to have the brew configuration setup.
 #
 
-# Dumps all the shell commands need to configure the environemnt for brew.
+# Dumps all the shell commands need to configure the environment for brew.
 # Try brew shellenv and observe what get displayed.
 echo 'eval "${/opt/homebrew/bin/brew shellenv zsh}"' >> $HOME/.zshrc
+```
+
+### Linux
+<b>Prerequisite: None</b>
+
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+#
+# Setup the environment for homebrew
+# Modify a new and then from another window execute zsh to have the brew configuration setup.
+#
+
+# Dumps all the shell commands need to configure the environment for brew.
+# Try brew shellenv and observe what get displayed.
+echo 'eval "${/opt/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh}"' >> $HOME/.zshrc
 ```
 
 ## Commands
