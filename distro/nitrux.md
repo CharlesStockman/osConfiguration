@@ -19,8 +19,16 @@ To describe the installation and configuration of the Nitrux Operating System
 ```
 sudo -E start-calamares
 ```
-
 <li>Fill in all the data that Calamares requires.</li>
+<p>
+  For this Section: Partitions<br>
+
+  <b>Question: </b><br>
+  Drop Down Box with the selections: No Swap, Swap No hibernate, Swap with hibernate or Swap to file<br>
+
+  <b>Answer: </b><br>
+  Select: "Swap to file" since it is the modern default of new Linux Distrubtions.<br>
+</p>
 <li>Click Done Button and the machine will reboot</li>
 
 ## Lessons learned from the Installation process
