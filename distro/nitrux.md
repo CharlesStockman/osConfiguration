@@ -53,7 +53,7 @@ udisksctl mount -b /dev/sdX1
 ```
 
 # Edit Files
-micro is the command letter is nitrux's command line editor
+micro is nitrux's default command line editor
 
 <b>The basic commands are</b>
 |Command|Description|
