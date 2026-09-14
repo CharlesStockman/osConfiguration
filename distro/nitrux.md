@@ -38,7 +38,7 @@ sudo -E start-calamares
 When installing (Using Calamares) use the partition setup that is recommended by the distro since one of the partitions must be readonly.
 
 # Keyboard Bindings
-In order to find the keyboarding bindings the developer should read the following file: <b>$HOME/.config/hypr/hyprland.conf</b> and search for the bindings section.
+In order to find the keyboarding bindings the developer should read the following file: <b>$HOME/.config/hypr/hyprland.lua</b> and search for the bindings section.
 
 # Mounting an USB
 Auto-mount is the (simplest) which uses udev + udisks2, so plugging in a USB drive should auto-mount it under /run/media/$USER/<label> or /media/$USER/<label>. 
