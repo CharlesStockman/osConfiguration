@@ -1,5 +1,7 @@
 # Commands
 
+## diskutil
+
 |Command|Description|
 |-------|-----------|
 |diskutil unmountDisk /dev/disk4 | umount the specified disk |
