@@ -92,7 +92,7 @@ After rebooting the network will be active.
 
 To allow Slackware to upgrade itself we need to select a repository and download the keys used to upgrade the software.
 
-[Uncomment Mirror and Download GPG Kyes](scripts/uncommentMirrorAndGetGPG.sh)
+[Uncomment Mirror and Download GPG Keys](scripts/uncommentMirrorAndGetGPG.sh)
 
 <b>Commands to install/update software from Slackware itself</b>
 <ol>
@@ -102,11 +102,6 @@ To allow Slackware to upgrade itself we need to select a repository and download
 </ol>
 
 Do not attempt the "slackpkg clean since it might remove the builds from slackbuilds.org too.
-
-## Homebrew 
-Homebrew is another package repository that might contains tools and libraries that are not found in the Slackware distribution or the slackbuilds.org website.  Useful when you want to build a project, but don't want to add all the dependenicies for building at the current moment.
-
-[Information on brew](../../mac/brew.md)
 
 ## SboTools
 
