@@ -5,6 +5,7 @@
 `wget -q --spider --timeout=5 https://www.google.com/generate_204`
 if [ $# -ne 1 ]; then
 	echo "$0 -- internet connection required"
+	exit -1
 fi
 
 git clone https://github.com/pghvlaans/sbotools.git
