@@ -2,6 +2,11 @@
 # Purpose: To install packages that will allow use to install packages from slackbuild
 #
 
+`wget -q --spider --timeout=5 https://www.google.com/generate_204`
+if [ $# -ne 1 ]; then
+	echo "$0 -- internet connection required"
+fi
+
 git clone https://github.com/pghvlaans/sbotools.git
 cd sbotools/slackbuild/sbotools
 

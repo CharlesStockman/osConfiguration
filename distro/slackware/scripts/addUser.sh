@@ -16,8 +16,14 @@ additional_gid="audio cdrom floppy input lp netdev plugdev power scanner video w
 home_directory=/home/${user}
 shell=/bin/zsh
 
+if [ -z "$user" ]; then
+       echo "Username not supplied on the command line"
+       echo "Usage: sh $0  <username>"
+       exit -1 
+fi
+
 #
 # Adds the user 
 #    -m  -- create the home directory
 #
-/usr/sbin/useradd -d $home_directory -m -g users -G audio,cdrom,input,netdev,plugdev,power,video,wheel -s $shell $user
+/usr/sbin$/useradd -d $home_directory -m -g users -G audio,cdrom,input,netdev,plugdev,power,video,wheel -s $shell $user
