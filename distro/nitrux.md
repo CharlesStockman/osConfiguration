@@ -35,10 +35,26 @@ sudo -E start-calamares
 <b>Recommendation:</b><br>
 When installing (Using Calamares) use the partition setup that is recommended by the distro since one of the partitions must be readonly.
 
-# Keyboard Bindings
+# Installing Software
+Nitrux does not have a package manger of its own instead you have to install your own package manager
+
+<b>Recommended Package Managers</b>
+<ol>
+  <li>Homebrew</li>
+  <li>Flatpak</li>
+  <li>Snaps</li>
+  <li>Guix</li>
+</ol>
+
+## Installing homebrew
+Follow the instructions for a linux installation of <a href="../mac/brew.md" target="_blank">Homebrew</a>
+
+# Appendix
+
+## Keyboard Bindings
 In order to find the keyboarding bindings the developer should read the following file: <b>$HOME/.config/hypr/hyprland.lua</b> and search for the bindings section.
 
-# Mounting an USB
+## Mounting an USB
 Auto-mount is the (simplest) which uses udev + udisks2, so plugging in a USB drive should auto-mount it under /run/media/$USER/<label> or /media/$USER/<label>. 
 
 <b>Will show the Name of the device ( ex. /dev/sda1 )</b>
@@ -50,7 +66,7 @@ lsblk
 udisksctl mount -b /dev/sdX1
 ```
 
-# Edit Files
+## Edit Files
 micro is nitrux's default command line editor
 
 <b>The basic commands are</b>
