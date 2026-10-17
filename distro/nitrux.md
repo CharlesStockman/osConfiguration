@@ -8,9 +8,8 @@ To describe the installation and configuration of the Nitrux Operating System
 
 # Install Nitrux 
 <b>Select the iso by Graphics Card</b><br>
-Download and burn the iso to an USB Stick.
 
-<li>Boot Nitrux from a USB Stick</li>
+<li>Download and burn the iso to an USB Stick.</li>
 <li>Go to UEFI Firmware Settings and select the USB Drive with the nitrux iso.</li>
 <li>Select "Boot Nitrux Live [Default]</li> and the desktop will appear.</li>
 <li>Open a Terminal and enter the following command</li>
