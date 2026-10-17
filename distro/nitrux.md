@@ -1,6 +1,6 @@
 # Introduction
 To describe the installation and configuration of the Nitrux Operating System
-
+https://github.com/CharlesStockman/osConfiguration/blob/master/distro/nitrux.md
 # Default Username and Password
 
 <b>Username:</b> nitrux<br>
