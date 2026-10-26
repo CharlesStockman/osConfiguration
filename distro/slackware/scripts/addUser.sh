@@ -26,4 +26,4 @@ fi
 # Adds the user 
 #    -m  -- create the home directory
 #
-/usr/sbin$/useradd -d $home_directory -m -g users -G audio,cdrom,input,netdev,plugdev,power,video,wheel -s $shell $user
+/usr/sbin/useradd -d $home_directory -m -g users -G audio,cdrom,input,netdev,plugdev,power,video,wheel -s $shell $user
