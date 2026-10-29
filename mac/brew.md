@@ -48,6 +48,36 @@ echo 'eval "${/home/linuxbrew/.linuxbrew/bin/brew shellenv}"' >> $HOME/.zshrc
 |brew install hello| Verifies that homebrew is installed correctly|
 |brew search <string> | Search through the formula and casks for the string in the package names. |
 
+## brew services Subcommands
+
+Usage: `brew services <subcommand> postgresql@16`<br>
+postgresql@16 is being used as an example
+
+| Subcommand | Command | Description |
+|------------|---------|-------------|
+| `start` | `brew services start postgresql@16` | Start the service formula immediately and register it to launch at login (or boot). |
+| `stop` | `brew services stop postgresql@16` | Stop the service formula immediately and unregister it from launching at login (or boot). |
+| `run` | `brew services run postgresql@16` | Run the service formula without registering it to launch at login (or boot). |
+| `restart` | `brew services restart postgresql@16` | Stop (if necessary) and start the service formula immediately and register it to launch at login (or boot). |
+| `kill` | `brew services kill postgresql@16` | Stop the service formula immediately but keep it registered to launch at login (or boot). |
+| `list` | `brew services list` | List information about all managed services for the current user (or root). |
+| `info` | `brew services info postgresql@16` | List all managed services for the current user (or root). |
+| `cleanup` | `brew services cleanup` | Remove all unused services. |
+
+## brew services Options
+
+| Option | Description |
+|--------|-------------|
+| `-d`, `--debug` | Display any debugging information. |
+| `-q`, `--quiet` | Make some output more quiet. |
+| `-v`, `--verbose` | Make some output more verbose. |
+| `-h`, `--help` | Show this message. |
+| `--sudo-service-user` | When run as root on macOS, run the service(s) as this user. |
+
+## Notes
+
+- Use `brew services run postgresql@16` instead of `start` if you only want Postgres running for this session and not at every login.
+
 ## Specific Installs
 ### Nerd Fonts
 Install all the nerd fonts
