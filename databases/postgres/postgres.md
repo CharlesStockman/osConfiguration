@@ -1,3 +1,9 @@
+## Definitions
+
+|Term|Description|Examples|
+|----|-----------|--------|
+|Relation|Anything that stores or presents rows in a table | <ul><li>Tables (the usual case)</li><li>Views</li><li>Materialized views</li><li>Indexes and sequences (also stored as relations internally)</li></ul> |
+
 ## Operations
 
 ### Create a database 
