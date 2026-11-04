@@ -28,3 +28,16 @@ the after the system has been modified
 | Phonix Test Suite | Runs on different computers and covers all the test that I need ( cpu, i/o, gpu )| 
 | Mongo DB | The database where results will be stored |
 
+### Commands
+
+#### Informational Commands
+
+|Command|Description|
+|-------|-----------|
+|phoronix-test-suite system-info | Provides information for Processor, Grpahics, MotherBoard, Membory, Disk and OS ( Inlcuding Security )
+|phoronix-test-suite system-sensors | Displays both Supported and Unsupported snesors. |
+|phoronix-test-suite list-available-suites| |
+|phoronix-test-suite list-available-tests | |
+|phoronix-test-suite info pts/hpc| Given a suite from the <b>phoronix-test-suite list-available-suites</b> will provide all the tests for the suite|
+|phoronix-test-suite info pts/quantlib| Give a test from the <b>horonix-test-suite list-available-tests</b> will dispaly the descrition, installed/not installed, Dependencies and git history  
+
