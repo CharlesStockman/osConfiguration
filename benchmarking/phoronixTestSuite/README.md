@@ -39,5 +39,47 @@ the after the system has been modified
 |phoronix-test-suite list-available-suites| |
 |phoronix-test-suite list-available-tests | |
 |phoronix-test-suite info pts/hpc| Given a suite from the <b>phoronix-test-suite list-available-suites</b> will provide all the tests for the suite|
-|phoronix-test-suite info pts/quantlib| Give a test from the <b>horonix-test-suite list-available-tests</b> will dispaly the descrition, installed/not installed, Dependencies and git history  
+|phoronix-test-suite info pts/quantlib| Give a test from the <b>horonix-test-suite list-available-tests</b> will dispaly the descrition, installed/not installed, Dependencies and git history
 
+#### Running Test Without any Parameters
+
+This section will document how the test can be executed without having to fill in any parameters when the test is started.
+
+Command being executed that will expect arguments
+```
+phoronix-test-suite benchmark pts/c-ray
+```
+<b>The two input parameters the user must enter are:</b>
+<ul>
+    <li>Processor Test Configuration</li>
+    <li>Would you like to save the test results</li>
+</ul>
+
+<b>Command being executed that will expect no arguments</b>
+
+<b>Would you like to save the test results</b>
+
+|Description|Command|
+|-----------|-------|
+|Set the file name | TEST_RESULTS_NAME="mytest" |
+
+<b>Processor Test Configuration</b>
+
+|Description|Command Argument|
+|-----------|-------|
+|Change the command from benchmark to default-bench so the defaults are used instead of asking the user | default-benchmark |
+
+<b>Actual Command</b>
+
+```
+TEST_RESULTS_NAME="mytest"
+phoronix-test-suite default default-benchmark pts/c-ray
+```
+
+#### Filenames 
+
+The results are put in the following directory
+
+```
+$HOME/.phoronix-test-suite/test-results/$TEST_RESULTS_NAME/test-logs/<hash code>/<results-file>
+```
