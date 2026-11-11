@@ -1,0 +1,28 @@
+# Template file for 'tuios'
+pkgname=tuios
+version=0.12.1
+revision=1
+build_style=go
+go_import_path="github.com/Gaurav-Gosain/tuios"
+go_package="${go_import_path}/cmd/tuios"
+go_ldflags="-X main.version=${version}"
+short_desc="Terminal window manager, multiplexer with tiling & persistent sessions"
+maintainer="Charles Stockman <you@example.com>"
+license="MIT"
+homepage="https://tuios.dev"
+changelog="https://tuios.dev/releases"
+distfiles="https://github.com/Gaurav-Gosain/tuios/archive/refs/tags/v${version}.tar.gz"
+checksum=11803b70c1853c8d328cf24f75ba49e0459c8589d2deb6279c52160865b69228
+
+# Upstream release builds disable the workspace (go.work has in-tree replaces)
+export GOWORK=off
+
+post_install() {
+	vlicense LICENSE
+	if [ -z "$CROSS_BUILD" ]; then
+		for sh in bash zsh fish; do
+			${DESTDIR}/usr/bin/tuios completion ${sh} > tuios.${sh}
+			vcompletion tuios.${sh} ${sh} tuios
+		done
+	fi
+}
