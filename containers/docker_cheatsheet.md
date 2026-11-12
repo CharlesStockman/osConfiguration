@@ -2,14 +2,15 @@
 
 ## Setup
 
-    After installing the docker from repository.
+After installing the docker from repository add the docker into the group.
 
 ### WHY THE DOCKER NEEDS TO BE IN THE GROUP
 
-The Docker CLI doesn’t do the work itself; it sends requests to the Docker daemon 
-(dockerd) over a Unix socket at /var/run/docker.sock. The daemon runs as root, andthe socket is owned by root:docker with mode 660:
+The Docker CLI doesn’t do the work itself; it sends requests to the Docker daemon (dockerd) over a Unix socket at /var/run/docker.sock. The daemon runs as root, andthe socket is owned by root:docker with mode 660:
 
-        srw-rw---- 1 root docker 0 ... /var/run/docker.sock
+```
+srw-rw---- 1 root docker 0 ... /var/run/docker.sock
+```
 
 Docker’s design is “whoever can talk to the daemon is trusted.” There’s is no per-use authentication on the socket. Instead of making everyone use sudo, the packagers create a docker group so the admin can say “these users may use Docker” using ordinary Unix permissions.
 
@@ -28,12 +29,12 @@ On production machines either:
 | sudo docker | Each time (same power, but gated by sudo’s auth and logging).|
 | Rootless Docker or Podman | The daemon runs as your user, so the socket is yours and no group is needed.<br> The tradeoff is some feature limits (privileged ports, certain storage and networking setups).|
 
-    <b>Add the user to group</b>
+<b>Add the user to group</b>
 
-    ```
-        # Become root user
-        usermod -append --groups docker <user>
-    ```
+```
+# Become root user
+usermod -append --groups docker <user>
+```
 
 ### Deamons
 
