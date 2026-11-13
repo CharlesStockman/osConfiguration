@@ -54,7 +54,8 @@ In order to user docker the docker daemon must run as root
 | docker image rm \<tag name\>| Removes the image |
 | docker run --interactive --tty \<tag name\> | Converts the image into a container and the user is inside the containeer<br><br>--interactive: keeps STDIN open so the container can receive your keystrokes.<br><br>--tty: allocates a pseudo-terminal, so you get a proper shell with a prompt, line editing, colors, and Ctrl+C handling. |
 | docker ps --all | Lists all containers that are running or stopped or exitied  |
- | docker rm \<container\> | removes a stopeed container |
+| docker rm \<container\> | removes a stopeed container |
+| docker system prune --force | <b>Removes</b><br><ul><li>All Stopped Containers</li><li>All networks not used by one container</li><li>All Dangling images</li><li>Unused Build Cache</li></ul>--force: Do not prompt for confirmation |
 
 
 
