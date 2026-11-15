@@ -34,9 +34,17 @@ Podman is an open-source container engine for building, running, and managing co
   </li>
 </ul>
 
+## Notes
+
+If "podman images" displays an image with the prefix local host that means the image is in the registry on the local machine
+
 ## Commands
 
 |Comamnd|Description|
 |-------|-----------|
 |podman run quay.io/podman/hello | Verifies that podman is working correctly and rm the quay.io/podman/hello:latest |
 |podman info | provides information about the podman environment in YAML Format|
+|podman build
+--tty open-adventure:podman | Executes the Dockerfile to create the image<br><br>--tty: allocates a pseudo-terminal, so you get a proper shell with a prompt, line editing, colors, and Ctrl+C handling. |
+| podman run --tty --interactive open-adventure:podman /bin/bash | This starts an interactive Bash shell inside a container built from a local image called open-adventure:podman.<br><br>--interactive: keeps STDIN open so the container can receive your keystrokes |
+
