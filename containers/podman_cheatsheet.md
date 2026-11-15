@@ -38,3 +38,5 @@ Podman is an open-source container engine for building, running, and managing co
 
 |Comamnd|Description|
 |-------|-----------|
+|podman run quay.io/podman/hello | Verifies that podman is working correctly and rm the quay.io/podman/hello:latest |
+|podman info | provides information about the podman environment in YAML Format|
