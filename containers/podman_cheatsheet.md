@@ -47,4 +47,7 @@ If "podman images" displays an image with the prefix local host that means the i
 |podman build
 --tty open-adventure:podman | Executes the Dockerfile to create the image<br><br>--tty: allocates a pseudo-terminal, so you get a proper shell with a prompt, line editing, colors, and Ctrl+C handling. |
 | podman run --tty --interactive open-adventure:podman /bin/bash | This starts an interactive Bash shell inside a container built from a local image called open-adventure:podman.<br><br>--interactive: keeps STDIN open so the container can receive your keystrokes |
+| podman ps | Shows the running container(s) |
+| podman login quay.io --username | Will prompt for a password and on successful authentication the user will be logged in a user account on quay.io |
+| podman push open-adventure:podman quay.io/dougtidwell openadventure:podman| pushed the image to quay.io ( must be logged in )
 
