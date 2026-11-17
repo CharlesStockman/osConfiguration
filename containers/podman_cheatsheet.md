@@ -50,5 +50,6 @@ If "podman images" displays an image with the prefix local host that means the i
 | podman login quay.io --username | Will prompt for a password and on successful authentication the user will be logged in a user account on quay.io |
 | podman push open-adventure:podman quay.io/dougtidwell openadventure:podman| pushed the image to quay.io ( must be logged in )
 | podman rmi --all | Delete all images |
+| podman stop --all && podman rm --all | Stop and remove all instances |
 
 
