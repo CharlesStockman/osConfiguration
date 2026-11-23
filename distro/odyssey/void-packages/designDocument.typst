@@ -1,0 +1,75 @@
+#set enum(indent: 1em)
+
+= Intoduction
+
+The purpose of this document is to explain a tool for easily building pckages for the Odyssey Linux Distrobution.  The Odyssey LInux
+distribution was build on top of the Void Linux Distrobution.
+
+= Use Case
+
+#table( 
+	columns: 2,
+	[*Name*], [*Value*],
+	[Use Case Number], [1],
+	[Preconditions], [ The container to build void packages is running 
+		- All packages are installed that are needed to build pakcages 
+		- Commmon directory between the host and the container],
+	[Basic Flow], [
+		+ In the container from the common directory execute a script that will build and place the package in the common directory
+		+ On the host system, run script that will place the package in a repository] 
+)
+
+== Assumptions
+
++ The tool only creates packages for the x86_64 architecture
+
++ The packages will be built from a Github Repository
+
++ Only one package will be built at a time
+
++ The packages will be for the x64_64 type only.  Currently there are no 32 bit or MUSL packages in this repository.  The primary use of package repository is to contain packages for odyssey.
+
+
+#pagebreak()
+
+= User Manual
+
+#pagebreak()
+
+= Development 
+
+== This section will explain how the repository is build
+
+This section will contain the instructions for creating a repository to allow users to use  "xbps-install -S yourpkg" to install packages from this repository.
+
+=== What is a Void Package Repository
+#v(1em)
+*Void repository is a plain directory of static files served over HTTP(S):*
+	+ \*.xbps package files, built by ./xbps-src pkg NAME into hostdir/binpkgs/.
+	+ \*.xbps.sig2 signature files, one per package.
+	+ x86_64-repodata, the signed index xbps downloads first.
+
+xbps appends /x86_64-repodata to whatever URL is configured, so any host that serves these files from one directory URL works.
+
+=== Creating the Void Package Repository isng the GitHub Platform
+
+The GitHub Repository was chosen since I have had experience with the repsotiory in the past.
+
+#table(
+   columns: 3, 
+   [*Option*], [*Pros*], [*Cons*], 
+   [Raw URLs from a git repo], [Simplest], [Cached for minutes, rate limits, history bloat],
+   [GitHub Pages (gh-pages branch)], [Stable CDN URL; force-push one commit to avoid bloat ], [1 GB limit; files over 100 MB rejected],
+   [Github Releases], [No git bloat; 2 GB per asset; scales to a big repo], [Must replace assets (including repodata) on every update],
+)
+
+*Git Bloat*
+
+Binaries committed to git stay in history forever, and each rebuild adds another full copy, since .xbps files are already compressed and 
+cannot be diffed. For a big repo that means bloat and GitHub's soft ~1 GB repo guideline. 
+
+Release assets avoid this: they are not part of git history, and a release tag acts as the "directory"
+
+
+
+#pagebreak()
